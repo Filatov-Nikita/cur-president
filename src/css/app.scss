@@ -1,0 +1,24 @@
+// app global css in SCSS form
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply tw-font-op-sans tw-text-white;
+}
+
+a[type=button] {
+  appearance: none
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: 0
+}
+
+.app-main-bg {
+  background: #141b32;
+}

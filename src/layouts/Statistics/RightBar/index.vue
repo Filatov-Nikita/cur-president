@@ -1,0 +1,61 @@
+<template>
+  <div>
+    <router-link :to="{ name: 'main' }">
+      <img
+        class="logo"
+        src="~/assets/cur-logo.svg"
+        alt="cur-logo"
+        width="582"
+        height="222"
+      />
+    </router-link>
+    <MenuItems :items="items" />
+  </div>
+</template>
+
+<script>
+import MenuItems from './Menu/MenuItems';
+
+export default {
+  data() {
+    return {
+      items: [
+        { label: '20-ка показателей', icon: 'TW', to: { name: 'TW' } },
+        {
+          label: '3D Республика',
+          icon: 'Respublic',
+          to: { name: '3D' },
+        },
+        {
+          label: 'Дашборды',
+          icon: 'Dashboards',
+          external: true,
+          blank: true,
+          to: 'https://cur.bashkortostan.ru/',
+        },
+        {
+          label: 'Оперативное совещание',
+          icon: 'Sovet',
+          external: true,
+          blank: true,
+          to: 'http://preza.yes-idea.ru/index.html#/',
+        },
+        {
+          label: 'Социальные коммуникации',
+          icon: 'Communications',
+          to: { name: 'soc' },
+        },
+      ],
+    };
+  },
+  components: {
+    MenuItems,
+  },
+};
+</script>
+
+<style scoped>
+.logo {
+  margin-bottom: 118px;
+}
+</style>
