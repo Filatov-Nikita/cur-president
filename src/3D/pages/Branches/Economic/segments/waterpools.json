@@ -1,0 +1,382 @@
+{
+    "waterpools": [
+        {
+            "ID": "1",
+            "Municipal_districts": "Абзелиловский район",
+            "swimming_pools_fact_percent": "27",
+            "color": "r"
+        },
+        {
+            "ID": "2",
+            "Municipal_districts": "Альшеевский район",
+            "swimming_pools_fact_percent": "8",
+            "color": "r"
+        },
+        {
+            "ID": "3",
+            "Municipal_districts": "Архангельский район",
+            "swimming_pools_fact_percent": "0",
+            "color": "r"
+        },
+        {
+            "ID": "4",
+            "Municipal_districts": "Аскинский район",
+            "swimming_pools_fact_percent": "36",
+            "color": "y"
+        },
+        {
+            "ID": "5",
+            "Municipal_districts": "Аургазинский район",
+            "swimming_pools_fact_percent": "0",
+            "color": "r"
+        },
+        {
+            "ID": "6",
+            "Municipal_districts": "Баймакский район",
+            "swimming_pools_fact_percent": "5",
+            "color": "r"
+        },
+        {
+            "ID": "7",
+            "Municipal_districts": "Бакалинский район",
+            "swimming_pools_fact_percent": "6",
+            "color": "r"
+        },
+        {
+            "ID": "8",
+            "Municipal_districts": "Балтачевский район",
+            "swimming_pools_fact_percent": "16",
+            "color": "r"
+        },
+        {
+            "ID": "9",
+            "Municipal_districts": "Белебеевский район",
+            "swimming_pools_fact_percent": "20",
+            "color": "r"
+        },
+        {
+            "ID": "10",
+            "Municipal_districts": "Белокатайский район",
+            "swimming_pools_fact_percent": "0",
+            "color": "r"
+        },
+        {
+            "ID": "11",
+            "Municipal_districts": "Белорецкий район",
+            "swimming_pools_fact_percent": "25",
+            "color": "r"
+        },
+        {
+            "ID": "12",
+            "Municipal_districts": "Бижбулякский район",
+            "swimming_pools_fact_percent": "13",
+            "color": "r"
+        },
+        {
+            "ID": "13",
+            "Municipal_districts": "Бирский район",
+            "swimming_pools_fact_percent": "17",
+            "color": "r"
+        },
+        {
+            "ID": "14",
+            "Municipal_districts": "Благоварский район",
+            "swimming_pools_fact_percent": "0",
+            "color": "r"
+        },
+        {
+            "ID": "15",
+            "Municipal_districts": "Благовещенский район",
+            "swimming_pools_fact_percent": "10",
+            "color": "r"
+        },
+        {
+            "ID": "16",
+            "Municipal_districts": "Буздякский район",
+            "swimming_pools_fact_percent": "12",
+            "color": "r"
+        },
+        {
+            "ID": "17",
+            "Municipal_districts": "Бураевский район",
+            "swimming_pools_fact_percent": "26",
+            "color": "r"
+        },
+        {
+            "ID": "18",
+            "Municipal_districts": "Бурзянский район",
+            "swimming_pools_fact_percent": "21",
+            "color": "r"
+        },
+        {
+            "ID": "19",
+            "Municipal_districts": "Гафурийский район",
+            "swimming_pools_fact_percent": "34",
+            "color": "y"
+        },
+        {
+            "ID": "20",
+            "Municipal_districts": "Давлекановский район",
+            "swimming_pools_fact_percent": "7",
+            "color": "r"
+        },
+        {
+            "ID": "21",
+            "Municipal_districts": "Дуванский район ",
+            "swimming_pools_fact_percent": "0",
+            "color": "r"
+        },
+        {
+            "ID": "22",
+            "Municipal_districts": "Дюртюлинский район ",
+            "swimming_pools_fact_percent": "17",
+            "color": "r"
+        },
+        {
+            "ID": "23",
+            "Municipal_districts": "Ермекеевский район ",
+            "swimming_pools_fact_percent": "23",
+            "color": "r"
+        },
+        {
+            "ID": "24",
+            "Municipal_districts": "Зианчуринский район",
+            "swimming_pools_fact_percent": "18",
+            "color": "r"
+        },
+        {
+            "ID": "25",
+            "Municipal_districts": "Зилаирский район ",
+            "swimming_pools_fact_percent": "21",
+            "color": "r"
+        },
+        {
+            "ID": "26",
+            "Municipal_districts": "Иглинский район",
+            "swimming_pools_fact_percent": "12",
+            "color": "r"
+        },
+        {
+            "ID": "27",
+            "Municipal_districts": "Илишевский район ",
+            "swimming_pools_fact_percent": "16",
+            "color": "r"
+        },
+        {
+            "ID": "28",
+            "Municipal_districts": "Ишимбайский район ",
+            "swimming_pools_fact_percent": "33",
+            "color": "y"
+        },
+        {
+            "ID": "29",
+            "Municipal_districts": "Калтасинский район ",
+            "swimming_pools_fact_percent": "4",
+            "color": "r"
+        },
+        {
+            "ID": "30",
+            "Municipal_districts": "Караидельский район",
+            "swimming_pools_fact_percent": "0",
+            "color": "r"
+        },
+        {
+            "ID": "31",
+            "Municipal_districts": "Кармаскалинский район ",
+            "swimming_pools_fact_percent": "0",
+            "color": "r"
+        },
+        {
+            "ID": "32",
+            "Municipal_districts": "Кигинский район ",
+            "swimming_pools_fact_percent": "9",
+            "color": "r"
+        },
+        {
+            "ID": "33",
+            "Municipal_districts": "Краснокамский район ",
+            "swimming_pools_fact_percent": "24",
+            "color": "r"
+        },
+        {
+            "ID": "34",
+            "Municipal_districts": "Кугарчинский район ",
+            "swimming_pools_fact_percent": "31",
+            "color": "y"
+        },
+        {
+            "ID": "35",
+            "Municipal_districts": "Кушнаренковский район",
+            "swimming_pools_fact_percent": "18",
+            "color": "r"
+        },
+        {
+            "ID": "36",
+            "Municipal_districts": "Куюргазинский район ",
+            "swimming_pools_fact_percent": "0",
+            "color": "r"
+        },
+        {
+            "ID": "37",
+            "Municipal_districts": "Мелеузовский район",
+            "swimming_pools_fact_percent": "12",
+            "color": "r"
+        },
+        {
+            "ID": "38",
+            "Municipal_districts": "Мечетлинский район ",
+            "swimming_pools_fact_percent": "15",
+            "color": "r"
+        },
+        {
+            "ID": "39",
+            "Municipal_districts": "Мишкинский район ",
+            "swimming_pools_fact_percent": "15",
+            "color": "r"
+        },
+        {
+            "ID": "40",
+            "Municipal_districts": "Миякинский район",
+            "swimming_pools_fact_percent": "16",
+            "color": "r"
+        },
+        {
+            "ID": "41",
+            "Municipal_districts": "Нуримановский район",
+            "swimming_pools_fact_percent": "5",
+            "color": "r"
+        },
+        {
+            "ID": "42",
+            "Municipal_districts": "Салаватский район",
+            "swimming_pools_fact_percent": "16",
+            "color": "r"
+        },
+        {
+            "ID": "43",
+            "Municipal_districts": "Стерлибашевский район",
+            "swimming_pools_fact_percent": "51",
+            "color": "y"
+        },
+        {
+            "ID": "44",
+            "Municipal_districts": "Стерлитамакский район",
+            "swimming_pools_fact_percent": "50",
+            "color": "y"
+        },
+        {
+            "ID": "45",
+            "Municipal_districts": "Татышлинский район",
+            "swimming_pools_fact_percent": "18",
+            "color": "r"
+        },
+        {
+            "ID": "46",
+            "Municipal_districts": "Туймазинский район",
+            "swimming_pools_fact_percent": "22",
+            "color": "r"
+        },
+        {
+            "ID": "47",
+            "Municipal_districts": "Уфимский район",
+            "swimming_pools_fact_percent": "21",
+            "color": "r"
+        },
+        {
+            "ID": "48",
+            "Municipal_districts": "Учалинский район",
+            "swimming_pools_fact_percent": "10",
+            "color": "r"
+        },
+        {
+            "ID": "49",
+            "Municipal_districts": "Фёдоровский район",
+            "swimming_pools_fact_percent": "0",
+            "color": "r"
+        },
+        {
+            "ID": "50",
+            "Municipal_districts": "Хайбуллинский район",
+            "swimming_pools_fact_percent": "0",
+            "color": "r"
+        },
+        {
+            "ID": "51",
+            "Municipal_districts": "Чекмагушевский район",
+            "swimming_pools_fact_percent": "13",
+            "color": "r"
+        },
+        {
+            "ID": "52",
+            "Municipal_districts": "Чишминский район",
+            "swimming_pools_fact_percent": "20",
+            "color": "r"
+        },
+        {
+            "ID": "53",
+            "Municipal_districts": "Шаранский район",
+            "swimming_pools_fact_percent": "0",
+            "color": "r"
+        },
+        {
+            "ID": "54",
+            "Municipal_districts": "Янаульский район",
+            "swimming_pools_fact_percent": "17",
+            "color": "r"
+        },
+        {
+            "ID": "55",
+            "Municipal_districts": "Агидель г.о.",
+            "swimming_pools_fact_percent": "30",
+            "color": "r"
+        },
+        {
+            "ID": "56",
+            "Municipal_districts": "Кумертау г.о.",
+            "swimming_pools_fact_percent": "25",
+            "color": "r"
+        },
+        {
+            "ID": "57",
+            "Municipal_districts": "Нефтекамск г.о.",
+            "swimming_pools_fact_percent": "8",
+            "color": "r"
+        },
+        {
+            "ID": "58",
+            "Municipal_districts": "Октябрьский г.о.",
+            "swimming_pools_fact_percent": "7",
+            "color": "r"
+        },
+        {
+            "ID": "59",
+            "Municipal_districts": "Салават г.о.",
+            "swimming_pools_fact_percent": "22",
+            "color": "r"
+        },
+        {
+            "ID": "60",
+            "Municipal_districts": "Сибай г.о.",
+            "swimming_pools_fact_percent": "7",
+            "color": "r"
+        },
+        {
+            "ID": "61",
+            "Municipal_districts": "Стерлитамак г.о.",
+            "swimming_pools_fact_percent": "9",
+            "color": "r"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "swimming_pools_fact_percent": "15",
+            "color": "r"
+        },
+        {
+            "ID": "63",
+            "Municipal_districts": "ЗАТО Межгорье",
+            "swimming_pools_fact_percent": "0",
+            "color": "r"
+        }
+    ]
+}

@@ -12,17 +12,20 @@
       </router-link>
     </section>
     <section>
-      <MapItems />
+      <DistrictMenuItems />
+      <!-- <MapItems /> -->
     </section>
   </q-page>
 </template>
 
 <script>
 import MapItems from 'src/3D/components/MapItems';
+import DistrictMenuItems from 'src/3D/components/District/Menu/DistrictMenuItems';
 
 export default {
   components: {
     MapItems,
+    DistrictMenuItems,
   },
 };
 </script>
@@ -35,5 +38,6 @@ export default {
 
 .map {
   padding-top: 100px;
+  background: #151B33;
 }
 </style>

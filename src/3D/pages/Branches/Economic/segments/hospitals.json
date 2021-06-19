@@ -1,0 +1,634 @@
+{
+    "hospitals": [
+        {
+            "ID": "1",
+            "Municipal_districts": "Абзелиловский район",
+            "hospitals_norm_beds": "598",
+            "hospitals_fact_beds": "195",
+            "hospitals_fact_beds_percent": "32.61",
+            "deficit_beds_bed": "403",
+            "deficit_beds_percent": "67.39",
+            "color": "r"
+        },
+        {
+            "ID": "2",
+            "Municipal_districts": "Альшеевский район",
+            "hospitals_norm_beds": "496",
+            "hospitals_fact_beds": "183",
+            "hospitals_fact_beds_percent": "36.90",
+            "deficit_beds_bed": "313",
+            "deficit_beds_percent": "63.10",
+            "color": "r"
+        },
+        {
+            "ID": "3",
+            "Municipal_districts": "Архангельский район",
+            "hospitals_norm_beds": "233",
+            "hospitals_fact_beds": "99",
+            "hospitals_fact_beds_percent": "42.49",
+            "deficit_beds_bed": "134",
+            "deficit_beds_percent": "57.51",
+            "color": "y"
+        },
+        {
+            "ID": "4",
+            "Municipal_districts": "Аскинский район",
+            "hospitals_norm_beds": "239",
+            "hospitals_fact_beds": "83",
+            "hospitals_fact_beds_percent": "34.73",
+            "deficit_beds_bed": "156",
+            "deficit_beds_percent": "65.27",
+            "color": "r"
+        },
+        {
+            "ID": "5",
+            "Municipal_districts": "Аургазинский район",
+            "hospitals_norm_beds": "430",
+            "hospitals_fact_beds": "107",
+            "hospitals_fact_beds_percent": "24.88",
+            "deficit_beds_bed": "323",
+            "deficit_beds_percent": "75.12",
+            "color": "r"
+        },
+        {
+            "ID": "6",
+            "Municipal_districts": "Баймакский район",
+            "hospitals_norm_beds": "743",
+            "hospitals_fact_beds": "234",
+            "hospitals_fact_beds_percent": "31.49",
+            "deficit_beds_bed": "509",
+            "deficit_beds_percent": "68.51",
+            "color": "r"
+        },
+        {
+            "ID": "7",
+            "Municipal_districts": "Бакалинский район",
+            "hospitals_norm_beds": "347",
+            "hospitals_fact_beds": "114",
+            "hospitals_fact_beds_percent": "32.85",
+            "deficit_beds_bed": "233",
+            "deficit_beds_percent": "67.15",
+            "color": "r"
+        },
+        {
+            "ID": "8",
+            "Municipal_districts": "Балтачевский район",
+            "hospitals_norm_beds": "244",
+            "hospitals_fact_beds": "70",
+            "hospitals_fact_beds_percent": "28.69",
+            "deficit_beds_bed": "174",
+            "deficit_beds_percent": "71.31",
+            "color": "r"
+        },
+        {
+            "ID": "9",
+            "Municipal_districts": "Белебеевский район",
+            "hospitals_norm_beds": "1288",
+            "hospitals_fact_beds": "611",
+            "hospitals_fact_beds_percent": "47.44",
+            "deficit_beds_bed": "677",
+            "deficit_beds_percent": "52.56",
+            "color": "y"
+        },
+        {
+            "ID": "10",
+            "Municipal_districts": "Белокатайский район",
+            "hospitals_norm_beds": "238",
+            "hospitals_fact_beds": "78",
+            "hospitals_fact_beds_percent": "32.77",
+            "deficit_beds_bed": "160",
+            "deficit_beds_percent": "67.23",
+            "color": "r"
+        },
+        {
+            "ID": "11",
+            "Municipal_districts": "Белорецкий район",
+            "hospitals_norm_beds": "1343",
+            "hospitals_fact_beds": "698",
+            "hospitals_fact_beds_percent": "51.97",
+            "deficit_beds_bed": "645",
+            "deficit_beds_percent": "48.03",
+            "color": "y"
+        },
+        {
+            "ID": "12",
+            "Municipal_districts": "Бижбулякский район",
+            "hospitals_norm_beds": "289",
+            "hospitals_fact_beds": "85",
+            "hospitals_fact_beds_percent": "29.41",
+            "deficit_beds_bed": "204",
+            "deficit_beds_percent": "70.59",
+            "color": "r"
+        },
+        {
+            "ID": "13",
+            "Municipal_districts": "Бирский район",
+            "hospitals_norm_beds": "861",
+            "hospitals_fact_beds": "372",
+            "hospitals_fact_beds_percent": "43.21",
+            "deficit_beds_bed": "489",
+            "deficit_beds_percent": "56.79",
+            "color": "y"
+        },
+        {
+            "ID": "14",
+            "Municipal_districts": "Благоварский район",
+            "hospitals_norm_beds": "335",
+            "hospitals_fact_beds": "104",
+            "hospitals_fact_beds_percent": "31.04",
+            "deficit_beds_bed": "231",
+            "deficit_beds_percent": "68.96",
+            "color": "r"
+        },
+        {
+            "ID": "15",
+            "Municipal_districts": "Благовещенский район",
+            "hospitals_norm_beds": "654",
+            "hospitals_fact_beds": "213",
+            "hospitals_fact_beds_percent": "32.57",
+            "deficit_beds_bed": "441",
+            "deficit_beds_percent": "67.43",
+            "color": "r"
+        },
+        {
+            "ID": "16",
+            "Municipal_districts": "Буздякский район",
+            "hospitals_norm_beds": "354",
+            "hospitals_fact_beds": "126",
+            "hospitals_fact_beds_percent": "35.59",
+            "deficit_beds_bed": "228",
+            "deficit_beds_percent": "64.41",
+            "color": "r"
+        },
+        {
+            "ID": "17",
+            "Municipal_districts": "Бураевский район",
+            "hospitals_norm_beds": "281",
+            "hospitals_fact_beds": "79",
+            "hospitals_fact_beds_percent": "28.11",
+            "deficit_beds_bed": "202",
+            "deficit_beds_percent": "71.89",
+            "color": "r"
+        },
+        {
+            "ID": "18",
+            "Municipal_districts": "Бурзянский район",
+            "hospitals_norm_beds": "224",
+            "hospitals_fact_beds": "57",
+            "hospitals_fact_beds_percent": "25.45",
+            "deficit_beds_bed": "167",
+            "deficit_beds_percent": "74.55",
+            "color": "r"
+        },
+        {
+            "ID": "19",
+            "Municipal_districts": "Гафурийский район",
+            "hospitals_norm_beds": "413",
+            "hospitals_fact_beds": "141",
+            "hospitals_fact_beds_percent": "34.14",
+            "deficit_beds_bed": "272",
+            "deficit_beds_percent": "65.86",
+            "color": "r"
+        },
+        {
+            "ID": "20",
+            "Municipal_districts": "Давлекановский район",
+            "hospitals_norm_beds": "526",
+            "hospitals_fact_beds": "234",
+            "hospitals_fact_beds_percent": "44.49",
+            "deficit_beds_bed": "292",
+            "deficit_beds_percent": "55.51",
+            "color": "y"
+        },
+        {
+            "ID": "21",
+            "Municipal_districts": "Дуванский район ",
+            "hospitals_norm_beds": "413",
+            "hospitals_fact_beds": "251",
+            "hospitals_fact_beds_percent": "60.77",
+            "deficit_beds_bed": "162",
+            "deficit_beds_percent": "39.23",
+            "color": "y"
+        },
+        {
+            "ID": "22",
+            "Municipal_districts": "Дюртюлинский район ",
+            "hospitals_norm_beds": "811",
+            "hospitals_fact_beds": "358",
+            "hospitals_fact_beds_percent": "44.14",
+            "deficit_beds_bed": "453",
+            "deficit_beds_percent": "55.86",
+            "color": "y"
+        },
+        {
+            "ID": "23",
+            "Municipal_districts": "Ермекеевский район ",
+            "hospitals_norm_beds": "211",
+            "hospitals_fact_beds": "61",
+            "hospitals_fact_beds_percent": "28.91",
+            "deficit_beds_bed": "150",
+            "deficit_beds_percent": "71.09",
+            "color": "r"
+        },
+        {
+            "ID": "24",
+            "Municipal_districts": "Зианчуринский район",
+            "hospitals_norm_beds": "331",
+            "hospitals_fact_beds": "134",
+            "hospitals_fact_beds_percent": "40.48",
+            "deficit_beds_bed": "197",
+            "deficit_beds_percent": "59.52",
+            "color": "y"
+        },
+        {
+            "ID": "25",
+            "Municipal_districts": "Зилаирский район ",
+            "hospitals_norm_beds": "195",
+            "hospitals_fact_beds": "60",
+            "hospitals_fact_beds_percent": "30.77",
+            "deficit_beds_bed": "135",
+            "deficit_beds_percent": "69.23",
+            "color": "r"
+        },
+        {
+            "ID": "26",
+            "Municipal_districts": "Иглинский район",
+            "hospitals_norm_beds": "885",
+            "hospitals_fact_beds": "241",
+            "hospitals_fact_beds_percent": "27.23",
+            "deficit_beds_bed": "644",
+            "deficit_beds_percent": "72.77",
+            "color": "r"
+        },
+        {
+            "ID": "27",
+            "Municipal_districts": "Илишевский район ",
+            "hospitals_norm_beds": "422",
+            "hospitals_fact_beds": "165",
+            "hospitals_fact_beds_percent": "39.10",
+            "deficit_beds_bed": "257",
+            "deficit_beds_percent": "60.90",
+            "color": "r"
+        },
+        {
+            "ID": "28",
+            "Municipal_districts": "Ишимбайский район ",
+            "hospitals_norm_beds": "1158",
+            "hospitals_fact_beds": "501",
+            "hospitals_fact_beds_percent": "43.26",
+            "deficit_beds_bed": "657",
+            "deficit_beds_percent": "56.74",
+            "color": "y"
+        },
+        {
+            "ID": "29",
+            "Municipal_districts": "Калтасинский район ",
+            "hospitals_norm_beds": "297",
+            "hospitals_fact_beds": "84",
+            "hospitals_fact_beds_percent": "28.28",
+            "deficit_beds_bed": "213",
+            "deficit_beds_percent": "71.72",
+            "color": "r"
+        },
+        {
+            "ID": "30",
+            "Municipal_districts": "Караидельский район",
+            "hospitals_norm_beds": "331",
+            "hospitals_fact_beds": "105",
+            "hospitals_fact_beds_percent": "31.72",
+            "deficit_beds_bed": "226",
+            "deficit_beds_percent": "68.28",
+            "color": "r"
+        },
+        {
+            "ID": "31",
+            "Municipal_districts": "Кармаскалинский район ",
+            "hospitals_norm_beds": "658",
+            "hospitals_fact_beds": "207",
+            "hospitals_fact_beds_percent": "31.46",
+            "deficit_beds_bed": "451",
+            "deficit_beds_percent": "68.54",
+            "color": "r"
+        },
+        {
+            "ID": "32",
+            "Municipal_districts": "Кигинский район ",
+            "hospitals_norm_beds": "223",
+            "hospitals_fact_beds": "201",
+            "hospitals_fact_beds_percent": "90.13",
+            "deficit_beds_bed": "22",
+            "deficit_beds_percent": "9.87",
+            "color": "g"
+        },
+        {
+            "ID": "33",
+            "Municipal_districts": "Краснокамский район ",
+            "hospitals_norm_beds": "352",
+            "hospitals_fact_beds": "106",
+            "hospitals_fact_beds_percent": "30.11",
+            "deficit_beds_bed": "246",
+            "deficit_beds_percent": "69.89",
+            "color": "r"
+        },
+        {
+            "ID": "34",
+            "Municipal_districts": "Кугарчинский район ",
+            "hospitals_norm_beds": "370",
+            "hospitals_fact_beds": "109",
+            "hospitals_fact_beds_percent": "29.46",
+            "deficit_beds_bed": "261",
+            "deficit_beds_percent": "70.54",
+            "color": "r"
+        },
+        {
+            "ID": "35",
+            "Municipal_districts": "Кушнаренковский район",
+            "hospitals_norm_beds": "348",
+            "hospitals_fact_beds": "90",
+            "hospitals_fact_beds_percent": "25.86",
+            "deficit_beds_bed": "258",
+            "deficit_beds_percent": "74.14",
+            "color": "r"
+        },
+        {
+            "ID": "36",
+            "Municipal_districts": "Куюргазинский район ",
+            "hospitals_norm_beds": "299",
+            "hospitals_fact_beds": "40",
+            "hospitals_fact_beds_percent": "13.38",
+            "deficit_beds_bed": "259",
+            "deficit_beds_percent": "86.62",
+            "color": "r"
+        },
+        {
+            "ID": "37",
+            "Municipal_districts": "Мелеузовский район",
+            "hospitals_norm_beds": "1092",
+            "hospitals_fact_beds": "493",
+            "hospitals_fact_beds_percent": "45.15",
+            "deficit_beds_bed": "599",
+            "deficit_beds_percent": "54.85",
+            "color": "y"
+        },
+        {
+            "ID": "38",
+            "Municipal_districts": "Мечетлинский район ",
+            "hospitals_norm_beds": "300",
+            "hospitals_fact_beds": "82",
+            "hospitals_fact_beds_percent": "27.33",
+            "deficit_beds_bed": "218",
+            "deficit_beds_percent": "72.67",
+            "color": "r"
+        },
+        {
+            "ID": "39",
+            "Municipal_districts": "Мишкинский район ",
+            "hospitals_norm_beds": "299",
+            "hospitals_fact_beds": "95",
+            "hospitals_fact_beds_percent": "31.77",
+            "deficit_beds_bed": "204",
+            "deficit_beds_percent": "68.23",
+            "color": "r"
+        },
+        {
+            "ID": "40",
+            "Municipal_districts": "Миякинский район",
+            "hospitals_norm_beds": "327",
+            "hospitals_fact_beds": "104",
+            "hospitals_fact_beds_percent": "31.80",
+            "deficit_beds_bed": "223",
+            "deficit_beds_percent": "68.20",
+            "color": "r"
+        },
+        {
+            "ID": "41",
+            "Municipal_districts": "Нуримановский район",
+            "hospitals_norm_beds": "267",
+            "hospitals_fact_beds": "75",
+            "hospitals_fact_beds_percent": "28.09",
+            "deficit_beds_bed": "192",
+            "deficit_beds_percent": "71.91",
+            "color": "r"
+        },
+        {
+            "ID": "42",
+            "Municipal_districts": "Салаватский район",
+            "hospitals_norm_beds": "312",
+            "hospitals_fact_beds": "147",
+            "hospitals_fact_beds_percent": "47.12",
+            "deficit_beds_bed": "165",
+            "deficit_beds_percent": "52.88",
+            "color": "y"
+        },
+        {
+            "ID": "43",
+            "Municipal_districts": "Стерлибашевский район",
+            "hospitals_norm_beds": "235",
+            "hospitals_fact_beds": "70",
+            "hospitals_fact_beds_percent": "29.79",
+            "deficit_beds_bed": "165",
+            "deficit_beds_percent": "70.21",
+            "color": "r"
+        },
+        {
+            "ID": "44",
+            "Municipal_districts": "Стерлитамакский район",
+            "hospitals_norm_beds": "334",
+            "hospitals_fact_beds": "42",
+            "hospitals_fact_beds_percent": "12.57",
+            "deficit_beds_bed": "292",
+            "deficit_beds_percent": "87.43",
+            "color": "r"
+        },
+        {
+            "ID": "45",
+            "Municipal_districts": "Татышлинский район",
+            "hospitals_norm_beds": "296",
+            "hospitals_fact_beds": "83",
+            "hospitals_fact_beds_percent": "28.04",
+            "deficit_beds_bed": "213",
+            "deficit_beds_percent": "71.96",
+            "color": "r"
+        },
+        {
+            "ID": "46",
+            "Municipal_districts": "Туймазинский район",
+            "hospitals_norm_beds": "1764",
+            "hospitals_fact_beds": "617",
+            "hospitals_fact_beds_percent": "34.98",
+            "deficit_beds_bed": "1147",
+            "deficit_beds_percent": "65.02",
+            "color": "r"
+        },
+        {
+            "ID": "47",
+            "Municipal_districts": "Уфимский район",
+            "hospitals_norm_beds": "1341",
+            "hospitals_fact_beds": "155",
+            "hospitals_fact_beds_percent": "11.56",
+            "deficit_beds_bed": "1186",
+            "deficit_beds_percent": "88.44",
+            "color": "r"
+        },
+        {
+            "ID": "48",
+            "Municipal_districts": "Учалинский район",
+            "hospitals_norm_beds": "942",
+            "hospitals_fact_beds": "461",
+            "hospitals_fact_beds_percent": "48.94",
+            "deficit_beds_bed": "481",
+            "deficit_beds_percent": "51.06",
+            "color": "y"
+        },
+        {
+            "ID": "49",
+            "Municipal_districts": "Фёдоровский район",
+            "hospitals_norm_beds": "216",
+            "hospitals_fact_beds": "65",
+            "hospitals_fact_beds_percent": "30.09",
+            "deficit_beds_bed": "151",
+            "deficit_beds_percent": "69.91",
+            "color": "r"
+        },
+        {
+            "ID": "50",
+            "Municipal_districts": "Хайбуллинский район",
+            "hospitals_norm_beds": "404",
+            "hospitals_fact_beds": "101",
+            "hospitals_fact_beds_percent": "25.00",
+            "deficit_beds_bed": "303",
+            "deficit_beds_percent": "75.00",
+            "color": "r"
+        },
+        {
+            "ID": "51",
+            "Municipal_districts": "Чекмагушевский район",
+            "hospitals_norm_beds": "374",
+            "hospitals_fact_beds": "116",
+            "hospitals_fact_beds_percent": "31.02",
+            "deficit_beds_bed": "258",
+            "deficit_beds_percent": "68.98",
+            "color": "r"
+        },
+        {
+            "ID": "52",
+            "Municipal_districts": "Чишминский район",
+            "hospitals_norm_beds": "701",
+            "hospitals_fact_beds": "290",
+            "hospitals_fact_beds_percent": "41.37",
+            "deficit_beds_bed": "411",
+            "deficit_beds_percent": "58.63",
+            "color": "y"
+        },
+        {
+            "ID": "53",
+            "Municipal_districts": "Шаранский район",
+            "hospitals_norm_beds": "261",
+            "hospitals_fact_beds": "107",
+            "hospitals_fact_beds_percent": "40.10",
+            "deficit_beds_bed": "154",
+            "deficit_beds_percent": "59.00",
+            "color": "y"
+        },
+        {
+            "ID": "54",
+            "Municipal_districts": "Янаульский район",
+            "hospitals_norm_beds": "584",
+            "hospitals_fact_beds": "202",
+            "hospitals_fact_beds_percent": "34.59",
+            "deficit_beds_bed": "382",
+            "deficit_beds_percent": "65.41",
+            "color": "r"
+        },
+        {
+            "ID": "55",
+            "Municipal_districts": "Агидель г.о.",
+            "hospitals_norm_beds": "192",
+            "hospitals_fact_beds": "85",
+            "hospitals_fact_beds_percent": "44.27",
+            "deficit_beds_bed": "107",
+            "deficit_beds_percent": "55.73",
+            "color": "y"
+        },
+        {
+            "ID": "56",
+            "Municipal_districts": "Кумертау г.о.",
+            "hospitals_norm_beds": "853",
+            "hospitals_fact_beds": "526",
+            "hospitals_fact_beds_percent": "61.66",
+            "deficit_beds_bed": "327",
+            "deficit_beds_percent": "38.34",
+            "color": "y"
+        },
+        {
+            "ID": "57",
+            "Municipal_districts": "Нефтекамск г.о.",
+            "hospitals_norm_beds": "1916",
+            "hospitals_fact_beds": "697",
+            "hospitals_fact_beds_percent": "36.38",
+            "deficit_beds_bed": "1219",
+            "deficit_beds_percent": "63.62",
+            "color": "r"
+        },
+        {
+            "ID": "58",
+            "Municipal_districts": "Октябрьский г.о.",
+            "hospitals_norm_beds": "1537",
+            "hospitals_fact_beds": "626",
+            "hospitals_fact_beds_percent": "40.73",
+            "deficit_beds_bed": "911",
+            "deficit_beds_percent": "59.27",
+            "color": "y"
+        },
+        {
+            "ID": "59",
+            "Municipal_districts": "Салават г.о.",
+            "hospitals_norm_beds": "2027",
+            "hospitals_fact_beds": "893",
+            "hospitals_fact_beds_percent": "44.06",
+            "deficit_beds_bed": "1134",
+            "deficit_beds_percent": "55.94",
+            "color": "y"
+        },
+        {
+            "ID": "60",
+            "Municipal_districts": "Сибай г.о.",
+            "hospitals_norm_beds": "833",
+            "hospitals_fact_beds": "695",
+            "hospitals_fact_beds_percent": "83.43",
+            "deficit_beds_bed": "138",
+            "deficit_beds_percent": "16.57",
+            "color": "g"
+        },
+        {
+            "ID": "61",
+            "Municipal_districts": "Стерлитамак г.о.",
+            "hospitals_norm_beds": "3723",
+            "hospitals_fact_beds": "2723",
+            "hospitals_fact_beds_percent": "73.14",
+            "deficit_beds_bed": "1000",
+            "deficit_beds_percent": "26.86",
+            "color": "y"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "hospitals_norm_beds": "15359",
+            "hospitals_fact_beds": "14500",
+            "hospitals_fact_beds_percent": "94.41",
+            "deficit_beds_bed": "859",
+            "deficit_beds_percent": "5.59",
+            "color": "g"
+        },
+        {
+            "ID": "63",
+            "Municipal_districts": "ЗАТО Межгорье",
+            "hospitals_norm_beds": "209",
+            "hospitals_fact_beds": "105",
+            "hospitals_fact_beds_percent": "50.24",
+            "deficit_beds_bed": "104",
+            "deficit_beds_percent": "49.76",
+            "color": "y"
+        }
+    ]
+}

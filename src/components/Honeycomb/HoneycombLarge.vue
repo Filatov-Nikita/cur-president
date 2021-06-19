@@ -15,7 +15,7 @@
       >
         {{ number }}
       </p>
-      <p v-if="subtitle" class="tw-text-sm">{{subtitle}}</p>
+      <p v-if="subtitle" class="tw-text-sm">{{ subtitle }}</p>
       <HoneycompSeparator class="hc-separator" stroke="2" opacity="1" />
 
       <div class="tw-flex tw-justify-between tw-text-center tw-mt-4">
@@ -39,10 +39,30 @@ export default {
   props: ['number', 'middle', 'bottom', 'subtitle'],
   computed: {
     color() {
+      if (this.neutral) return 'st-bigHC-color-neutral';
       return this.positive ? 'st-bigHC-color-positive' : 'st-bigHC-color';
     },
     positive() {
-      return this.$route.path === '/tw/zp';
+      return [
+        '/tw/zp',
+        '/tw/bis',
+        '/tw/inv',
+        '/tw/doh',
+        '/tw/okr',
+        '/tw/dor',
+        '/tw/gor',
+        '/tw/str',
+        '/tw/zhl',
+        '/tw/kul',
+        '/tw/gar',
+        '/tw/vol',
+        '/tw/edu',
+      ].includes(this.$route.path);
+    },
+    neutral() {
+      return ['/tw/vlast-dov', '/tw/sport', '/tw/tal', '/tw/cif'].includes(
+        this.$route.path
+      );
     },
   },
   components: {
@@ -64,6 +84,13 @@ export default {
 }
 .tw-border-st-bigHC-color-positive {
   border-color: #00cd77;
+}
+
+.tw-bg-st-bigHC-color-neutral {
+  background: #324272;
+}
+.tw-border-st-bigHC-color-neutral {
+  border-color: #324272;
 }
 </style>
 

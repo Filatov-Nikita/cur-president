@@ -4,7 +4,7 @@
       ref="slider"
       class="carousel"
       v-model="innerValue"
-      height="1351px"
+      :height="height"
       animated
     >
       <slot />
@@ -48,6 +48,10 @@ export default {
     slides: {
       required: true,
       type: Array,
+    },
+    height: {
+      default: '1351px',
+      type: String,
     },
   },
   data() {

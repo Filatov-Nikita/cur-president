@@ -34,10 +34,30 @@ export default {
       };
     },
     fill() {
+      if (this.neutral) return '#2A3451';
       return this.positive ? '#01F859' : '#FF0000';
     },
     positive() {
-      return this.$route.path === '/tw/zp';
+      return [
+        '/tw/zp',
+        '/tw/bis',
+        '/tw/inv',
+        '/tw/doh',
+        '/tw/okr',
+        '/tw/dor',
+        '/tw/gor',
+        '/tw/str',
+        '/tw/zhl',
+        '/tw/kul',
+        '/tw/gar',
+        '/tw/vol',
+        '/tw/edu',
+      ].includes(this.$route.path);
+    },
+    neutral() {
+      return ['/tw/vlast-dov', '/tw/sport', '/tw/tal', '/tw/cif'].includes(
+        this.$route.path
+      );
     },
     rightBarStyles() {
       let { rightWidth: width } = this;

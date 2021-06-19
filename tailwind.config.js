@@ -11,7 +11,8 @@ module.exports = {
       negative: "#FF0000",
       orange: "#FF6B00",
       blue: "#2790D4",
-      green: "#00CD77"
+      green: "#00CD77",
+      eDark: "#1A243F"
     },
     fontFamily: {
       "op-sans": "Open Sans"

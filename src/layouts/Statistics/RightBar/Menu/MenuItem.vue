@@ -8,7 +8,7 @@
       <a
         class="a"
         :href="item.external ? item.to : href"
-        v-on="item.external && item.blank ? {} : { click: navigate }"
+        v-on="item.external ? {} : { click: navigate }"
         v-bind="item.blank ? { target: '_blank' } : {}"
       >
         <MenuIcon :icon="item.icon" class="item-icon" :active="isActive" />

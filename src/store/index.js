@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-// import example from './module-example'
+import _3D from './3D';
 
 Vue.use(Vuex)
 
@@ -17,7 +17,7 @@ Vue.use(Vuex)
 export default function (/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: {
-      // example
+      _3D
     },
 
     // enable strict mode (adds overhead!)

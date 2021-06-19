@@ -1,5 +1,5 @@
 <template>
-  <svg height="160" width="160" viewBox="0 0 160 160" class="donut-chart">
+  <svg height="500" width="500" viewBox="0 0 500 500" class="donut-chart">
     <g v-for="(value, index) in sortedValues">
       <circle
         :cx="cx"
@@ -14,14 +14,24 @@
       />
 
       <text
+        v-if="middle !== undefined"
         class="text"
-        v-if="segmentBigEnough(value)"
         text-anchor="middle"
         dy="3px"
-        :x="chartData[index].textX"
-        :y="chartData[index].textY"
+        :x="250"
+        :y="260"
       >
-        {{ percentageString(value) }}
+        {{middle}}
+      </text>
+      <text
+        v-if="caption !== undefined"
+        class="caption"
+        text-anchor="middle"
+        dy="3px"
+        :x="250"
+        :y="280"
+      >
+        {{caption}}
       </text>
     </g>
   </svg>
@@ -30,20 +40,39 @@
 <script>
 export default {
   props: {
-    initialValues: {
-      default: () => [230, 308, 520],
+    values: {
+      default: () => [230, 308, 520, 120, 150, 5, 4, 10],
+    },
+    middle: {
+      default: undefined,
+      type: String,
+    },
+    caption: {
+      default: undefined,
+      type: String,
     },
   },
   data() {
     return {
       angleOffset: -90,
       chartData: [],
-      colors: ['#01AEF8', '#0FDF49', '#FF4D00'],
-      cx: 80,
-      cy: 80,
-      radius: 40,
+      colors: [
+        '#0FDF49',
+        '#07C18A',
+        '#0F6FDF',
+        '#0395FF',
+        '#DF410F',
+        '#DFD70F',
+        '#00952A',
+        '#AA007A',
+        '#F85992',
+        '#009B76',
+      ],
+      cx: 250,
+      cy: 250,
+      radius: 160,
       sortedValues: [],
-      strokeWidth: 40,
+      strokeWidth: 130,
     };
   },
   computed: {
@@ -71,8 +100,8 @@ export default {
           this.dataPercentage(dataVal) * 360 + this.angleOffset;
       });
     },
-    sortInitialValues() {
-      return (this.sortedValues = this.initialValues.sort((a, b) => b - a));
+    sortvalues() {
+      return (this.sortedValues = this.values.sort((a, b) => b - a));
     },
   },
   methods: {
@@ -111,7 +140,7 @@ export default {
     },
   },
   mounted() {
-    this.sortInitialValues;
+    this.sortvalues;
     this.calculateChartData;
   },
 };
@@ -119,8 +148,15 @@ export default {
 
 <style scoped>
 .text {
-  /* font-size: 50px; */
+  font-size: 50px;
   fill: #fff;
+  letter-spacing: -1.5px;
   @apply tw-font-bold tw-font-op-sans;
+}
+
+.caption {
+  font-size: 20px;
+  fill: #fff;
+  @apply tw-font-op-sans;
 }
 </style>

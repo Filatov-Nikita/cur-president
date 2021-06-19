@@ -1,0 +1,382 @@
+{
+    "cultures": [
+        {
+            "ID": "1",
+            "Municipal_districts": "Абзелиловский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "2",
+            "Municipal_districts": "Альшеевский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "3",
+            "Municipal_districts": "Архангельский район",
+            "cultures_need_point": "1",
+            "color": "y"
+        },
+        {
+            "ID": "4",
+            "Municipal_districts": "Аскинский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "5",
+            "Municipal_districts": "Аургазинский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "6",
+            "Municipal_districts": "Баймакский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "7",
+            "Municipal_districts": "Бакалинский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "8",
+            "Municipal_districts": "Балтачевский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "9",
+            "Municipal_districts": "Белебеевский район",
+            "cultures_need_point": "1",
+            "color": "y"
+        },
+        {
+            "ID": "10",
+            "Municipal_districts": "Белокатайский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "11",
+            "Municipal_districts": "Белорецкий район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "12",
+            "Municipal_districts": "Бижбулякский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "13",
+            "Municipal_districts": "Бирский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "14",
+            "Municipal_districts": "Благоварский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "15",
+            "Municipal_districts": "Благовещенский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "16",
+            "Municipal_districts": "Буздякский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "17",
+            "Municipal_districts": "Бураевский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "18",
+            "Municipal_districts": "Бурзянский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "19",
+            "Municipal_districts": "Гафурийский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "20",
+            "Municipal_districts": "Давлекановский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "21",
+            "Municipal_districts": "Дуванский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "22",
+            "Municipal_districts": "Дюртюлинский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "23",
+            "Municipal_districts": "Ермекеевский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "24",
+            "Municipal_districts": "Зианчуринский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "25",
+            "Municipal_districts": "Зилаирский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "26",
+            "Municipal_districts": "Иглинский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "27",
+            "Municipal_districts": "Илишевский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "28",
+            "Municipal_districts": "Ишимбайский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "29",
+            "Municipal_districts": "Калтасинский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "30",
+            "Municipal_districts": "Караидельский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "31",
+            "Municipal_districts": "Кармаскалинский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "32",
+            "Municipal_districts": "Кигинский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "33",
+            "Municipal_districts": "Краснокамский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "34",
+            "Municipal_districts": "Кугарчинский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "35",
+            "Municipal_districts": "Кушнаренковский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "36",
+            "Municipal_districts": "Куюргазинский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "37",
+            "Municipal_districts": "Мелеузовский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "38",
+            "Municipal_districts": "Мечетлинский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "39",
+            "Municipal_districts": "Мишкинский район ",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "40",
+            "Municipal_districts": "Миякинский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "41",
+            "Municipal_districts": "Нуримановский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "42",
+            "Municipal_districts": "Салаватский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "43",
+            "Municipal_districts": "Стерлибашевский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "44",
+            "Municipal_districts": "Стерлитамакский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "45",
+            "Municipal_districts": "Татышлинский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "46",
+            "Municipal_districts": "Туймазинский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "47",
+            "Municipal_districts": "Уфимский район",
+            "cultures_need_point": "2",
+            "color": "r"
+        },
+        {
+            "ID": "48",
+            "Municipal_districts": "Учалинский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "49",
+            "Municipal_districts": "Фёдоровский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "50",
+            "Municipal_districts": "Хайбуллинский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "51",
+            "Municipal_districts": "Чекмагушевский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "52",
+            "Municipal_districts": "Чишминский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "53",
+            "Municipal_districts": "Шаранский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "54",
+            "Municipal_districts": "Янаульский район",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "55",
+            "Municipal_districts": "Агидель г.о.",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "56",
+            "Municipal_districts": "Кумертау г.о.",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "57",
+            "Municipal_districts": "Нефтекамск г.о.",
+            "cultures_need_point": "1",
+            "color": "y"
+        },
+        {
+            "ID": "58",
+            "Municipal_districts": "Октябрьский г.о.",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "59",
+            "Municipal_districts": "Салават г.о.",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "60",
+            "Municipal_districts": "Сибай г.о.",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "61",
+            "Municipal_districts": "Стерлитамак г.о.",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "cultures_need_point": "0",
+            "color": "g"
+        },
+        {
+            "ID": "63",
+            "Municipal_districts": "ЗАТО Межгорье",
+            "cultures_need_point": "0",
+            "color": "g"
+        }
+    ]
+}

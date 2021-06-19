@@ -3,31 +3,102 @@ import Routes3D from "./3D";
 const routes = [
   {
     path: "/",
-    beforeEnter(from, to, next) {
-      next({ name: "TW" });
-    }
+    component: () => import("src/pages/Main.vue"),
+    name: "main"
   },
 
   {
     path: "/tw",
     component: () => import("layouts/MainLayout.vue"),
-    redirect: { name: "main" },
-    name: "TW",
+    name: "tw",
+    redirect: { name: "tw.main" },
     children: [
-      { path: "/", component: () => import("src/pages/Main.vue"), name: "main" }
+      {
+        path: "main",
+        component: () => import("src/pages/20Indicators/Main.vue"),
+        name: "tw.main"
+      }
     ]
   },
 
   {
-    path: "",
+    path: "/tw",
     component: () => import("layouts/Statistics/index.vue"),
     children: [
-      { path: "/tw/nas", component: () => import("src/pages/Nas.vue") },
       {
-        path: "/tw/lifespan",
-        component: () => import("src/pages/Lifespan.vue")
+        path: "nas",
+        component: () => import("src/pages/20Indicators/Nas.vue")
       },
-      { path: "/tw/zp", component: () => import("src/pages/ZP.vue") }
+      {
+        path: "lifespan",
+        component: () => import("src/pages/20Indicators/Lifespan.vue")
+      },
+      { path: "zp", component: () => import("src/pages/20Indicators/ZP.vue") },
+      {
+        path: "vlast-dov",
+        component: () => import("src/pages/20Indicators/VlastDov.vue")
+      },
+      {
+        path: "bed",
+        component: () => import("src/pages/20Indicators/Bed.vue")
+      },
+      {
+        path: "bis",
+        component: () => import("src/pages/20Indicators/Bis.vue")
+      },
+      {
+        path: "doh",
+        component: () => import("src/pages/20Indicators/Doh.vue")
+      },
+      {
+        path: "dor",
+        component: () => import("src/pages/20Indicators/Dor.vue")
+      },
+      {
+        path: "edu",
+        component: () => import("src/pages/20Indicators/Edu.vue")
+      },
+      {
+        path: "gar",
+        component: () => import("src/pages/20Indicators/Gar.vue")
+      },
+      {
+        path: "gor",
+        component: () => import("src/pages/20Indicators/Gor.vue")
+      },
+      {
+        path: "inv",
+        component: () => import("src/pages/20Indicators/Inv.vue")
+      },
+      {
+        path: "kul",
+        component: () => import("src/pages/20Indicators/Kul.vue")
+      },
+      {
+        path: "okr",
+        component: () => import("src/pages/20Indicators/Okr.vue")
+      },
+      {
+        path: "sport",
+        component: () => import("src/pages/20Indicators/Sport.vue")
+      },
+      {
+        path: "str",
+        component: () => import("src/pages/20Indicators/Str.vue")
+      },
+      {
+        path: "vol",
+        component: () => import("src/pages/20Indicators/Vol.vue")
+      },
+      {
+        path: "zhl",
+        component: () => import("src/pages/20Indicators/Zhl.vue")
+      },
+      {
+        path: "tal",
+        component: () => import("src/pages/20Indicators/Tal.vue")
+      },
+      { path: "cif", component: () => import("src/pages/20Indicators/Cif.vue") }
     ]
   },
 
@@ -37,7 +108,7 @@ const routes = [
   // but you can also remove it
   {
     path: "*",
-    component: () => import("pages/Error404.vue")
+    component: () => import("src/pages/20Indicators/Error404.vue")
   }
 ];
 

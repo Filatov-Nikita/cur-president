@@ -3,6 +3,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+:root {
+}
+
 body {
   @apply tw-font-op-sans tw-text-white;
 }
@@ -21,4 +24,34 @@ button:focus {
 
 .app-main-bg {
   background: #141b32;
+}
+
+.slide-text-sm {
+  font-size: 100px;
+  line-height: 100px;
+  @apply tw-font-bold;
+}
+
+.slide-text-sm2 {
+  font-size: 110px;
+  line-height: 110px;
+  @apply tw-font-bold;
+}
+
+.slide-text-md {
+  font-size: 150px;
+  line-height: 150px;
+  @apply tw-font-bold;
+}
+
+.slide-text-lg {
+  font-size: 170px;
+  line-height: 150px;
+  @apply tw-font-bold;
+}
+
+.slide-text-xl {
+  font-size: 200px;
+  line-height: 200px;
+  @apply tw-font-bold;
 }

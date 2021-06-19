@@ -1,17 +1,17 @@
 <template>
-  <div v-click-outside="hide" @click="toggle" class="point" :style="positions">
+  <div v-click-outside="hide" @click="toggle" class="point" :style="position">
     <img :src="require(`./icons/${type}.svg`)" />
 
     <div class="popup" v-if="show">
       <div class="label" :class="`label-${type}`">
-        <p>Строительство СКЦ в с.Жуково Уфимского района</p>
+        <p>{{ title }}</p>
       </div>
       <div class="tw-flex">
         <div class="left">
           <p class="subtitle">отклонение от графика</p>
-          <p :class="`text-${type}`">63%</p>
+          <p :class="`text-${type}`">{{ `${value}%` }}</p>
         </div>
-        <q-img src="images/3D/popup.jpg" />
+        <q-img v-if="photo !== ''" :src="`images/3D/points/${photo}.jpg`" />
       </div>
     </div>
   </div>
@@ -31,6 +31,26 @@ export default {
     ClickOutside,
   },
   props: {
+    title: {
+      required: true,
+      type: String,
+    },
+    value: {
+      required: true,
+      type: [String, Number],
+    },
+    photo: {
+      required: true,
+      type: String,
+    },
+    left: {
+      required: true,
+      type: String,
+    },
+    top: {
+      required: true,
+      type: String,
+    },
     type: {
       default: 'positive',
       type: String,
@@ -49,6 +69,16 @@ export default {
     return {
       show: false,
     };
+  },
+  computed: {
+    position() {
+      const left = `${(this.left / 3840) * 100}%`;
+      const top = `${(this.top / 2160) * 100}%`;
+      return {
+        left,
+        top,
+      };
+    },
   },
   methods: {
     hide() {

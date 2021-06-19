@@ -1,14 +1,82 @@
 export default [
   {
+    path: "/3d/district/:id/branches/economic",
+    component: () => import("src/3D/layouts/MainLayout/index.vue"),
+    name: "3D.branches.economic",
+    children: [
+      {
+        path: "obes",
+        component: () => import("src/3D/pages/Branches/Economic/Obes.vue"),
+        name: "3D.branches.economic.obes",
+        props: true
+      },
+      {
+        path: "invest",
+        component: () => import("src/3D/pages/Branches/Economic/Invest.vue"),
+        name: "3D.branches.economic.invest",
+        props: true
+      },
+      {
+        path: "invest/companies",
+        component: () =>
+          import("src/3D/pages/Branches/Economic/InvestCompanies.vue"),
+        name: "3D.branches.economic.invest.companies",
+        props: true
+      },
+      {
+        path: "transport",
+        component: () => import("src/3D/pages/Branches/Economic/Transport.vue"),
+        name: "3D.branches.economic.transport",
+        props: true
+      }
+    ]
+  },
+  {
     path: "/3d",
     component: () => import("src/3D/layouts/MainLayout/index.vue"),
     redirect: { name: "3D.main" },
     name: "3D",
     children: [
       {
+        path: "d1",
+        component: () => import("src/3D/pages/Drafts/D1.vue")
+      },
+      {
         path: "home",
         component: () => import("src/3D/pages/Main.vue"),
         name: "3D.main"
+      },
+      {
+        path: "district/:id",
+        component: () => import("src/3D/pages/Districts/ShowDistrict.vue"),
+        name: "3D.show.district",
+        props: true
+      },
+      {
+        path: "district/:id/branches/roads",
+        component: () => import("src/3D/pages/Branches/Roads/Main.vue"),
+        name: "3D.branches.roads",
+        props: true
+      },
+      {
+        path: "district/:id/branches/building",
+        component: () => import("src/3D/pages/Branches/Building/Main.vue"),
+        name: "3D.branches.building",
+        props: true
+      },
+      {
+        path: "district/:id/branches/building/objects",
+        component: () =>
+          import("src/3D/pages/Branches/Building/BuildingObjects.vue"),
+        name: "3D.branches.building.objects",
+        props: true
+      },
+      {
+        path: "district/:id/branches/building/objects/:object_id",
+        component: () =>
+          import("src/3D/pages/Branches/Building/BuildingShowObject.vue"),
+        name: "3D.branches.building.show.object",
+        props: true
       },
       {
         path: "map-items",
@@ -19,12 +87,6 @@ export default [
         path: "map-location",
         component: () => import("src/3D/pages/MapLocation/MapLocationMain.vue"),
         name: "3D.map-location.main"
-      },
-      {
-        path: "map-location/branch",
-        component: () =>
-          import("src/3D/pages/MapLocation/MapLocationBranch.vue"),
-        name: "3D.map-location.branch"
       },
       {
         path: "map-location/slides/fire",

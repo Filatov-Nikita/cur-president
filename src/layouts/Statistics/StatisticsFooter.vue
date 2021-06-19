@@ -1,6 +1,6 @@
 <template>
   <q-footer class="footer">
-    <router-link :to="{ name: 'main' }" class="tw-text-xs tw-underline backBtn">
+    <router-link :to="{ name: 'tw.main' }" class="tw-text-xs tw-underline backBtn">
       <HoneycompMaker contentClass="backBtn-content" color="blue" :w="482">
         <div class="tw-relative back-text">
           <img
@@ -16,8 +16,9 @@
       </HoneycompMaker>
     </router-link>
     <StatisticsCuratorName
+      v-if="showCurator"
       class="curatorBlock"
-      fio="Антонов Никита Вячеславович"
+      fio="Иванов Иван Иванович"
     />
   </q-footer>
 </template>
@@ -27,6 +28,11 @@ import HoneycompMaker from 'src/components/Honeycomb/HoneycompMaker';
 import StatisticsCuratorName from 'src/components/Statistics/StatisticsCuratorName';
 
 export default {
+  computed: {
+    showCurator() {
+      return !['/tw/vlast-dov', '/tw/tal', '/tw/cif'].includes(this.$route.path);
+    },
+  },
   components: {
     HoneycompMaker,
     StatisticsCuratorName,

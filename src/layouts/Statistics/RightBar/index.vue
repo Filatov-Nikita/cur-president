@@ -15,12 +15,19 @@
 
 <script>
 import MenuItems from './Menu/MenuItems';
+import moment from 'moment';
+
+function getDashboardUrl() {
+  const curDate = moment().format('DD.MM.YYYY');
+  const hash = window.btoa(curDate);
+  return `http://192.168.71.153/PpAccount/BigPanel?hash=${hash}`;
+}
 
 export default {
   data() {
     return {
       items: [
-        { label: '20-ка показателей', icon: 'TW', to: { name: 'TW' } },
+        { label: 'Оценка ВДЛ', icon: 'TW', to: { name: 'tw' } },
         {
           label: '3D Республика',
           icon: 'Respublic',
@@ -30,15 +37,13 @@ export default {
           label: 'Дашборды',
           icon: 'Dashboards',
           external: true,
-          blank: true,
-          to: 'https://cur.bashkortostan.ru/',
+          to: getDashboardUrl(),
         },
         {
           label: 'Оперативное совещание',
           icon: 'Sovet',
           external: true,
-          blank: true,
-          to: 'http://preza.yes-idea.ru/index.html#/',
+          to: 'http://cur-rb-os.ru',
         },
         {
           label: 'Социальные коммуникации',
