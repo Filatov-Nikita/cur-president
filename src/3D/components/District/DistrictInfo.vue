@@ -5,7 +5,7 @@
         <img :src="require('./icons/people.svg')" alt="people" />
         <p class="caption">Население, чел.</p>
       </div>
-      <div class="number">{{ peopleCol }}</div>
+      <div class="number">{{ peopleCol | prettyAmount }}</div>
     </div>
 
     <div class="item item-2">
@@ -13,7 +13,7 @@
         <img :src="require('./icons/rb.svg')" alt="rb" />
         <p class="caption">Площадь, кв. км</p>
       </div>
-      <div class="number">{{ square }}</div>
+      <div class="number">{{ square | prettyAmount }}</div>
     </div>
 
     <div class="item item-3">
@@ -24,7 +24,7 @@
 
       <div>
         <div class="include-item" v-for="(item, index) in include" :key="index">
-          <div class="include-val">{{ item.val }}</div>
+          <div class="include-val">{{ item.val | prettyAmount}}</div>
           <div class="include-label">{{ item.label }}</div>
         </div>
       </div>

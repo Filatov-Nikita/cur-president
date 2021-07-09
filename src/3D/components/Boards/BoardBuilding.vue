@@ -17,9 +17,11 @@
               <RoundDiagram
                 :values="diagram.values"
                 :middle="diagram.value.toString()"
+                :colors="['#0FDF49', '#01AEF8', '#FF1F00', '#9C9C9C']"
                 style="margin-right: 60px"
               />
               <DiagramLegends2
+                :colors="['#0FDF49', '#01AEF8', '#FF1F00', '#9C9C9C']"
                 style="flex-basis: 369px"
                 :legends="diagram.legends"
               />
@@ -39,7 +41,7 @@
                 align="center"
                 v-space-m:bottom="'15px'"
               />
-              <board-numbers v-bind="got" />
+              <board-numbers pretty v-bind="got" />
             </div>
             <div v-space-m:bottom="'62px'">
               <board-caption
@@ -50,7 +52,7 @@
                 align="center"
                 v-space-m:bottom="'15px'"
               />
-              <board-numbers v-bind="contract" />
+              <board-numbers pretty v-bind="contract" />
             </div>
             <div>
               <board-caption
@@ -61,7 +63,7 @@
                 align="center"
                 v-space-m:bottom="'15px'"
               />
-              <board-numbers v-bind="done" />
+              <board-numbers pretty v-bind="done" />
             </div>
           </board-offsets>
         </template>

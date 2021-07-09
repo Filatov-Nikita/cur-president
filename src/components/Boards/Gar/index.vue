@@ -1,6 +1,6 @@
  <template>
   <div>
-    <img class="tw-mx-auto" :src="require('./gar.svg')" alt="" />
+    <img style="margin-top: 440px" class="tw-mx-auto" :src="require('./gar.svg')" alt="" />
   </div>
 </template>
 

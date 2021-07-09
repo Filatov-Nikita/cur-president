@@ -13,15 +13,15 @@
               labelY="10px"
               v-space-m:bottom="'20px'"
             />
-            <board-numbers size="xl" v-bind="roadLength" />
+            <board-numbers pretty size="xl" v-bind="roadLength" />
           </board-offsets>
         </template>
       </BoardCells>
       <BoardCells :cols="1">
         <template #cell1>
-          <board-offsets :t="80" :b="100" :l="79" :r="75">
+          <board-offsets :t="80" :b="100" :l="49" :r="25">
             <div class="tw-flex tw-justify-between">
-              <div style="max-width: 574px">
+              <div style="max-width: 680px">
                 <div v-space-m:bottom="'92px'">
                   <board-caption
                     icon="road-beton"
@@ -30,7 +30,7 @@
                     iconX="34px"
                     v-space-m:bottom="'19px'"
                   />
-                  <board-numbers size="sm2" v-bind="beton" />
+                  <board-numbers pretty size="sm" v-bind="beton" />
                 </div>
                 <div>
                   <board-caption
@@ -41,14 +41,18 @@
                     v-space-m:bottom="'19px'"
                   />
                   <board-numbers
+                    pretty
                     class="tw-break-all"
-                    size="sm2"
+                    size="sm"
                     v-bind="roadType"
                   />
                 </div>
               </div>
               <div>
-                <RoundDiagram v-bind="diagram" />
+                <RoundDiagram
+                  :colors="['#FF0000', '#0FDF49']"
+                  v-bind="diagram"
+                />
               </div>
             </div>
           </board-offsets>
@@ -69,7 +73,7 @@
                   iconX="34px"
                   v-space-m:bottom="'35px'"
                 />
-                <board-numbers size="sm2" v-bind="roadBroke" />
+                <board-numbers pretty size="sm2" v-bind="roadBroke" />
               </div>
               <div
                 class="tw-flex tw-flex-col tw-justify-between"
@@ -82,7 +86,7 @@
                   iconX="34px"
                   v-space-m:bottom="'35px'"
                 />
-                <board-numbers size="sm2" v-bind="roadBrokeDone" />
+                <board-numbers pretty size="sm2" v-bind="roadBrokeDone" />
               </div>
             </div>
           </board-offsets>

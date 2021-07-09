@@ -163,6 +163,7 @@ $positiveColor: #01f859;
 .honeycomb::after,
 .honeycomb-inner::after {
   top: 100%;
+  z-index: -1;
 }
 
 .honeycomb-positive {
@@ -240,6 +241,7 @@ $positiveColor: #01f859;
 .title {
   line-height: 100%;
   font-size: 23px;
+  padding: 0 60px;
 }
 
 .stat {

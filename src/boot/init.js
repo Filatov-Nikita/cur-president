@@ -2,10 +2,14 @@ import Vue from "vue";
 import PortalVue from "portal-vue";
 import * as moment from "moment";
 import "moment/locale/ru";
+import { ValidationProvider, ValidationObserver } from "vee-validate";
 
 Vue.use(PortalVue);
 
 moment.locale("ru");
+
+Vue.component("ValidationProvider", ValidationProvider);
+Vue.component("ValidationObserver", ValidationObserver);
 
 Vue.component(
   "BoardCover",
@@ -64,10 +68,29 @@ Vue.component(
   require("src/3D/components/Boards/Helpers/BoardCells").default
 );
 
+Vue.component("AppSelect", require("src/3D/core/AppSelect").default);
+Vue.component("AppButton", require("src/3D/core/AppButton").default);
+Vue.component("AppInput", require("src/3D/core/AppInput").default);
+Vue.component("AppCheckbox", require("src/3D/core/AppCheckbox").default);
+
 Vue.directive("space-m", function(el, binding, vnode) {
   el.style[`margin-${binding.arg}`] = binding.value;
 });
 
 Vue.directive("space-p", function(el, binding, vnode) {
   el.style[`padding-${binding.arg}`] = binding.value;
+});
+
+Vue.filter("prettyAmount", function(value) {
+  if (typeof value !== "string") return "";
+  let [left, right = ""] = value.split(".");
+  const sign = left[0] === "-" || left[0] === "+" ? left[0] : "";
+  if (sign) left = left.substring(1);
+  const clearLeft = left.replace(/[^0-9]/g, "");
+  if (!clearLeft) return value;
+  const matched = (right || left).match(/[^0-9](.*?)+/);
+  const tail = (matched && matched[0]) || "";
+  const prettyPart = clearLeft.match(/.{1,3}(?=(.{3})*$)/g).join(" ");
+  if (!right) return sign + prettyPart + tail;
+  return sign + prettyPart + "," + right.replace(/[^0-9]/g, "") + tail;
 });

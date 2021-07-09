@@ -1,7 +1,7 @@
 <template>
-  <router-link :to="{ name: '3D.map-items' }" class="select">
+  <a @click.prevent="push" class="select">
     <span>{{ label ? label : 'Выбрать район' }}</span>
-  </router-link>
+  </a>
 </template>
 
 <script>
@@ -10,6 +10,13 @@ export default {
     label: {
       default: undefined,
       type: String,
+    },
+  },
+  methods: {
+    push() {
+      const { name, params, query } = this.$route;
+      this.$router.push({ name: '3D.map-items' });
+      this.$store.commit('_3D/setFrom', { name, params, query });
     },
   },
 };

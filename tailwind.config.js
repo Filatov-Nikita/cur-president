@@ -15,7 +15,8 @@ module.exports = {
       eDark: "#1A243F"
     },
     fontFamily: {
-      "op-sans": "Open Sans"
+      "op-sans": "Open Sans",
+      "roboto": "Roboto"
     },
     fontSize: {
       xs: "35px",

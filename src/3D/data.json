@@ -3,7 +3,7 @@
         {
             "ID": "1",
             "Municipal_districts": "Абзелиловский район",
-            "Chief": "Нафиков Ильдар Тагирович ",
+            "Chief": "Нафиков Ильдар Тагирович",
             "Chiefs_foto": "GL1",
             "Administrative_center": "Аскарово",
             "City_foto": "GO1",
@@ -499,7 +499,7 @@
         },
         {
             "ID": "21",
-            "Municipal_districts": "Дуванский район ",
+            "Municipal_districts": "Дуванский район",
             "Chief": "Мухамадеев Фаиль Рафаэлевич",
             "Chiefs_foto": "GL21",
             "Administrative_center": "Месягутово",
@@ -524,7 +524,7 @@
         },
         {
             "ID": "22",
-            "Municipal_districts": "Дюртюлинский район ",
+            "Municipal_districts": "Дюртюлинский район",
             "Chief": "Юсупов Риф Сагдатуллович",
             "Chiefs_foto": "GL22",
             "Administrative_center": "Дюртюли",
@@ -550,7 +550,7 @@
         },
         {
             "ID": "23",
-            "Municipal_districts": "Ермекеевский район ",
+            "Municipal_districts": "Ермекеевский район",
             "Chief": "Райманов Ильшат Амирович",
             "Chiefs_foto": "GL23",
             "Administrative_center": "Ермекеево",
@@ -596,7 +596,7 @@
         },
         {
             "ID": "25",
-            "Municipal_districts": "Зилаирский район ",
+            "Municipal_districts": "Зилаирский район",
             "Chief": "Мелкоедов Борис Николаевич",
             "Chiefs_foto": "GL25",
             "Administrative_center": "Зилаир",
@@ -645,7 +645,7 @@
         },
         {
             "ID": "27",
-            "Municipal_districts": "Илишевский район ",
+            "Municipal_districts": "Илишевский район",
             "Chief": "Мустафин Ильдар Иршатович",
             "Chiefs_foto": "GL27",
             "Administrative_center": "        Верхнеяркеево",
@@ -668,7 +668,7 @@
         },
         {
             "ID": "28",
-            "Municipal_districts": "Ишимбайский район ",
+            "Municipal_districts": "Ишимбайский район",
             "Chief": "Абдрахманов Азамат Фаритович",
             "Chiefs_foto": "GL28",
             "Administrative_center": "Ишимбай",
@@ -693,7 +693,7 @@
         },
         {
             "ID": "29",
-            "Municipal_districts": "Калтасинский район ",
+            "Municipal_districts": "Калтасинский район",
             "Chief": "Габдуллин Забир Тагирьянович",
             "Chiefs_foto": "GL29",
             "Administrative_center": "Калтасы",
@@ -739,7 +739,7 @@
         },
         {
             "ID": "31",
-            "Municipal_districts": "Кармаскалинский район ",
+            "Municipal_districts": "Кармаскалинский район",
             "Chief": "Сабиров Альфир Фархатович",
             "Chiefs_foto": "GL31",
             "Administrative_center": "Кармаскалы",
@@ -763,7 +763,7 @@
         },
         {
             "ID": "32",
-            "Municipal_districts": "Кигинский район ",
+            "Municipal_districts": "Кигинский район",
             "Chief": "Гордиенко Зухра Маулитбаевна",
             "Chiefs_foto": "GL32",
             "Administrative_center": "Верхние Киги",
@@ -788,7 +788,7 @@
         },
         {
             "ID": "33",
-            "Municipal_districts": "Краснокамский район ",
+            "Municipal_districts": "Краснокамский район",
             "Chief": "Мусин Рустам Маратович",
             "Chiefs_foto": "GL33",
             "Administrative_center": "\tНиколо-Берёзовка",
@@ -813,7 +813,7 @@
         },
         {
             "ID": "34",
-            "Municipal_districts": "Кугарчинский район ",
+            "Municipal_districts": "Кугарчинский район",
             "Chief": "Янбаев Гайса Гильмитдинович",
             "Chiefs_foto": "GL34",
             "Administrative_center": "Мраково",
@@ -863,7 +863,7 @@
         },
         {
             "ID": "36",
-            "Municipal_districts": "Куюргазинский район ",
+            "Municipal_districts": "Куюргазинский район",
             "Chief": "Ильясов Юлай Талхович",
             "Chiefs_foto": "GL36",
             "Administrative_center": "Ермолаево",
@@ -914,7 +914,7 @@
         },
         {
             "ID": "38",
-            "Municipal_districts": "Мечетлинский район ",
+            "Municipal_districts": "Мечетлинский район",
             "Chief": "Асадуллин Анис Касимович",
             "Chiefs_foto": "GL38",
             "Administrative_center": "Большеустьикинское",
@@ -937,7 +937,7 @@
         },
         {
             "ID": "39",
-            "Municipal_districts": "Мишкинский район ",
+            "Municipal_districts": "Мишкинский район",
             "Chief": "Трапезников Павел Владимирович",
             "Chiefs_foto": "GL39",
             "Administrative_center": "Мишкино",
@@ -1184,7 +1184,7 @@
         },
         {
             "ID": "49",
-            "Municipal_districts": "Фёдоровский район",
+            "Municipal_districts": "Федоровский район",
             "Chief": "Насретдинов Венер Фаритович",
             "Chiefs_foto": "GL49",
             "Administrative_center": "Фёдоровка",
@@ -1374,7 +1374,7 @@
         {
             "ID": "57",
             "Municipal_districts": "Нефтекамск г.о.",
-            "Chief": "Мавлиев Ратмир Рафилович ",
+            "Chief": "Мавлиев Ратмир Рафилович",
             "Chiefs_foto": "GL57",
             "Administrative_center": "Нефтекамск",
             "City_foto": "GO57",
@@ -1396,7 +1396,7 @@
         {
             "ID": "58",
             "Municipal_districts": "Октябрьский г.о.",
-            "Chief": "Шмелёв Алексей Николаевич ",
+            "Chief": "Шмелёв Алексей Николаевич",
             "Chiefs_foto": "GL58",
 	    "Administrative_center": "Октябрьский",
             "City_foto": "GO58",
@@ -1466,7 +1466,7 @@
             "Chiefs_foto": "GL61",
             "Administrative_center": "Стерлитамак",
             "City_foto": "GO61",
-            "People_man": "276 394 ",
+            "People_man": "276 394",
             "S_km2": "109",
             "icon": "icon_61",
             "City_icon": "R61",
@@ -1483,8 +1483,8 @@
         },
         {
             "ID": "62",
-            "Municipal_districts": "Уфа г.о. ",
-            "Chief": "Греков Сергей Николаевич ",
+            "Municipal_districts": "Уфа г.о.",
+            "Chief": "Греков Сергей Николаевич",
             "Chiefs_foto": "GL62",
             "Administrative_center": "Уфа",
             "City_foto": "GO62",

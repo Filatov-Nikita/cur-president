@@ -1,7 +1,7 @@
 <template>
   <ul>
     <li v-for="(legend, index) in legends" :key="index" class="legend">
-      <div class="value" :style="{ background: colors[index] }">
+      <div class="value" :style="{ background: colorsLocal[index] }">
         {{ legend.value }}
       </div>
       <div class="label">{{ legend.label }}</div>
@@ -16,10 +16,15 @@ export default {
       required: true,
       type: Array,
     },
+    colors: {
+      default() {
+        return ['#0FDF49', '#07C18A', '#0F6FDF', '#0395FF'];
+      },
+    },
   },
   data() {
     return {
-      colors: ['#0FDF49', '#07C18A', '#0F6FDF', '#0395FF'],
+      colorsLocal: this.colors,
     };
   },
 };

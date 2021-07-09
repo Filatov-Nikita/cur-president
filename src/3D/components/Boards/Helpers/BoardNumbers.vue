@@ -1,6 +1,7 @@
 <template>
   <div class="tw-flex">
     <p
+      class="tw-font-roboto"
       :class="[colorClass, textSize]"
       :style="hasIt ? { 'margin-right': numberOffset } : {}"
     >
@@ -12,6 +13,9 @@
         :complete="complete"
         :formatValue="formatToPrice"
       />
+      <span v-else-if="pretty">
+        {{ value | prettyAmount }}
+      </span>
       <span v-else>{{ value }}</span>
     </p>
     <p class="it" v-if="hasIt">
@@ -42,6 +46,10 @@ export default {
     value: {
       default: undefined,
       type: String,
+    },
+    pretty: {
+      default: false,
+      type: Boolean,
     },
     size: {
       default: 'sm',
@@ -104,6 +112,7 @@ export default {
 
 .it {
   line-height: 130%;
-  @apply tw-text-md tw-font-bold tw-text-white tw-self-start;
+  font-size: 48px;
+  @apply tw-font-bold tw-text-white tw-self-start;
 }
 </style>

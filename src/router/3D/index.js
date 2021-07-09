@@ -59,6 +59,33 @@ export default [
         props: true
       },
       {
+        path: "district/:id/branches/ur-help",
+        component: () => import("src/3D/pages/Branches/UrHelp/UrHelpMain.vue"),
+        name: "3D.branches.ur-help",
+        props: true
+      },
+      {
+        path: "district/:id/branches/ur-help/centers/map",
+        component: () =>
+          import("src/3D/pages/Branches/UrHelp/UrHelpCentersMap.vue"),
+        name: "3D.branches.ur-help.centers.map",
+        props: true
+      },
+      {
+        path: "district/:id/branches/ur-help/centers",
+        component: () =>
+          import("src/3D/pages/Branches/UrHelp/UrHelpCenters.vue"),
+        name: "3D.branches.ur-help.centers",
+        props: true
+      },
+      {
+        path: "district/:id/branches/ur-help/centers/:center_id",
+        component: () =>
+          import("src/3D/pages/Branches/UrHelp/UrHelpShowCenter.vue"),
+        name: "3D.branches.ur-help.show.center",
+        props: true
+      },
+      {
         path: "district/:id/branches/building",
         component: () => import("src/3D/pages/Branches/Building/Main.vue"),
         name: "3D.branches.building",
@@ -81,7 +108,8 @@ export default [
       {
         path: "map-items",
         component: () => import("src/3D/pages/MapItems.vue"),
-        name: "3D.map-items"
+        name: "3D.map-items",
+        props: true
       },
       {
         path: "map-location",

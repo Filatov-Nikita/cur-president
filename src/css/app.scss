@@ -3,8 +3,21 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-:root {
+@font-face {
+  font-family: 'Open Sans';
+  src:
+       url(~assets/fonts/open-sans/OpenSans-Regular-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(~assets/fonts/open-sans/OpenSans-Bold-webfont.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 body {
   @apply tw-font-op-sans tw-text-white;

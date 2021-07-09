@@ -75,7 +75,7 @@ export default {
         return {
           invest: {
             color: 'positive',
-            value: '318 895',
+            value: '318895',
           },
           projects: {
             color: 'positive',
@@ -83,11 +83,11 @@ export default {
           },
           workPlaces: {
             color: 'positive',
-            value: '17 765',
+            value: '17765',
           },
           diagram1: {
             values: [53, 20, 9, 6, 4, 3, 2, 1, 1, 0],
-            value: '318 895',
+            value: '318895',
             caption: 'млн. ₽',
             legends: [
               {
@@ -128,7 +128,7 @@ export default {
               },
               {
                 value: 0,
-                name: 'Траснпорт',
+                name: 'Транспорт',
               },
             ],
           },
@@ -175,7 +175,7 @@ export default {
               },
               {
                 value: 1,
-                name: 'Траснпорт',
+                name: 'Транспорт',
               },
             ],
           },
@@ -292,7 +292,7 @@ export default {
               },
               {
                 value: transport_percent,
-                name: 'Траснпорт',
+                name: 'Транспорт',
               },
             ],
           },
@@ -340,7 +340,7 @@ export default {
               },
               {
                 value: transport_jobs_percent,
-                name: 'Траснпорт',
+                name: 'Транспорт',
               },
             ],
           },

@@ -122,7 +122,7 @@ export default {
         zp: {
           left: {
             color: 'negative',
-            value: `${Average_salary_III_quarter_2020_y}₽`,
+            value: `${Average_salary_III_quarter_2020_y} ₽`,
           },
           right: {
             color: 'positive',

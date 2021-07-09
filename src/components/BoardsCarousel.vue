@@ -87,6 +87,8 @@ export default {
 <style scoped>
 .carousel {
   background: transparent;
+  max-width: 86%;
+  @apply tw-mx-auto;
 }
 
 .slider-button {

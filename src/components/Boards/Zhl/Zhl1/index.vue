@@ -1,6 +1,6 @@
  <template>
   <div>
-    <img class="tw-mx-auto" :src="require('./zhl1.svg')" alt="" />
+    <img width="95%" class="tw-mx-auto" :src="require('./zhl1.svg')" alt="" />
   </div>
 </template>
 

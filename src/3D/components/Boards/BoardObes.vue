@@ -15,7 +15,7 @@
               labelY="9px"
               v-space-m:bottom="'27px'"
             />
-            <board-numbers v-bind="hospitals" size="md" />
+            <board-numbers pretty v-bind="hospitals" size="md" />
           </board-offsets>
         </template>
         <template #cell2>
@@ -29,7 +29,7 @@
               align="center"
               v-space-m:bottom="'27px'"
             />
-            <board-numbers v-bind="sportSquares" size="md" />
+            <board-numbers pretty v-bind="sportSquares" size="md" />
           </board-offsets>
         </template>
       </BoardCells>
@@ -44,7 +44,7 @@
               labelY="10px"
               v-space-m:bottom="'10px'"
             />
-            <board-numbers v-bind="pol" size="md" />
+            <board-numbers pretty v-bind="pol" size="md" />
           </board-offsets>
         </template>
         <template #cell2>
@@ -57,7 +57,7 @@
               labelY="10px"
               v-space-m:bottom="'10px'"
             />
-            <board-numbers v-bind="sportZals" size="md" />
+            <board-numbers pretty v-bind="sportZals" size="md" />
           </board-offsets>
         </template>
       </BoardCells>
@@ -72,7 +72,7 @@
               labelY="16px"
               v-space-m:bottom="'24px'"
             />
-            <board-numbers v-bind="schools" size="md" />
+            <board-numbers pretty v-bind="schools" size="md" />
           </board-offsets>
         </template>
         <template #cell2>
@@ -85,7 +85,7 @@
               labelY="14px"
               v-space-m:bottom="'51px'"
             />
-            <board-numbers v-bind="waterpools" size="md" />
+            <board-numbers pretty v-bind="waterpools" size="md" />
           </board-offsets>
         </template>
       </BoardCells>
@@ -93,14 +93,14 @@
         <template #cell1>
           <board-offsets :t="36" :b="44" :l="79" :r="73">
             <board-caption
-              icon="waterpull"
+              icon="edu"
               label="Общеобразовательные организации"
               caption="потребность, мест"
               iconX="45px"
               labelY="13px"
               v-space-m:bottom="'29px'"
             />
-            <board-numbers v-bind="org" size="md" />
+            <board-numbers pretty v-bind="org" size="md" />
           </board-offsets>
         </template>
         <template #cell2>
@@ -113,7 +113,7 @@
               labelY="13px"
               v-space-m:bottom="'29px'"
             />
-            <board-numbers v-bind="culture" size="md" /> </board-offsets
+            <board-numbers pretty v-bind="culture" size="md" /> </board-offsets
         ></template>
       </BoardCells>
     </board-cover>

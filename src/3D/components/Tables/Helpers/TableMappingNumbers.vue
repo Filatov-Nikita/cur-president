@@ -2,7 +2,7 @@
   <div>
     <p class="label">{{ label }}</p>
     <div class="tw-flex tw-items-center">
-      <div class="num">{{ left }}</div>
+      <div class="num">{{ left | prettyAmount }}</div>
       <div class="tw-flex-grow" style="margin-right: 15px; margin-left: 15px">
         <img
           class="tw-w-full"
@@ -12,7 +12,7 @@
           alt=""
         />
       </div>
-      <div class="num tw-text-positive">{{ right }}%</div>
+      <div class="num tw-text-positive">{{ right | prettyAmount }}%</div>
     </div>
   </div>
 </template>

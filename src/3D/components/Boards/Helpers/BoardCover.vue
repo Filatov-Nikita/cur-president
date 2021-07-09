@@ -18,8 +18,9 @@ export default {
   background: rgba(0, 7, 47, 0.5);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 0;
+  /* border-bottom: 0; */
   position: relative;
+  z-index: 3;
   /* max-width: 3264px; */
 }
 

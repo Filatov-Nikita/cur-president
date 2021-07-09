@@ -13,7 +13,7 @@
       >
         {{ label }}
       </p>
-      <p v-if="hasCaption">{{ caption }}</p>
+      <p class="caption-bottom" v-if="hasCaption">{{ caption }}</p>
     </div>
   </div>
 </template>
@@ -71,5 +71,9 @@ export default {
   line-height: 100%;
   font-size: 30px;
   @apply tw-text-white;
+}
+
+.caption-bottom {
+  font-size: 25px;
 }
 </style>

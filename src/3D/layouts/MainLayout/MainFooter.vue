@@ -57,6 +57,13 @@ export default {
             },
           ],
         },
+          {
+          label: 'Юридическая помощь',
+          icon: 'ur-help',
+          to: {
+            name: '3D.branches.ur-help',
+          },
+        },
       ],
     };
   },

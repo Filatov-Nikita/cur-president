@@ -86,6 +86,9 @@ export default {
       if (this.filter === value) return (this.filter = 'all');
       this.filter = value;
     },
+    replaceCommas(value) {
+      return value.replace(/,/g, '');
+    },
   },
   computed: {
     ...mapGetters('_3D/districts', ['mapDistricts']),
@@ -154,15 +157,15 @@ export default {
           },
           got: {
             color: 'positive',
-            value: '36 790 400 000 ₽',
+            value: '36790400000 ₽',
           },
           contract: {
             color: 'negative',
-            value: '31 370 270 000 ₽',
+            value: '31370270000 ₽',
           },
           done: {
             color: 'positive',
-            value: '24 024 470 000 ₽',
+            value: '24024470000 ₽',
           },
         };
       } else {
@@ -185,7 +188,7 @@ export default {
               sport_percent,
               not_defined_percent,
             ]
-              .map((item) => (item === -1 ? 100 : item))
+              .map((item) => (item === -1 ? 0 : item))
               .map((item) => Number(item)),
             value: total_number,
             legends: [
@@ -209,15 +212,15 @@ export default {
           },
           got: {
             color: 'positive',
-            value: selected_by_district_rub,
+            value: this.replaceCommas(selected_by_district_rub) + ' ₽',
           },
           contract: {
             color: 'negative',
-            value: contracted_by_district_rub,
+            value: this.replaceCommas(contracted_by_district_rub) + ' ₽',
           },
           done: {
             color: 'positive',
-            value: executed_by_district_rub,
+            value: this.replaceCommas(executed_by_district_rub) + ' ₽',
           },
         };
       }
@@ -249,7 +252,7 @@ export default {
     BoardBuilding,
     MapSelect,
     MapLocationPoint,
-    ToTableLink
+    ToTableLink,
   },
 };
 </script>

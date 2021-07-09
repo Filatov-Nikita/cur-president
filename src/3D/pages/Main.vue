@@ -20,37 +20,37 @@ export default {
       mainData: {
         invest: {
           color: 'positive',
-          value: '168 634 747',
+          value: '168634747',
           it: '+90%',
         },
         milk: {
           color: 'positive',
-          value: '167 526',
+          value: '167526',
           it: '+37%',
         },
         cow: {
           color: 'positive',
-          value: '104 129',
+          value: '104129',
         },
         born: {
           color: 'positive',
-          value: '9 757',
+          value: '9757',
           it: '+66%',
         },
         unwork: {
           color: 'positive',
-          value: '3,5%',
-          it: '+6,5%',
+          value: '3.5%',
+          it: '+6.5%',
         },
         zp: {
           left: {
             color: 'negative',
-            value: '34 154 ₽',
+            value: '34154 \u20bd',
           },
           right: {
             color: 'positive',
-            value: '35 069 ₽',
-            it: '+2,81%',
+            value: '35069 \u20bd',
+            it: '+2.81%',
           },
         },
       },

@@ -8,6 +8,15 @@
       @show:name="showName"
       @show:marker="toggleMarker"
     />
+    <template v-if="urMap">
+      <MapUrMarker
+        v-for="district in urDistrictsMarkers"
+        :key="district.districtId"
+        :col="district.centers.length"
+        :centers="district.centers"
+        :districtId="district.districtId"
+      />
+    </template>
     <MapMarker
       v-if="showMarker"
       :left="marker.left"
@@ -30,6 +39,7 @@
 import Map from './Index';
 import MapMarker from './MapMarker';
 import MapDistrictName from './MapDistrictName';
+import MapUrMarker from './MapUrMarker';
 import { mapGetters } from 'vuex';
 
 export default {
@@ -49,6 +59,14 @@ export default {
     transparent: {
       type: Boolean,
       default: false,
+    },
+    urDistrictsMarkers: {
+      default: undefined,
+      type: Object,
+    },
+    urMap: {
+      default: false,
+      type: Boolean,
     },
   },
   data() {
@@ -98,6 +116,7 @@ export default {
     Map,
     MapMarker,
     MapDistrictName,
+    MapUrMarker,
   },
 };
 </script>

@@ -1,8 +1,5 @@
 <template>
   <div style="max-width: 2801px">
-    <BoardHead
-      text="Экономика. Инвестпроекты Республики Башкортостан. Заявочная кампания"
-    />
     <BoardCover>
       <div class="cont">
         <div class="table-container">
@@ -17,11 +14,18 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="tr" v-for="row in rows">
+              <tr
+                class="tr"
+                v-for="row in rows"
+                @click="click(row)"
+                :class="{
+                  selected: selected && selected.objectId === row.objectId,
+                }"
+              >
                 <td class="td col1">
                   {{ row.name }}
                 </td>
-                <td class="td col2 ttext-lg">{{ row.cost }}</td>
+                <td class="td col2 ttext-lg">{{ row.cost | prettyAmount }}</td>
                 <td class="td col3">{{ row.generalContractor }}</td>
                 <td class="td col4">{{ row.department }}</td>
                 <td class="td col5">
@@ -39,7 +43,14 @@
                         })
                       "
                     >
-                      <img src="images/3D/table-btn.svg" alt="" />
+                      <img
+                        :src="
+                          selected && selected.objectId === row.objectId
+                            ? 'images/3D/table-orange-btn.svg'
+                            : 'images/3D/table-btn.svg'
+                        "
+                        alt=""
+                      />
                     </button>
                   </div>
                 </td>
@@ -61,6 +72,27 @@ export default {
     rows: {
       required: true,
       type: Array,
+    },
+  },
+  data() {
+    return {
+      selected: null,
+    };
+  },
+  methods: {
+    click(row) {
+      if (this.selected) {
+        if (this.selected.objectId === row.objectId) {
+          return this.$router.push({
+            name: '3D.branches.building.show.object',
+            params: {
+              id: this.$route.params.id,
+              object_id: row.objectId,
+            },
+          });
+        }
+      }
+      this.selected = row;
     },
   },
   components: {
@@ -171,5 +203,13 @@ export default {
 .table-container::-webkit-scrollbar-thumb {
   background-color: #01f859;
   /* width: 6px; */
+}
+
+.selected {
+  background: #ff4d00;
+}
+
+.selected-btn {
+  background: #eb4600;
 }
 </style>

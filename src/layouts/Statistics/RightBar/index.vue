@@ -20,7 +20,7 @@ import moment from 'moment';
 function getDashboardUrl() {
   const curDate = moment().format('DD.MM.YYYY');
   const hash = window.btoa(curDate);
-  return `http://192.168.71.153/PpAccount/BigPanel?hash=${hash}`;
+  return `https://cur.bashkortostan.ru`;
 }
 
 export default {

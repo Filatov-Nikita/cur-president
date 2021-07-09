@@ -151,7 +151,7 @@ export default {
         return {
           hospitals: {
             color: 'negative',
-            value: '23 387',
+            value: '23387',
           },
           sportSquares: {
             color: 'positive',
@@ -159,7 +159,7 @@ export default {
           },
           pol: {
             color: 'negative',
-            value: '3 118',
+            value: '3118',
           },
           sportZals: {
             color: 'negative',
@@ -167,7 +167,7 @@ export default {
           },
           schools: {
             color: 'negative',
-            value: '35 952',
+            value: '35952',
           },
           waterpools: {
             color: 'negative',
@@ -175,7 +175,7 @@ export default {
           },
           org: {
             color: 'negative',
-            value: '32 452',
+            value: '32452',
           },
           culture: {
             color: 'negative',

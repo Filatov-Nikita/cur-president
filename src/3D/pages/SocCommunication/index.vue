@@ -1,10 +1,10 @@
 <template>
   <q-page class="tw-flex tw-flex-col tw-justify-center tw-items-center">
     <div>
-      <a @click.prevent="d1 = !d1" class="link1">
+      <a href="https://im.gosuslugi.ru/#/login" class="link1">
         <img :src="require('./link1.svg')" alt="" />
       </a>
-      <a @click.prevent="d2 = !d2">
+      <a href="https://pos.gosuslugi.ru/backoffice/login">
         <img :src="require('./link2.svg')" alt="" />
       </a>
       <q-dialog v-model="d1">

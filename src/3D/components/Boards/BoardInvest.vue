@@ -15,7 +15,7 @@
               labelY="10px"
               v-space-m:bottom="'20px'"
             />
-            <board-numbers size="lg" v-bind="invest" />
+            <board-numbers pretty size="lg" v-bind="invest" />
           </board-offsets>
         </template>
       </BoardCells>
@@ -30,7 +30,7 @@
               labelY="10px"
               v-space-m:bottom="'25px'"
             />
-            <board-numbers v-bind="projects" />
+            <board-numbers pretty v-bind="projects" />
           </board-offsets>
         </template>
         <template #cell2>
@@ -43,7 +43,7 @@
               labelY="10px"
               v-space-m:bottom="'25px'"
             />
-            <board-numbers v-bind="workPlaces" />
+            <board-numbers pretty v-bind="workPlaces" />
           </board-offsets>
         </template>
       </BoardCells>

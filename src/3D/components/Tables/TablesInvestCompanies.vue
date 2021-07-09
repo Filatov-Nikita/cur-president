@@ -23,24 +23,28 @@
                   {{ row.name }}
                 </td>
                 <td class="td col2">{{ row.investor }}</td>
-                <td class="td col3 ttext-lg tw-pl-8">{{ row.jobs }}</td>
+                <td class="td col3 ttext-lg tw-pl-8">
+                  {{ row.jobs | prettyAmount }}
+                </td>
                 <td class="td col4">{{ row.district }}</td>
                 <td class="td col5">{{ row.industry }}</td>
                 <td class="td col6">
-                  <div class="ttext-lg ttext-op50">{{ row.total }}</div>
+                  <div class="ttext-lg ttext-op50">
+                    {{ replaceSpace(row.total) | prettyAmount }}
+                  </div>
                   <TableMappingNumbers
-                    :left="row.Own_funds_mln_rub"
-                    :right="row.Own_funds_percent"
+                    :left="replaceSpace(row.Own_funds_mln_rub)"
+                    :right="replaceSpace(row.Own_funds_percent)"
                     label="собственные средства"
                   />
                   <TableMappingNumbers
-                    :left="row.Borrowed_funds_mln_rub"
-                    :right="row.Borrowed_funds_percent"
+                    :left="replaceSpace(row.Borrowed_funds_mln_rub)"
+                    :right="replaceSpace(row.Borrowed_funds_percent)"
                     label="заемные средства"
                   />
                   <TableMappingNumbers
-                    :left="row.Budget_funds_mln_rub"
-                    :right="row.Budget_funds_percent"
+                    :left="replaceSpace(row.Budget_funds_mln_rub)"
+                    :right="replaceSpace(row.Budget_funds_percent)"
                     label="бюджетные средства"
                   />
                 </td>
@@ -67,14 +71,18 @@ export default {
   },
   data() {
     return {
-      t1:
-        'Строительство всесезонной трассы скоростного спуска на санях ООО "Нотера"',
+      t1: 'Строительство всесезонной трассы скоростного спуска на санях ООО "Нотера"',
       t2: 'ООО "Нотера"',
       t3: '45',
       t4: 'Абзелиловский район',
       t5: 'Культура и спорт',
       t6: 'test',
     };
+  },
+  methods: {
+    replaceSpace(value) {
+      return value.replace(/ /g, '');
+    },
   },
   components: {
     BoardCover,

@@ -21,12 +21,12 @@
 
                 <div v-space-m:bottom="'67px'">
                   <p class="caption">Общая площадь здания</p>
-                  <p class="tt-lg">{{ object.s }} м2</p>
+                  <p class="tt-lg">{{ object.s | prettyAmount }} м2</p>
                 </div>
 
                 <div v-space-m:bottom="'67px'">
                   <p class="caption">Фактическая стоимость</p>
-                  <p class="tt-lg">{{ object.cost }} ₽</p>
+                  <p class="tt-lg">{{ object.cost | prettyAmount }} ₽</p>
                 </div>
               </section>
               <section class="s2">
@@ -104,6 +104,6 @@ export default {
 }
 
 .tt-lg {
-  @apply tw-font-bold tw-text-md;
+  @apply tw-font-bold tw-text-md tw-font-roboto;
 }
 </style>

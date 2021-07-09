@@ -12,7 +12,12 @@
               labelY="9px"
               v-space-m:bottom="'40px'"
             />
-            <board-numbers size="md" numberOffset="44px" v-bind="invest" />
+            <board-numbers
+              pretty
+              size="md"
+              numberOffset="44px"
+              v-bind="invest"
+            />
           </board-offsets>
         </template>
       </BoardCells>
@@ -27,7 +32,7 @@
               labelY="20px"
               v-space-m:bottom="'24px'"
             />
-            <board-numbers v-bind="milk" numberOffset="24px" />
+            <board-numbers pretty v-bind="milk" numberOffset="24px" />
           </board-offsets>
         </template>
         <template #cell2>
@@ -40,7 +45,7 @@
               labelY="14px"
               v-space-m:bottom="'24px'"
             />
-            <board-numbers v-bind="cow" />
+            <board-numbers pretty v-bind="cow" />
           </board-offsets>
         </template>
       </BoardCells>
@@ -55,7 +60,7 @@
               labelY="16px"
               v-space-m:bottom="'24px'"
             />
-            <board-numbers v-bind="born" />
+            <board-numbers pretty v-bind="born" />
           </board-offsets>
         </template>
         <template #cell2>
@@ -68,13 +73,13 @@
               labelY="14px"
               v-space-m:bottom="'33px'"
             />
-            <board-numbers v-bind="unwork" />
+            <board-numbers pretty v-bind="unwork" />
           </board-offsets>
         </template>
       </BoardCells>
       <BoardCells :cols="1">
         <template #cell1>
-          <board-offsets :t="33" :b="76" :l="74" :r="20">
+          <board-offsets :t="33" :b="76" :l="44" :r="20">
             <board-caption
               icon="zp"
               label="Среднемесячная номинальная начисленная заработная плата работников крупных и средних предприятий"
@@ -84,10 +89,12 @@
             />
             <board-mapping-numbers
               :left="{
+                pretty: true,
                 ...zp.left,
                 size: 'sm',
               }"
               :right="{
+                pretty: true,
                 ...zp.right,
                 size: 'sm',
               }"

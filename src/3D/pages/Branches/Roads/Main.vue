@@ -82,23 +82,23 @@ export default {
         return {
           roadLength: {
             color: 'positive',
-            value: '48 078',
+            value: '48078',
           },
           beton: {
             color: 'positive',
-            value: '57,91%',
+            value: '57.91%',
           },
           roadType: {
             color: 'negative',
-            value: '42,09%',
+            value: '42.09%',
           },
           roadBroke: {
             color: 'positive',
-            value: '4,38%',
+            value: '4.38%',
           },
           roadBrokeDone: {
             color: 'negative',
-            value: '58,15%',
+            value: '58.15%',
           },
           diagram: {
             values: [57, 43],
@@ -116,23 +116,23 @@ export default {
         return {
           roadLength: {
             color: 'positive',
-            value: Road_length_km,
+            value: this.replaceCommas(`${Road_length_km}`),
           },
           beton: {
             color: 'positive',
-            value: `${Asphalt_percent}%`,
+            value: this.replaceCommas(`${Asphalt_percent}%`),
           },
           roadType: {
             color: 'negative',
-            value: `${S_defects_asphalt_m2}%`,
+            value: this.replaceCommas(`${S_defects_asphalt_m2}%`),
           },
           roadBroke: {
             color: 'positive',
-            value: `${Part_defects_asphalt_percent}%`,
+            value: this.replaceCommas(`${Part_defects_asphalt_percent}%`),
           },
           roadBrokeDone: {
             color: 'negative',
-            value: `${Amount_of_works_asphalt_percent}%`,
+            value: this.replaceCommas(`${Amount_of_works_asphalt_percent}%`),
           },
           diagram: {
             values: [57, 43],
@@ -160,6 +160,11 @@ export default {
 
         return acc;
       }, {});
+    },
+  },
+  methods: {
+    replaceCommas(value) {
+      return value.replace(/,/g, '');
     },
   },
   components: {

@@ -1,17 +1,23 @@
 <template>
-  <router-link class="link" :to="to">
+  <router-link v-if="to" v-on="$listeners" class="link" :to="to">
     <img class="icon" src="./table-link.svg" alt="" />
     <div>
       {{ label }}
     </div>
   </router-link>
+  <button v-else v-on="$listeners" class="link">
+    <img class="icon" src="./ur-chat.svg" alt="" />
+    <div>
+      {{ label }}
+    </div>
+  </button>
 </template>
 
 <script>
 export default {
   props: {
     to: {
-      required: true,
+      default: undefined,
       type: Object,
     },
     label: {

@@ -377,6 +377,7 @@ export default {
 .h-item {
   margin-left: 13px;
   margin-right: 13px;
+
 }
 .row-offset {
   position: relative;

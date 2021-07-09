@@ -5,7 +5,7 @@
         :cx="cx"
         :cy="cy"
         :r="radius"
-        :stroke="colors[index]"
+        :stroke="colorsLocal[index]"
         :stroke-width="strokeWidth"
         :stroke-dasharray="adjustedCircumference"
         :stroke-dashoffset="calculateStrokeDashOffset(value, circumference)"
@@ -20,8 +20,9 @@
         dy="3px"
         :x="250"
         :y="260"
+        font-family="Open Sans"
       >
-        {{middle}}
+        {{ middle }}
       </text>
       <text
         v-if="caption !== undefined"
@@ -30,8 +31,9 @@
         dy="3px"
         :x="250"
         :y="280"
+        font-family="Open Sans"
       >
-        {{caption}}
+        {{ caption }}
       </text>
     </g>
   </svg>
@@ -51,23 +53,29 @@ export default {
       default: undefined,
       type: String,
     },
+    colors: {
+      default() {
+        return [
+          '#0FDF49',
+          '#07C18A',
+          '#0F6FDF',
+          '#0395FF',
+          '#DF410F',
+          '#DFD70F',
+          '#00952A',
+          '#AA007A',
+          '#F85992',
+          '#009B76',
+        ];
+      },
+      type: Array,
+    },
   },
   data() {
     return {
       angleOffset: -90,
       chartData: [],
-      colors: [
-        '#0FDF49',
-        '#07C18A',
-        '#0F6FDF',
-        '#0395FF',
-        '#DF410F',
-        '#DFD70F',
-        '#00952A',
-        '#AA007A',
-        '#F85992',
-        '#009B76',
-      ],
+      colorsLocal: this.colors,
       cx: 250,
       cy: 250,
       radius: 160,
@@ -101,7 +109,7 @@ export default {
       });
     },
     sortvalues() {
-      return (this.sortedValues = this.values.sort((a, b) => b - a));
+      return (this.sortedValues = this.values);
     },
   },
   methods: {
@@ -127,7 +135,7 @@ export default {
       return angle * (Math.PI / 180);
     },
     dataPercentage(dataVal) {
-      return dataVal / this.dataTotal;
+      return dataVal / (this.dataTotal || 1);
     },
     percentageString(dataVal) {
       return `${Math.round(this.dataPercentage(dataVal) * 100)}%`;
@@ -142,7 +150,7 @@ export default {
   mounted() {
     this.sortvalues;
     this.calculateChartData;
-  },
+  }
 };
 </script>
 
@@ -151,12 +159,12 @@ export default {
   font-size: 50px;
   fill: #fff;
   letter-spacing: -1.5px;
-  @apply tw-font-bold tw-font-op-sans;
+  @apply tw-font-bold tw-font-roboto;
 }
 
 .caption {
   font-size: 20px;
   fill: #fff;
-  @apply tw-font-op-sans;
+  @apply tw-font-bold tw-font-roboto;
 }
 </style>
