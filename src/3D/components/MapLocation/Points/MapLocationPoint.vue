@@ -2,7 +2,14 @@
   <div v-click-outside="hide" @click="toggle" class="point" :style="position">
     <img :src="require(`./icons/${type}.svg`)" />
 
-    <div class="popup" v-if="show">
+    <router-link
+      class="popup"
+      :to="{
+        name: '3D.branches.building.show.object',
+        params: { id, object_id: objectId },
+      }"
+      v-if="show"
+    >
       <div class="label" :class="`label-${type}`">
         <p>{{ title }}</p>
       </div>
@@ -13,7 +20,7 @@
         </div>
         <q-img v-if="photo !== ''" :src="`images/3D/points/${photo}.jpg`" />
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -31,6 +38,14 @@ export default {
     ClickOutside,
   },
   props: {
+    id: {
+      required: true,
+      type: [String, Number],
+    },
+    objectId: {
+      required: true,
+      type: [String, Number],
+    },
     title: {
       required: true,
       type: String,

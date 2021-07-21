@@ -74,9 +74,23 @@ export default {
       return this.district.S_km2;
     },
     include() {
+      if(this.districtName.indexOf('г.о') !== -1) return [];
+
+      let cityLabel = 'город(ов)';
+      if (this.district.Cities) {
+        const num = this.district.Cities % 10;
+        if (this.district.Cities === '1') {
+          cityLabel = 'город';
+        } else if (num > 1 && num < 5) {
+          cityLabel = 'города';
+        } else {
+          cityLabel = 'городов';
+        }
+      }
+
       return [
-        { label: 'сельских поселений', val: this.district.Village },
-        { label: 'город(ов)', val: this.district.Cities || '-' },
+        { label: 'сельских поселений', val: this.district.Village || '-' },
+        { label: cityLabel, val: this.district.Cities || '-' },
       ];
     },
     tableData() {

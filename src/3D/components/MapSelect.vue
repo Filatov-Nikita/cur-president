@@ -14,9 +14,9 @@ export default {
   },
   methods: {
     push() {
-      const { name, params, query } = this.$route;
+      const { name, params, query, meta } = this.$route;
       this.$router.push({ name: '3D.map-items' });
-      this.$store.commit('_3D/setFrom', { name, params, query });
+      this.$store.commit('_3D/setFrom', { name, params, query, meta });
     },
   },
 };

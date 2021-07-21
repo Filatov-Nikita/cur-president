@@ -120,6 +120,8 @@ export default {
         .filter((item) => item.ID == this.id)
         .map((item) => {
           return {
+            id: item.ID,
+            objectId: item.id,
             type: typesColors[item.color] || 'positive',
             value: item.percent_deviation || '0',
             title: item.name || '-',
@@ -170,11 +172,11 @@ export default {
         };
       } else {
         const {
-          selected_by_district_rub = '-',
-          contracted_by_district_rub = '-',
-          executed_by_district_rub = '-',
+          selected_by_district_rub = 'Данных нет',
+          contracted_by_district_rub = 'Данных нет',
+          executed_by_district_rub = 'Данных нет',
           education_percent = -1,
-          total_number = '-',
+          total_number = 'Данных нет',
           culture_percent = -1,
           not_defined_percent = -1,
           sport_percent = -1,
@@ -212,15 +214,24 @@ export default {
           },
           got: {
             color: 'positive',
-            value: this.replaceCommas(selected_by_district_rub) + ' ₽',
+            value:
+              selected_by_district_rub === 'Данных нет'
+                ? selected_by_district_rub
+                : this.replaceCommas(selected_by_district_rub) + ' ₽',
           },
           contract: {
             color: 'negative',
-            value: this.replaceCommas(contracted_by_district_rub) + ' ₽',
+            value:
+              contracted_by_district_rub === 'Данных нет'
+                ? contracted_by_district_rub
+                : this.replaceCommas(contracted_by_district_rub) + ' ₽',
           },
           done: {
             color: 'positive',
-            value: this.replaceCommas(executed_by_district_rub) + ' ₽',
+            value:
+              executed_by_district_rub === 'Данных нет'
+                ? executed_by_district_rub
+                : this.replaceCommas(executed_by_district_rub) + ' ₽',
           },
         };
       }

@@ -38,26 +38,33 @@ export default {
           label: 'Экономика',
           icon: 'wallet',
           to: {
-            name: '3D.branches.economic',
+            name: '3D.branches.new-economic',
           },
-          children: [
-            {
-              label: 'Обеспеченность',
-              to: {
-                name: '3D.branches.economic.obes',
-              },
-            },
-            {
-              label: 'Инвестиционная поддержка',
-              to: { name: '3D.branches.economic.invest' },
-            },
-            {
-              label: 'Общественные перевозки',
-              to: { name: '3D.branches.economic.transport' },
-            },
-          ],
         },
-          {
+        // {
+        //   label: 'Экономика',
+        //   icon: 'wallet',
+        //   to: {
+        //     name: '3D.branches.economic',
+        //   },
+        //   children: [
+        //     {
+        //       label: 'Обеспеченность',
+        //       to: {
+        //         name: '3D.branches.economic.obes',
+        //       },
+        //     },
+        //     {
+        //       label: 'Инвестиционная поддержка',
+        //       to: { name: '3D.branches.economic.invest' },
+        //     },
+        //     {
+        //       label: 'Общественные перевозки',
+        //       to: { name: '3D.branches.economic.transport' },
+        //     },
+        //   ],
+        // },
+        {
           label: 'Юридическая помощь',
           icon: 'ur-help',
           to: {

@@ -16,15 +16,19 @@
         <section class="tw-text-center">
           <p class="stat">{{ number }}</p>
         </section>
-        <section>
+        <section class="tw-mt-auto tw-pb-2">
           <HoneycompSeparator class="separator" />
           <div class="tw-flex tw-justify-between tw-text-center tw-mt-4">
             <p class="indicatorName tw-w-1/2">
-              <span class="tw-font-bold tw-text-lg">{{ bottom.l.number }}</span>
+              <span class="tw-font-bold tw-text-lg tw-leading-none">{{
+                bottom.l.number
+              }}</span>
               {{ bottom.l.label }}
             </p>
             <p class="indicatorName tw-w-1/2">
-              <span class="tw-font-bold tw-text-lg">{{ bottom.r.number }}</span>
+              <span class="tw-font-bold tw-text-lg tw-leading-none">{{
+                bottom.r.number
+              }}</span>
               {{ bottom.r.label }}
             </p>
           </div>
@@ -142,6 +146,8 @@ $positiveColor: #01f859;
 .honeycomb-inner {
   transform: scale(0.94);
   z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .honeycomb::after,
@@ -276,6 +282,10 @@ $positiveColor: #01f859;
 
 .separator {
   max-width: 331px;
-  margin-top: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 86px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 </style>

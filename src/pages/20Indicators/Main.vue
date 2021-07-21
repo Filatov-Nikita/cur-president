@@ -276,7 +276,7 @@ export default {
           dynamic: false,
           icon: 'GrowIndex',
           title: 'Индекс роста объема инвестиций',
-          number: '-',
+          number: '365,9',
           bottom: {
             l: { number: '-', label: 'по РФ' },
             r: { number: '-', label: 'по ПФО' },
@@ -287,7 +287,7 @@ export default {
           positive: true,
           dynamic: false,
           icon: 'DynamicState',
-          title: 'Темпы роста среднемесячной зарплаты',
+          title: 'Темпы роста среднедушевого дохода',
           number: '94,9%',
           bottom: {
             l: { number: '79', label: 'по РФ' },

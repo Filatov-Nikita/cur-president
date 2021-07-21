@@ -5,6 +5,12 @@ export default [
     name: "3D.branches.economic",
     children: [
       {
+        path: "new",
+        component: () => import("src/3D/pages/Branches/Economic/New/index.vue"),
+        name: "3D.branches.new-economic",
+        props: true
+      },
+      {
         path: "obes",
         component: () => import("src/3D/pages/Branches/Economic/Obes.vue"),
         name: "3D.branches.economic.obes",
@@ -103,7 +109,10 @@ export default [
         component: () =>
           import("src/3D/pages/Branches/Building/BuildingShowObject.vue"),
         name: "3D.branches.building.show.object",
-        props: true
+        props: true,
+        meta: {
+          menuBack: "3D.branches.building.objects"
+        }
       },
       {
         path: "map-items",

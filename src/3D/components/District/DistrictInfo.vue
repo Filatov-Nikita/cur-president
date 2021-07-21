@@ -16,7 +16,7 @@
       <div class="number">{{ square | prettyAmount }}</div>
     </div>
 
-    <div class="item item-3">
+    <div class="item item-3" v-if="include.length > 0">
       <div class="label">
         <img :src="require('./icons/include.svg')" alt="include" />
         <p class="caption">Включает</p>

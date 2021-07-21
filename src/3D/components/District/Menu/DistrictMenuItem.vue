@@ -52,20 +52,17 @@ export default {
     to() {
       // const { name = '' } = this.$route;
       const { id } = this;
-      if (
-        this.$store.getters['_3D/from'] &&
-        this.$store.getters['_3D/from'].name !== '3D.main'
-      ) {
+      const from = this.$store.getters['_3D/from'];
+      if (from && from.meta && from.meta.menuBack) {
+        return { name: from.meta.menuBack, params: { id } };
+      } else if (from && from.name !== '3D.main') {
         return {
-          ...this.$store.getters['_3D/from'],
-          params: { ...this.$store.getters['_3D/from'].params, id },
+          ...from,
+          params: { ...from.params, id },
         };
       }
-      // if (name.indexOf('3D.branches')) {
-      //   return { params: { id } };
-      // } else {
+
       return { name: '3D.show.district', params: { id } };
-      // }
     },
   },
   components: {
@@ -82,7 +79,9 @@ export default {
 }
 
 .chc {
-  margin-top: -13px;
+  /* margin-top: -13px; */
+  position: relative;
+  top: -7px;
   padding: 0px 5px;
   @apply tw-flex tw-flex-col  tw-h-full;
 }

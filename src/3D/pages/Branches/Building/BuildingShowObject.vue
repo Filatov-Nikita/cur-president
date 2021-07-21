@@ -5,14 +5,7 @@
       style="margin-bottom: 53px"
     />
     <BoardBuildingObject style="margin-bottom: 50px" :object="object" />
-    <router-link
-      class="back"
-      :to="{
-        name: '3D.branches.building.objects',
-        params: { id: $route.params.id },
-      }"
-      >Назад к данным</router-link
-    >
+    <button class="back" @click="$router.back()">Назад к данным</button>
   </q-page>
 </template>
 
@@ -49,16 +42,16 @@ export default {
       )[0];
       if (!data) data = {};
       const {
-        address = '-',
-        s = '-',
-        cost = '-',
+        address = 'Данных нет',
+        s = 'Данных нет',
+        cost = 'Данных нет',
         foto: photo = '',
-        date_start: dateFrom = '-',
-        date_fin_fact: dateTo = '-',
-        general_contractor: generalContractor = '-',
-        client = '-',
-        name = '-',
-        project = '-',
+        date_start: dateFrom = 'Данных нет',
+        date_fin: dateTo = 'Данных нет',
+        general_contractor: generalContractor = 'Данных нет',
+        client = 'Данных нет',
+        name = 'Данных нет',
+        project = 'Данных нет',
       } = data;
 
       return {

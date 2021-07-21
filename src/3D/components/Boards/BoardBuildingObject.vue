@@ -21,12 +21,18 @@
 
                 <div v-space-m:bottom="'67px'">
                   <p class="caption">Общая площадь здания</p>
-                  <p class="tt-lg">{{ object.s | prettyAmount }} м2</p>
+                  <p class="tt-lg">
+                    {{ object.s | prettyAmount }}
+                    {{ object.s === 'Данных нет' ? '' : 'м2' }}
+                  </p>
                 </div>
 
                 <div v-space-m:bottom="'67px'">
                   <p class="caption">Фактическая стоимость</p>
-                  <p class="tt-lg">{{ object.cost | prettyAmount }} ₽</p>
+                  <p class="tt-lg">
+                    {{ object.cost | prettyAmount }}
+                    {{ object.cost === 'Данных нет' ? '' : '₽' }}
+                  </p>
                 </div>
               </section>
               <section class="s2">
@@ -44,7 +50,7 @@
                 <div v-space-m:bottom="'82px'">
                   <p class="caption">Окончание строительства</p>
                   <p class="tt-lg">
-                    {{ object.dateFrom | prettyDate }}
+                    {{ object.dateTo | prettyDate }}
                   </p>
                 </div>
               </section>
@@ -79,7 +85,8 @@ export default {
   filters: {
     prettyDate(val) {
       if (val === '-') return '-';
-      return moment(val).format('DD MMMM YYYY [г.]');
+      const date = moment(val).format('DD MMMM YYYY [г.]');
+      return date === 'Invalid date' ? val : date;
     },
   },
   components: { BoardDevider, BoardHead },
