@@ -1,5 +1,6 @@
 <template>
   <q-page class="main">
+    <h1 class="eco-h1">экономика. ключевые индексы</h1>
     <div class="row row1">
       <EconomicHoneycomb
         class="item"
@@ -14,14 +15,14 @@
       />
       <EconomicHoneycomb
         class="item"
-        positive
+        negative
         icon="Diagram"
         componentName="SocEco"
-        period="Май 2021 г."
-        number="101,5%"
+        period="I квартал 2021 г."
+        number="81,2%"
         title="Показатели социально-экономического развития"
-        subtitle="Индекс промышленного производства"
-        dynamic
+        subtitle="Объём инвестиций <br/> в основной капитал"
+        :dynamic="false"
       />
       <EconomicHoneycomb
         class="item"
@@ -30,8 +31,8 @@
         componentName="MonRealSec"
         period="Май 2021 г."
         number="101,4%"
-        title="Мониторинг реального сектора экономики"
-        subtitle="Индекс промышленного производства"
+        title="Мониторинг реального <br/> сектора экономики"
+        subtitle="Индекс промышленного <br/> производства"
         dynamic
       />
     </div>
@@ -42,11 +43,10 @@
         icon="InvestCompanies"
         componentName="Zayav"
         period="I квартал 2021 г."
-        number="396"
-        title="Инвестпроекты. Заявочная компания"
-        subtitle="Проектов"
-        dynamic
-        :subtitle2="{ number: '318 895', label: 'млн ₽' }"
+        number="318 895"
+        title="Инвестпроекты. <br/> Заявочная компания"
+        subtitle="млн ₽"
+        :subtitle2="{ number: '396', label: 'Проектов' }"
       />
       <EconomicHoneycomb
         class="item"
@@ -55,7 +55,7 @@
         componentName="MonRealize"
         period="IV квартал 2020 г."
         number="173 351"
-        title="Инвестпроекты. Мониторинг реализации"
+        title="Инвестпроекты.<br/> Мониторинг реализации"
         subtitle="Млн ₽"
         :subtitle2="{ number: '1 234', label: 'проекта' }"
       />
@@ -64,7 +64,7 @@
         positive
         icon="InvestDynamic"
         componentName="InvestDynamic"
-        period="2020"
+        period="2020 г."
         number="9 место"
         title="Динамика развития инвестиционной деятельности"
         subtitle="В рейтинге регионов"
@@ -76,10 +76,9 @@
         positive
         icon="InvestPromo"
         componentName="InvestPromo"
-        period="-"
         number="312 673"
         title="Привлечение инвестиций"
-        subtitle="Объём заявленных инвестиций, млн ₽"
+        subtitle="Объём заявленных <br/> инвестиций, млн ₽"
       />
       <EconomicHoneycomb
         class="item"
@@ -94,7 +93,6 @@
         ]"
         title="Рейтинг инвестиционной активности МО"
         subtitle="Объём заявленных инвестиций, млн ₽"
-        dynamic
       />
 
       <EconomicHoneycomb
@@ -117,21 +115,21 @@
         icon="SocActive"
         componentName="SocActivity"
         period="Апрель 2021 г."
-        number="16 221,65"
+        number="38 818,6"
         title="Благосостояние и социальная активность населения"
-        subtitle="Продуктовая корзина, ₽"
+        subtitle="Номинальная ЗП, ₽"
         dynamic
-        :subtitle2="{ number: '38 818,6', label: 'Номинальная ЗП, ₽' }"
+        :subtitle2="{ number: '16 221,65', label: 'Продуктовая корзина, ₽' }"
       />
       <EconomicHoneycomb
         class="item"
         negative
         icon="PriceIndex"
         componentName="PriceIndex"
-        period="Начало года - Май 2021 г."
+        period="Январь — Май 2021 г."
         number="105,99%"
         title="Индекс потребительских цен "
-        subtitle="Индекс цен на товары и услуги"
+        subtitle="Индекс цен на товары <br/> и услуги"
         dynamic
       />
       <EconomicHoneycomb
@@ -139,10 +137,10 @@
         negative
         icon="SocMonitor"
         componentName="MonSoc"
-        period="IV квартал 2021 г."
+        period="IV квартал 2020 г."
         number="94,7%"
         title="Мониторинг социальной сферы"
-        subtitle="Динамика реальных денежных доходов"
+        subtitle="Динамика реальных денежных <br/> доходов"
         dynamic
       />
       <EconomicHoneycomb
@@ -150,7 +148,6 @@
         negative
         icon="SocObes"
         componentName="SocObes"
-        period="-"
         number="82,06%"
         title="Обеспеченность населения объектами социальной сферы"
         subtitle="Сводный индекс обеспеченности"
@@ -196,32 +193,29 @@
         type="2stat"
         icon="Oaz"
         componentName="Toser"
-        period="-"
         :_2stat="{
           left: { number: '5', label: 'ТОСЭР' },
           right: { number: '1', label: 'ОЭЗ' },
         }"
         title="ТОСЭР и ОЭЗ"
-        dynamic
       />
 
       <EconomicHoneycomb
         class="item"
-        positive
         icon="FailedBuilading"
         componentName="FailedBuilding"
         period="2020 г."
         number="2 075"
         subtitle="Всего объектов"
-        title="Незавершенное строительство"
+        title="Незавершенное <br/> строительство"
+        negative
       />
       <EconomicHoneycomb
         class="item"
         positive
         icon="SetPlan"
         componentName="Plan"
-        period="-"
-        number="8"
+        number="16"
         subtitle="Проекты в работе"
         title="Сетевое планирование приоритетных направлений деятельности"
       />
@@ -243,7 +237,7 @@
         positive
         icon="Callback"
         componentName="Callback"
-        period="С начала года"
+        period="С января 2021 г."
         number="137"
         subtitle="Всего звонков"
         title="Горячая линия «Обратная связь» от бизнеса»"
@@ -258,7 +252,7 @@
         period="на 20 июня 2021 г."
         number="40%"
         subtitle="Доля использования карт"
-        title="Транспортная карта АЛГА"
+        title="Транспортная карта <br/> АЛГА"
       />
       <EconomicHoneycomb
         class="item"
@@ -268,7 +262,7 @@
         period="на 20 июня 2021 г."
         number="73"
         subtitle="Млн поездок"
-        title="Общественные перевозки"
+        title="Общественные <br/>  перевозки"
         :subtitle2="{ number: '1 849', label: 'Млн ₽' }"
         dynamic
       />
@@ -291,7 +285,8 @@ export default {
   padding-top: 90px;
   background: url('/images/3D/main-map.jpg') no-repeat;
   background-size: cover;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  overflow-x: hidden;
 }
 
 .item {
@@ -328,5 +323,11 @@ export default {
 .space {
   width: 362px;
   height: 418px;
+}
+
+.eco-h1 {
+  font-size: 65px;
+  margin-bottom: 40px;
+  @apply tw-uppercase tw-font-bold;
 }
 </style>

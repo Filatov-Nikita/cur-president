@@ -3,10 +3,12 @@
     v-model="innerValue"
     icon="InvestPromo"
     title="Привлечение инвестиций"
-    period="-"
   >
     <div class="tw-mb-20">
-      <NewSubtitle text="Объём заявленных инвестиций" class="tw-mb-10 tw-text-center" />
+      <NewSubtitle
+        text="Объём заявленных инвестиций"
+        class="tw-mb-10 tw-text-center"
+      />
 
       <div>
         <img src="../images-slides/priv-invest.svg" alt="" />
@@ -14,12 +16,17 @@
     </div>
 
     <div class="tw-text-center">
-      <AppButton
-        icon="raiting"
-        size="lg"
-        label="Подробнее к дашбордам"
-        color="light-blue"
-      />
+      <a
+        href="https://cur.bashkortostan.ru/?menukey=4085&type=DASHBOARD"
+        target="_blank"
+      >
+        <AppButton
+          icon="diagram"
+          size="lg"
+          label="Подробнее к дашбордам"
+          color="light-blue"
+        />
+      </a>
     </div>
   </HoneycombDialog>
 </template>

@@ -6,7 +6,10 @@
     period="2020 г."
   >
     <div class="tw-mb-20">
-      <NewSubtitle text="В рейтинге регионов РФ" class="tw-mb-10 tw-text-center" />
+      <NewSubtitle
+        text="В рейтинге регионов РФ"
+        class="tw-mb-10 tw-text-center"
+      />
 
       <div>
         <img src="../images-slides/dinamika.svg" alt="" />
@@ -14,12 +17,17 @@
     </div>
 
     <div class="tw-text-center">
-      <AppButton
-        icon="raiting"
-        size="lg"
-        label="Подробнее к дашбордам"
-        color="light-blue"
-      />
+      <a
+        href="https://cur.bashkortostan.ru/?menukey=4080&type=DASHBOARD"
+        target="_blank"
+      >
+        <AppButton
+          icon="diagram"
+          size="lg"
+          label="Подробнее к дашбордам"
+          color="light-blue"
+        />
+      </a>
     </div>
   </HoneycombDialog>
 </template>

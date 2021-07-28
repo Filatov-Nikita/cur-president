@@ -7,7 +7,12 @@
   >
     <div class="inner">
       <div class="tw-absolute">
-        <HoneycompMaker :w="135" :color="itemStyle" class="close" @click="close">
+        <HoneycompMaker
+          :w="135"
+          :color="itemStyle"
+          class="close"
+          @click="close"
+        >
           <img class="close-icon" src="./close.svg" alt="" />
         </HoneycompMaker>
         <HoneycombDialogCover :color="itemStyle" class="honeycomb-cover">
@@ -21,8 +26,9 @@
             <div
               class="period tw-text-center tw-mb-5"
               :style="{ 'margin-bottom': tb }"
+              :class="{ 'tw-invisible': period === undefined }"
             >
-              {{ period }}
+              {{ period === undefined ? '-' : period }}
             </div>
             <div class="container">
               <slot />
@@ -49,7 +55,7 @@ export default {
       type: String,
     },
     period: {
-      required: true,
+      default: undefined,
       type: String,
     },
     negative: {

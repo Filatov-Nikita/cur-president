@@ -3,7 +3,6 @@
     v-model="innerValue"
     icon="SetPlan"
     title="Сетевое планирование приоритетных направлений деятельности"
-    period="-"
   >
     <div class="tw-mb-16">
       <div>
@@ -12,12 +11,17 @@
     </div>
 
     <div class="tw-text-center">
-      <AppButton
-        icon="raiting"
-        size="lg"
-        label="Подробнее к дашбордам"
-        color="light-blue"
-      />
+      <a
+        href="https://cur.bashkortostan.ru/?menukey=4086&type=DASHBOARD"
+        target="_blank"
+      >
+        <AppButton
+          icon="diagram"
+          size="lg"
+          label="Подробнее к дашбордам"
+          color="light-blue"
+        />
+      </a>
     </div>
   </HoneycombDialog>
 </template>

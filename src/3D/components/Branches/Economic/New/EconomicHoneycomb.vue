@@ -6,65 +6,76 @@
   >
     <div class="honeycomb" :class="`honeycomb-${itemStyle}`">
       <div class="honeycomb-inner" :class="`honeycomb-inner-${itemStyle}`">
-        <!-- top -->
-        <section class="top">
-          <q-icon size="40px" class="icon">
-            <component :is="iconComp" :fill="fillIcon" />
-          </q-icon>
-          <slot name="title">
-            <p class="title" v-if="title">{{ title }}</p>
-          </slot>
-        </section>
+        <div class="honeycomb-body">
+          <!-- top -->
+          <section class="top">
+            <q-icon size="40px" class="icon">
+              <component :is="iconComp" :fill="fillIcon" />
+            </q-icon>
+            <slot name="title">
+              <p
+                class="title"
+                :class="{ 'title-2stat': type === '2stat' }"
+                v-if="title"
+                v-html="title"
+              ></p>
+            </slot>
+          </section>
 
-        <!-- middle -->
-        <section class="middle">
-          <slot name="middle">
-            <template v-if="type === 'classic'">
-              <p v-if="number" class="number">{{ number }}</p>
-              <p v-if="subtitle" class="subtitle tw-mb-2">{{ subtitle }}</p>
-              <div
-                class="tw-flex tw-justify-center tw-items-end"
-                v-if="subtitle2"
-              >
-                <div class="subtitle2__number tw-mr-2">
-                  {{ subtitle2.number }}
-                </div>
-                <div class="subtitle2__label tw-mb-1">
-                  {{ subtitle2.label }}
-                </div>
-              </div>
-            </template>
-            <template v-else-if="type === 'indicators'">
-              <!-- indicators -->
-              <template v-if="indicators">
+          <!-- middle -->
+          <section class="middle">
+            <slot name="middle">
+              <template v-if="type === 'classic'">
+                <p v-if="number" class="number">{{ number }}</p>
+                <p
+                  v-if="subtitle"
+                  class="subtitle tw-mb-2"
+                  v-html="subtitle"
+                ></p>
                 <div
-                  v-for="(indicator, i) in indicators"
-                  :key="i"
-                  class="tw-flex tw-justify-center indicator"
+                  class="tw-flex tw-justify-center tw-items-end"
+                  v-if="subtitle2"
                 >
-                  <DynamicArrow
-                    class="tw-mr-3 tw-self-end tw-mb-3"
-                    size="md"
-                    :dynamic="indicator.dynamic"
-                  />
-                  <p class="indicators__label">{{ indicator.label }}</p>
+                  <div class="subtitle2__number tw-mr-2">
+                    {{ subtitle2.number }}
+                  </div>
+                  <div class="subtitle2__label tw-mb-1">
+                    {{ subtitle2.label }}
+                  </div>
                 </div>
               </template>
-            </template>
-            <template v-else-if="type === '2stat'">
-              <div class="tw-flex tw-justify-center" v-if="_2stat">
-                <div class="tw-mr-10">
-                  <p class="_2stat__label">{{ _2stat.left.number }}</p>
-                  <p>{{ _2stat.left.label }}</p>
+              <template v-else-if="type === 'indicators'">
+                <!-- indicators -->
+                <template v-if="indicators">
+                  <div
+                    v-for="(indicator, i) in indicators"
+                    :key="i"
+                    class="tw-flex tw-justify-center indicator"
+                  >
+                    <DynamicArrow
+                      class="tw-mr-3 tw-self-end tw-mb-3"
+                      size="md"
+                      :dynamic="indicator.dynamic"
+                    />
+                    <p class="indicators__label">{{ indicator.label }}</p>
+                  </div>
+                </template>
+              </template>
+              <template v-else-if="type === '2stat'">
+                <div class="tw-flex tw-justify-center" v-if="_2stat">
+                  <div class="tw-mr-10">
+                    <p class="_2stat__number">{{ _2stat.left.number }}</p>
+                    <p class="_2stat__label">{{ _2stat.left.label }}</p>
+                  </div>
+                  <div>
+                    <p class="_2stat__number">{{ _2stat.right.number }}</p>
+                    <p class="_2stat__label">{{ _2stat.right.label }}</p>
+                  </div>
                 </div>
-                <div>
-                  <p class="_2stat__label">{{ _2stat.right.number }}</p>
-                  <p>{{ _2stat.right.label }}</p>
-                </div>
-              </div>
-            </template>
-          </slot>
-        </section>
+              </template>
+            </slot>
+          </section>
+        </div>
 
         <!-- period -->
         <slot name="period">
@@ -72,7 +83,7 @@
         </slot>
 
         <!-- dynamic -->
-        <div class="dynamic" v-if="dynamic">
+        <div class="dynamic" v-if="dynamic !== undefined">
           <DynamicArrow
             :color="negative ? 'negative' : 'positive'"
             theme="honeycomb"
@@ -313,8 +324,15 @@ $positiveColor: #01f859;
 .title {
   line-height: 120%;
   font-size: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 47px;
+}
+
+.title-2stat {
+  font-size: 36px !important;
+  height: auto !important;
+  margin-bottom: 16px;
 }
 
 .stat {
@@ -348,10 +366,14 @@ $positiveColor: #01f859;
   margin-top: 20px;
 }
 
-._2stat__label {
+._2stat__number{
   font-size: 120px;
   line-height: 90px;
   @apply tw-font-bold tw-mb-5;
+}
+
+._2stat__label {
+  font-size: 16px;
 }
 
 .indicator + .indicator {
@@ -371,6 +393,8 @@ $positiveColor: #01f859;
 
 .subtitle {
   font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .subtitle2__label {
@@ -387,16 +411,15 @@ $positiveColor: #01f859;
   bottom: calc(#{$sideHeight * -1} + 70px);
 }
 
-.top {
-  position: absolute;
+.middle {
   width: 100%;
-  top: calc(#{$sideHeight * -1} + 36px);
+  height: 146px;
+  margin-top: 11px;
+  // margin-top: auto;
 }
 
-.middle {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+.honeycomb-body {
+  position: relative;
+  top: calc(#{$sideHeight * -1} + 36px);
 }
 </style>

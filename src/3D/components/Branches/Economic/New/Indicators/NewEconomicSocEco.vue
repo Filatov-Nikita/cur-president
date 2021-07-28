@@ -3,7 +3,8 @@
     v-model="innerValue"
     icon="Diagram"
     title="Показатели социально-экономического развития"
-    period="I квартал 2021 г."
+    period="Май 2021 г."
+    negative
   >
     <div class="tw-mb-20">
       <NewSubtitle
@@ -22,7 +23,7 @@
           <NewCaption space="lg" icon="soc-eco1">
             <NewNumber
               size="xs2-5"
-              number="1 931"
+              number="101,9%"
               color="positive"
               class="tw-mb-6"
             />
@@ -88,12 +89,17 @@
       </NewTable>
     </div>
     <div class="tw-text-center">
-      <AppButton
-        icon="raiting"
-        size="lg"
-        label="Подробнее к дашбордам"
-        color="light-blue"
-      />
+      <a
+        href="https://cur.bashkortostan.ru/?menukey=4071&type=DASHBOARD"
+        target="_blank"
+      >
+        <AppButton
+          icon="diagram"
+          size="lg"
+          label="Подробнее к дашбордам"
+          color="light-blue"
+        />
+      </a>
     </div>
   </HoneycombDialog>
 </template>

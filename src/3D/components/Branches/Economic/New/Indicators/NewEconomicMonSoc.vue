@@ -4,6 +4,7 @@
     icon="SocMonitor"
     title="Мониторинг социальной сферы"
     period="IV квартал 2020 г."
+    negative
   >
     <div class="tw-mb-28">
       <div>
@@ -12,12 +13,17 @@
     </div>
 
     <div class="tw-text-center">
-      <AppButton
-        icon="raiting"
-        size="lg"
-        label="Подробнее к дашбордам"
-        color="light-blue"
-      />
+      <a
+        href="https://cur.bashkortostan.ru/?menukey=4078&type=DASHBOARD"
+        target="_blank"
+      >
+        <AppButton
+          icon="diagram"
+          size="lg"
+          label="Подробнее к дашбордам"
+          color="light-blue"
+        />
+      </a>
     </div>
   </HoneycombDialog>
 </template>

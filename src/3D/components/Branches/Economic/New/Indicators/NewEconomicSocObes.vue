@@ -3,7 +3,6 @@
     v-model="innerValue"
     icon="SocObes"
     title="Обеспеченность населения объектами социальной сферы"
-    period="-"
     negative
   >
     <div class="tw-mb-12">
@@ -15,12 +14,17 @@
     </div>
 
     <div class="tw-text-center">
-      <AppButton
-        icon="raiting"
-        size="lg"
-        label="Подробнее к дашбордам"
-        color="light-blue"
-      />
+      <a
+        href="https://cur.bashkortostan.ru/?menukey=4082&type=DASHBOARD"
+        target="_blank"
+      >
+        <AppButton
+          icon="diagram"
+          size="lg"
+          label="Подробнее к дашбордам"
+          color="light-blue"
+        />
+      </a>
     </div>
   </HoneycombDialog>
 </template>

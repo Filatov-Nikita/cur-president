@@ -1,10 +1,5 @@
 <template>
-  <HoneycombDialog
-    v-model="innerValue"
-    icon="Oaz"
-    title="ТОСЭР и ОЭЗ"
-    period="-"
-  >
+  <HoneycombDialog v-model="innerValue" icon="Oaz" title="ТОСЭР и ОЭЗ">
     <div class="tw-mb-28">
       <BoardsCarousel
         v-model="slide"
@@ -27,12 +22,17 @@
     </div>
 
     <div class="tw-text-center">
-      <AppButton
-        icon="raiting"
-        size="lg"
-        label="Подробнее к дашбордам"
-        color="light-blue"
-      />
+      <a
+        href=" https://cur.bashkortostan.ru/?menukey=4087&type=DASHBOARD"
+        target="_blank"
+      >
+        <AppButton
+          icon="diagram"
+          size="lg"
+          label="Подробнее к дашбордам"
+          color="light-blue"
+        />
+      </a>
     </div>
   </HoneycombDialog>
 </template>

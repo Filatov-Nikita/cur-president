@@ -3,11 +3,14 @@
     v-model="innerValue"
     icon="PriceIndex"
     title="Индекс потребительских цен"
-    period="Начало года — Май 2021 г."
+    period="Январь — Май 2021 г."
     negative
   >
     <div class="tw-mb-8">
-      <NewSubtitle text="Индекс цен на товары и услуги" class="tw-mb-10 tw-text-center" />
+      <NewSubtitle
+        text="Индекс цен на товары и услуги"
+        class="tw-mb-10 tw-text-center"
+      />
 
       <div>
         <img src="../images-slides/index-potreb.svg" alt="" />
@@ -15,12 +18,17 @@
     </div>
 
     <div class="tw-text-center">
-      <AppButton
-        icon="raiting"
-        size="lg"
-        label="Подробнее к дашбордам"
-        color="light-blue"
-      />
+      <a
+        href="https://cur.bashkortostan.ru/?menukey=4094&type=DASHBOARD"
+        target="_blank"
+      >
+        <AppButton
+          icon="diagram"
+          size="lg"
+          label="Подробнее к дашбордам"
+          color="light-blue"
+        />
+      </a>
     </div>
   </HoneycombDialog>
 </template>

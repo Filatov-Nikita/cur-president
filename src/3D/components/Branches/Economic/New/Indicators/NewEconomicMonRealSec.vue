@@ -20,7 +20,7 @@
       <BoardsCarousel
         v-model="slide"
         :slides="slides"
-        height="530px"
+        height="550px"
         controlClass="_control"
         contentClass="_slide-content"
       >
@@ -30,7 +30,7 @@
               <NewCaption icon="real-sector1" class="tw-mb-7" />
               <NewNumber
                 size="xs5"
-                number="116,8%"
+                number="-"
                 color="positive"
                 class="tw-mb-6"
               />
@@ -40,12 +40,12 @@
               <div class="tw-flex tw-items-center">
                 <NewRegionNumber
                   region="rf"
-                  :number="{ number: '15', dynamic: false, color: 'positive' }"
+                  :number="{ number: '-', dynamic: false, color: 'positive' }"
                   class="tw-mr-10"
                 />
                 <NewRegionNumber
                   region="pfo"
-                  :number="{ number: '2', dynamic: false, color: 'positive' }"
+                  :number="{ number: '-', dynamic: false, color: 'positive' }"
                 />
               </div>
             </template>
@@ -53,7 +53,7 @@
               <NewCaption icon="real-sector2" class="tw-mb-7" />
               <NewNumber
                 size="xs5"
-                number="111,73%"
+                number="101,4%"
                 color="positive"
                 class="tw-mb-6"
               />
@@ -63,12 +63,12 @@
               <div class="tw-flex tw-items-center">
                 <NewRegionNumber
                   region="rf"
-                  :number="{ number: '9', dynamic: false, color: 'positive' }"
+                  :number="{ number: '-', dynamic: false, color: 'positive' }"
                   class="tw-mr-10"
                 />
                 <NewRegionNumber
                   region="pfo"
-                  :number="{ number: '6', dynamic: false, color: 'positive' }"
+                  :number="{ number: '-', dynamic: false, color: 'positive' }"
                 />
               </div>
             </template>
@@ -103,7 +103,7 @@
               <NewCaption icon="real-sector2-1" class="tw-mb-7" />
               <NewNumber
                 size="xs5"
-                number="116,8%"
+                number="-"
                 color="positive"
                 class="tw-mb-6"
               />
@@ -113,12 +113,12 @@
               <div class="tw-flex tw-items-center">
                 <NewRegionNumber
                   region="rf"
-                  :number="{ number: '15', dynamic: false, color: 'positive' }"
+                  :number="{ number: '-', dynamic: false, color: 'positive' }"
                   class="tw-mr-10"
                 />
                 <NewRegionNumber
                   region="pfo"
-                  :number="{ number: '2', dynamic: false, color: 'positive' }"
+                  :number="{ number: '-', dynamic: false, color: 'positive' }"
                 />
               </div>
             </template>
@@ -136,12 +136,12 @@
               <div class="tw-flex tw-items-center">
                 <NewRegionNumber
                   region="rf"
-                  :number="{ number: '23', dynamic: false, color: 'positive' }"
+                  :number="{ number: '23', dynamic: true, color: 'positive' }"
                   class="tw-mr-10"
                 />
                 <NewRegionNumber
                   region="pfo"
-                  :number="{ number: '4', dynamic: false, color: 'positive' }"
+                  :number="{ number: '4', dynamic: true, color: 'positive' }"
                 />
               </div>
             </template>
@@ -159,12 +159,12 @@
               <div class="tw-flex tw-items-center">
                 <NewRegionNumber
                   region="rf"
-                  :number="{ number: '33', dynamic: true, color: 'positive' }"
+                  :number="{ number: '-', dynamic: true, color: 'positive' }"
                   class="tw-mr-10"
                 />
                 <NewRegionNumber
                   region="pfo"
-                  :number="{ number: '3', dynamic: true, color: 'positive' }"
+                  :number="{ number: '-', dynamic: true, color: 'positive' }"
                 />
               </div>
             </template>
@@ -173,12 +173,17 @@
       </BoardsCarousel>
     </div>
     <div class="tw-text-center">
-      <AppButton
-        icon="raiting"
-        size="lg"
-        label="Подробнее к дашбордам"
-        color="light-blue"
-      />
+      <a
+        href="https://cur.bashkortostan.ru/?menukey=4077&type=DASHBOARD"
+        target="_blank"
+      >
+        <AppButton
+          icon="diagram"
+          size="lg"
+          label="Подробнее к дашбордам"
+          color="light-blue"
+        />
+      </a>
     </div>
   </HoneycombDialog>
 </template>
