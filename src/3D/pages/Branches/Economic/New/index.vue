@@ -1,30 +1,11 @@
 <template>
   <q-page class="main">
-    <HoneycombDialog v-model="dialog">
-      <div class="tw-mb-20 tw-pl-10">
-        <NewSubtitle text="Объём инвестиций" />
-        <NewNumber
-          size="lg"
-          number="123"
-          color="negative"
-          tail="млрд"
-          :dynamic="false"
-          dynamicSize="xl"
-        />
-      </div>
-      <AppButton
-        icon="raiting"
-        size="lg"
-        label="Подробнее к дашбордам"
-        color="light-blue"
-      />
-    </HoneycombDialog>
     <div class="row row1">
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="Invest"
+        componentName="Invest"
         period="I квартал 2021 г."
         number="47,69"
         title="Инвестиции в основной капитал"
@@ -32,10 +13,10 @@
         dynamic
       />
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="Diagram"
+        componentName="SocEco"
         period="Май 2021 г."
         number="101,5%"
         title="Показатели социально-экономического развития"
@@ -43,10 +24,10 @@
         dynamic
       />
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="EconomicSector"
+        componentName="MonRealSec"
         period="Май 2021 г."
         number="101,4%"
         title="Мониторинг реального сектора экономики"
@@ -56,10 +37,10 @@
     </div>
     <div class="row row2">
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="InvestCompanies"
+        componentName="Zayav"
         period="I квартал 2021 г."
         number="396"
         title="Инвестпроекты. Заявочная компания"
@@ -68,10 +49,10 @@
         :subtitle2="{ number: '318 895', label: 'млн ₽' }"
       />
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="InvestMonitor"
+        componentName="MonRealize"
         period="IV квартал 2020 г."
         number="173 351"
         title="Инвестпроекты. Мониторинг реализации"
@@ -79,10 +60,10 @@
         :subtitle2="{ number: '1 234', label: 'проекта' }"
       />
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="InvestDynamic"
+        componentName="InvestDynamic"
         period="2020"
         number="9 место"
         title="Динамика развития инвестиционной деятельности"
@@ -91,22 +72,22 @@
         :subtitle2="{ number: '+7', label: 'к АППГ' }"
       />
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="InvestPromo"
-        period="IV квартал 2021 г."
+        componentName="InvestPromo"
+        period="-"
         number="312 673"
         title="Привлечение инвестиций"
         subtitle="Объём заявленных инвестиций, млн ₽"
       />
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         type="indicators"
         icon="InvestRaiting"
-        period="Апрель 2021 г."
+        componentName="InvestRaiting"
+        period="IV квартал 2020 г."
         :indicators="[
           { label: 'Уфа', dynamic: true },
           { label: 'Межгорье', dynamic: false },
@@ -117,10 +98,10 @@
       />
 
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="InvestProgram"
+        componentName="InvestProgram"
         period="2020 г."
         number="70 906"
         title="Объекты республиканской адресной инвестиционной программы"
@@ -131,11 +112,11 @@
     </div>
     <div class="row row3">
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
-        icon="InvestDynamic"
-        period="2020 г."
+        icon="SocActive"
+        componentName="SocActivity"
+        period="Апрель 2021 г."
         number="16 221,65"
         title="Благосостояние и социальная активность населения"
         subtitle="Продуктовая корзина, ₽"
@@ -143,10 +124,10 @@
         :subtitle2="{ number: '38 818,6', label: 'Номинальная ЗП, ₽' }"
       />
       <EconomicHoneycomb
-        @click="open"
         class="item"
         negative
         icon="PriceIndex"
+        componentName="PriceIndex"
         period="Начало года - Май 2021 г."
         number="105,99%"
         title="Индекс потребительских цен "
@@ -154,10 +135,10 @@
         dynamic
       />
       <EconomicHoneycomb
-        @click="open"
         class="item"
         negative
         icon="SocMonitor"
+        componentName="MonSoc"
         period="IV квартал 2021 г."
         number="94,7%"
         title="Мониторинг социальной сферы"
@@ -165,18 +146,17 @@
         dynamic
       />
       <EconomicHoneycomb
-        @click="open"
         class="item"
         negative
         icon="SocObes"
-        period="I квартал 2021 г."
+        componentName="SocObes"
+        period="-"
         number="82,06%"
         title="Обеспеченность населения объектами социальной сферы"
         subtitle="Сводный индекс обеспеченности"
         dynamic
       />
-      <EconomicHoneycomb
-        @click="open"
+      <!-- <EconomicHoneycomb
         class="item"
         positive
         icon="SchoolFood"
@@ -184,14 +164,14 @@
         number="457"
         title="Качество школьного питания"
         subtitle="Школы"
-      />
+      /> -->
     </div>
     <div class="row row4">
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="Federal"
+        componentName="FederalProgram"
         period="II квартал 2020 г."
         number="84"
         title="Федеральные программы. Заявки"
@@ -200,10 +180,10 @@
       />
 
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="FederalFinance"
+        componentName="FederalFinance"
         period="IV квартал 2020 г."
         number="125 958"
         title="Федеральные программы. Финансирование"
@@ -211,12 +191,12 @@
       />
 
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         type="2stat"
         icon="Oaz"
-        period="Апрель 2021 г."
+        componentName="Toser"
+        period="-"
         :_2stat="{
           left: { number: '5', label: 'ТОСЭР' },
           right: { number: '1', label: 'ОЭЗ' },
@@ -226,21 +206,21 @@
       />
 
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="FailedBuilading"
-        period="Апрель 2021 г."
+        componentName="FailedBuilding"
+        period="2020 г."
         number="2 075"
         subtitle="Всего объектов"
         title="Незавершенное строительство"
       />
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="SetPlan"
-        period="I квартал 2021 г."
+        componentName="Plan"
+        period="-"
         number="8"
         subtitle="Проекты в работе"
         title="Сетевое планирование приоритетных направлений деятельности"
@@ -248,10 +228,10 @@
     </div>
     <div class="row row5">
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="Buisiness"
+        componentName="MP"
         period="Март 2021 г."
         number="28%"
         subtitle="Доля МП"
@@ -259,10 +239,10 @@
         dynamic
       />
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="Callback"
+        componentName="Callback"
         period="С начала года"
         number="137"
         subtitle="Всего звонков"
@@ -271,20 +251,20 @@
       />
       <div class="space item"></div>
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="Alfa"
+        componentName="Alga"
         period="на 20 июня 2021 г."
         number="40%"
         subtitle="Доля использования карт"
         title="Транспортная карта АЛГА"
       />
       <EconomicHoneycomb
-        @click="open"
         class="item"
         positive
         icon="Bus"
+        componentName="Transport"
         period="на 20 июня 2021 г."
         number="73"
         subtitle="Млн поездок"
@@ -298,26 +278,10 @@
 
 <script>
 import EconomicHoneycomb from 'src/3D/components/Branches/Economic/New/EconomicHoneycomb';
-import HoneycombDialog from 'src/3D/components/Branches/Economic/New/HoneycombDialog';
-import NewSubtitle from 'src/3D/components/Branches/Economic/New/NewSubtitle';
-import NewNumber from 'src/3D/components/Branches/Economic/New/NewNumber';
 
 export default {
-  data() {
-    return {
-      dialog: false,
-    };
-  },
-  methods: {
-    open() {
-      this.dialog = true;
-    },
-  },
   components: {
     EconomicHoneycomb,
-    HoneycombDialog,
-    NewSubtitle,
-    NewNumber,
   },
 };
 </script>

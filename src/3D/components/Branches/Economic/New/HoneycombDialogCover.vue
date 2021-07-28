@@ -1,6 +1,6 @@
 <template>
   <div class="cover">
-    <div><slot /></div>
+    <div class="slot"><slot /></div>
     <svg
       class="svg"
       width="1839"
@@ -17,7 +17,7 @@
         />
         <path
           d="M919.929 23.0821L1819 541.34L1819 1578.66L919.929 2096.92L20.0001 1578.65L20.0001 541.345L919.929 23.0821Z"
-          stroke="#01F859"
+          :stroke="colors[color]"
           stroke-width="40"
         />
       </g>
@@ -63,7 +63,20 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    color: {
+      default: 'positive',
+      type: String,
+    },
+  },
+  created() {
+    this.colors = {
+      positive: '#01F859',
+      negative: '#FF0000'
+    }
+  }
+};
 </script>
 
 <style scoped>
@@ -77,5 +90,13 @@ export default {};
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.slot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 </style>

@@ -52,7 +52,7 @@ export default {
     size: {
       default: 'sm',
       validator(value) {
-        return ['sm', 'md', 'md2', 'lg', 'lg2', 'xl'].includes(value);
+        return ['xs', 'sm', 'md', 'md2', 'md3', 'lg', 'lg2', 'xl'].includes(value);
       },
     },
   },
@@ -62,6 +62,11 @@ export default {
 <style scoped>
 .down {
   transform: rotate(180deg);
+}
+
+.size__xs {
+  width: 21px;
+  height: 18px;
 }
 
 .size__sm {
@@ -77,6 +82,11 @@ export default {
 .size__md2 {
   width: 29px;
   height: 24px;
+}
+
+.size__md3 {
+  width: 30px;
+  height: 25px;
 }
 
 .size__lg {

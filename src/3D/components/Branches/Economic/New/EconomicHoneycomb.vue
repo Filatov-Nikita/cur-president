@@ -1,5 +1,9 @@
 <template>
-  <button class="honeycomb-y-offsets tw-cursor-pointer" v-on="$listeners">
+  <button
+    @click="open"
+    class="honeycomb-y-offsets tw-cursor-pointer"
+    v-on="$listeners"
+  >
     <div class="honeycomb" :class="`honeycomb-${itemStyle}`">
       <div class="honeycomb-inner" :class="`honeycomb-inner-${itemStyle}`">
         <!-- top -->
@@ -78,6 +82,8 @@
         </div>
       </div>
     </div>
+
+    <component v-if="componentName" :is="dialogComp" v-model="dialog" />
   </button>
 </template>
 
@@ -140,8 +146,24 @@ export default {
       default: 'Book',
       type: String,
     },
+    componentName: {
+      default: undefined,
+      type: String,
+    },
+  },
+  data() {
+    return {
+      dialog: false,
+    };
   },
   computed: {
+    dialogComp() {
+      return () =>
+        import(
+          'src/3D/components/Branches/Economic/New/Indicators/' +
+            `NewEconomic${this.componentName}.vue`
+        );
+    },
     iconComp() {
       const { icon } = this;
       return () =>
@@ -160,6 +182,11 @@ export default {
         neutral: '#56718A',
       };
       return fills[this.itemStyle];
+    },
+  },
+  methods: {
+    open() {
+      this.dialog = true;
     },
   },
   components: {
@@ -286,6 +313,8 @@ $positiveColor: #01f859;
 .title {
   line-height: 120%;
   font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .stat {

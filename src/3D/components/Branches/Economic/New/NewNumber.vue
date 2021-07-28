@@ -1,19 +1,36 @@
 <template>
-  <div :class="[tail || dynamic !== undefined ? 'tw-flex' : '']">
+  <div
+    :class="[
+      tail || dynamic !== undefined
+        ? `tw-flex ${center ? 'tw-justify-center' : ''}`
+        : center
+        ? 'tw-text-center'
+        : 'tw-text-left',
+    ]"
+  >
     <DynamicArrow
+      v-if="dynamic !== undefined"
       class="tw-self-end"
       :class="`dynamic-right-${dynamicSize}`"
-      :color="color === 'positive' ? color : 'negative'"
+      :color="
+        color === 'white'
+          ? 'positive'
+          : color === 'positive'
+          ? color
+          : 'negative'
+      "
       :size="dynamicSize"
       :dynamic="dynamic"
     />
     <div
-      :class="`tw-text-${color} number size-${size}`"
+      :class="`tw-text-${color} number size-${size} tw-font-${weight}`"
       :style="[tail ? { 'margin-right': tailLeft } : {}]"
     >
       {{ number }}
     </div>
-    <div class="tail" :class="`tail-size-${tailSize}`">{{ tail }}</div>
+    <div class="tail" :class="`tail-size-${tailSize} tw-font-${tailWeight}`">
+      {{ tail }}
+    </div>
   </div>
 </template>
 
@@ -28,6 +45,11 @@ export default {
     },
     color: {
       default: 'white',
+      type: String,
+    },
+    weight: {
+      default: 'bold',
+      type: String,
     },
     number: {
       required: true,
@@ -41,12 +63,20 @@ export default {
       default: 'md',
       type: String,
     },
+    tailWeight: {
+      default: 'bold',
+      type: String,
+    },
     tailLeft: {
       default: '20px',
       type: String,
     },
     dynamic: {
       default: undefined,
+      type: Boolean,
+    },
+    center: {
+      default: false,
       type: Boolean,
     },
     dynamicSize: {
@@ -61,12 +91,28 @@ export default {
 </script>
 
 <style scoped>
+.size-xxs {
+  font-size: 36px;
+}
+
+.size-xxs2 {
+  font-size: 48px;
+}
+
 .size-xs {
   font-size: 60px;
 }
 
+.size-xs1-5 {
+  font-size: 64px;
+}
+
 .size-xs2 {
   font-size: 80px;
+}
+
+.size-xs2-5 {
+  font-size: 90px;
 }
 
 .size-xs3 {
@@ -75,6 +121,10 @@ export default {
 
 .size-xs4 {
   font-size: 100px;
+}
+
+.size-xs5 {
+  font-size: 110px;
 }
 
 .size-sm {
@@ -131,12 +181,12 @@ export default {
 
 .number {
   line-height: 80%;
-  @apply tw-font-bold tw-font-roboto;
+  @apply tw-font-roboto;
 }
 
 .tail {
-  line-height: 120%;
-  @apply tw-font-bold tw-self-end tw-font-roboto;
+  line-height: 200%;
+  @apply tw-self-end tw-font-roboto;
 }
 
 .tail-size-md {
@@ -147,8 +197,16 @@ export default {
   font-size: 64px;
 }
 
+.dynamic-right-xs {
+  margin-right: 6px;
+}
+
 .dynamic-right-md2 {
   margin-right: 16px;
+}
+
+.dynamic-right-md3 {
+  margin-right: 20px;
 }
 
 .dynamic-right-lg {

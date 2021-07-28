@@ -3,13 +3,17 @@
     <q-carousel
       ref="slider"
       class="carousel"
+      :class="contentClass"
       v-model="innerValue"
       :height="height"
       animated
     >
       <slot />
     </q-carousel>
-    <div class="tw-flex tw-items-center tw-justify-center controls">
+    <div
+      class="tw-flex tw-items-center tw-justify-center controls"
+      :class="controlClass"
+    >
       <button
         @click="previousSlide"
         class="slider-button tw-mr-12"
@@ -51,6 +55,14 @@ export default {
     },
     height: {
       default: '1351px',
+      type: String,
+    },
+    controlClass: {
+      default: '',
+      type: String,
+    },
+    contentClass: {
+      default: '',
       type: String,
     },
   },

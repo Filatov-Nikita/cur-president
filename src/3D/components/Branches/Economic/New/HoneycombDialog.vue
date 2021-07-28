@@ -7,19 +7,24 @@
   >
     <div class="inner">
       <div class="tw-absolute">
-        <HoneycompMaker :w="135" color="positive" class="close" @click="close">
+        <HoneycompMaker :w="135" :color="itemStyle" class="close" @click="close">
           <img class="close-icon" src="./close.svg" alt="" />
         </HoneycompMaker>
-        <HoneycombDialogCover class="honeycomb-cover">
+        <HoneycombDialogCover :color="itemStyle" class="honeycomb-cover">
           <div class="top">
-            <q-icon class="icon">
-              <component :is="iconComp" :fill="fillIcon" />
-            </q-icon>
-            <div class="title">Инвестиции в основной капитал</div>
-            <div class="period tw-mb-5" :style="{ 'margin-bottom': tb }">
-              I квартал 2021 г.
+            <div class="tw-text-center">
+              <q-icon class="icon">
+                <component :is="iconComp" :fill="fillIcon" />
+              </q-icon>
             </div>
-            <div>
+            <div class="title tw-text-center">{{ title }}</div>
+            <div
+              class="period tw-text-center tw-mb-5"
+              :style="{ 'margin-bottom': tb }"
+            >
+              {{ period }}
+            </div>
+            <div class="container">
               <slot />
             </div>
           </div>
@@ -39,12 +44,20 @@ export default {
       default: false,
       type: Boolean,
     },
+    title: {
+      required: true,
+      type: String,
+    },
+    period: {
+      required: true,
+      type: String,
+    },
     negative: {
       default: false,
       type: Boolean,
     },
     positive: {
-      default: true,
+      default: false,
       type: Boolean,
     },
     neutral: {
@@ -52,7 +65,7 @@ export default {
       type: Boolean,
     },
     icon: {
-      default: 'Invest',
+      required: true,
       type: String,
     },
     tb: {
@@ -71,11 +84,12 @@ export default {
       if (positive) return 'positive';
       if (negative) return 'negative';
       if (neutral) return 'neutral';
+      return 'positive';
     },
     fillIcon() {
       const fills = {
         positive: '#01F859',
-        negative: '#8A0000',
+        negative: '#FF0000',
         neutral: '#56718A',
       };
       return fills[this.itemStyle];
@@ -123,9 +137,9 @@ export default {
 }
 
 .top {
-  position: absolute;
+  position: relative;
   top: 252px;
-  @apply tw-text-center tw-w-full tw-z-10;
+  @apply tw-w-full tw-z-10;
 }
 
 .period {
@@ -141,7 +155,14 @@ export default {
 .title {
   max-width: 1185px;
   font-size: 48px;
-  line-height: 53px;
-  @apply tw-font-bold tw-mb-5 tw-mx-auto;
+  line-height: 120%;
+  padding-left: 75px;
+  padding-right: 75px;
+  @apply tw-font-bold tw-mb-5 tw-mx-auto tw-uppercase;
+}
+
+.container {
+  padding-left: 85px;
+  padding-right: 85px;
 }
 </style>
