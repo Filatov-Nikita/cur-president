@@ -2,7 +2,9 @@
   <q-dialog
     :value="value"
     @input="close"
-    contentClass="_honeycomb-dialog"
+    :contentClass="`_honeycomb-dialog ${
+      contentClass !== undefined ? contentClass : ''
+    }`"
     maximized
   >
     <div class="inner">
@@ -22,7 +24,7 @@
                 <component :is="iconComp" :fill="fillIcon" />
               </q-icon>
             </div>
-            <div class="title tw-text-center">{{ title }}</div>
+            <div class="title tw-text-center" v-html="title">{{ title }}</div>
             <div
               class="period tw-text-center tw-mb-5"
               :style="{ 'margin-bottom': tb }"
@@ -76,6 +78,10 @@ export default {
     },
     tb: {
       default: '60px',
+      type: String,
+    },
+    contentClass: {
+      default: undefined,
       type: String,
     },
   },

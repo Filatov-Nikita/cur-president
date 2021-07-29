@@ -3,7 +3,7 @@
     v-model="innerValue"
     icon="SocActive"
     title="Благосостояние и социальная активность населения"
-    period="Апрель 2021 г."
+    period="Апрель — Май 2021 г."
   >
     <div class="tw-mb-20">
       <div>

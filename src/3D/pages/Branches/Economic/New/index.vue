@@ -115,7 +115,7 @@
         positive
         icon="SocActive"
         componentName="SocActivity"
-        period="Апрель 2021 г."
+        period="Апрель — Май 2021 г."
         number="38 818,6"
         title="Благосостояние и социальная активность населения"
         subtitle="Номинальная ЗП, ₽"

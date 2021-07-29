@@ -1,8 +1,9 @@
 <template>
   <HoneycombDialog
+    contentClass="_Plan-title"
     v-model="innerValue"
     icon="SetPlan"
-    title="Сетевое планирование приоритетных направлений деятельности"
+    title="Сетевое планирование <br/> приоритетных направлений деятельности"
   >
     <div class="tw-mb-16">
       <div>
@@ -57,6 +58,11 @@ export default {
 };
 </script>
 
+<style>
+._Plan-title .title {
+  max-width: 1400px;
+}
+</style>
 <style scoped>
 .cap {
   font-size: 18px;

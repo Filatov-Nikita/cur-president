@@ -1,128 +1,144 @@
 <template>
   <q-page class="main">
     <div class="main-container">
-      <div class="tw-mb-28">
-        <h1 class="eco-h1">Видео о центре управления республикой</h1>
-        <div class="video">
-          <video
-            class="tw-block"
-            style="width: 2547px"
-            autoplay
-            playsinline
-            src="videos/about.mp4"
-            controls
-          >
-            <source src="movie.mp4" type="video/mp4" />
-            <source src="movie.ogg" type="video/ogg" />
-          </video>
-          <!-- poster="~assets/bg-main.jpg" -->
+      <div class="fullpage-wp" v-fullpage="opts">
+        <div>
+          <h1 class="eco-h1">Видео о центре управления республикой</h1>
+          <div class="video">
+            <video
+              class="tw-block"
+              style="width: 2547px"
+              autoplay
+              playsinline
+              src="videos/about.mp4"
+              controls
+            >
+              <source src="movie.mp4" type="video/mp4" />
+              <source src="movie.ogg" type="video/ogg" />
+            </video>
+            <!-- poster="~assets/bg-main.jpg" -->
+          </div>
+          <div class="tw-text-center">
+            <AppButton
+              class="tw-mx-auto"
+              label="Видео о платформе ЦУР"
+              color="blue"
+              size="lg"
+            />
+          </div>
         </div>
-        <div class="tw-text-center">
-          <AppButton
-            class="tw-mx-auto"
-            label="Видео о платформе ЦУР"
-            color="blue"
-            size="lg"
-          />
-        </div>
-      </div>
 
-      <h1 class="eco-h1">здание цур. интерактивный план</h1>
-      <div class="tw-relative">
-        <div class="tw-text-md tw-absolute tw-top-0 tw-left-0 tw-z-50">
-          {{ levelNames[slide] }}
+        <div>
+          <h1 class="eco-h1">здание цур. интерактивный план</h1>
+          <div class="tw-relative">
+            <div class="tw-text-md tw-absolute tw-top-0 tw-left-0 tw-z-50">
+              {{ levelNames[slide] }}
+            </div>
+            <BoardsCarousel
+              v-model="slide"
+              onTheLeft
+              :slides="slides"
+              height="1553px"
+              wFull
+              style="width: 2761px"
+              controlClass="_About-control"
+            >
+              <q-carousel-slide name="slide1" class="tw-relative slide">
+                <img
+                  src="./1.png"
+                  alt=""
+                  class="tw-absolute tw-left-0 tw-top-0 tw-z-0"
+                />
+                <template v-for="(level, index) in levels">
+                  <div
+                    :key="'layer' + index"
+                    class="tw-text-xxl tw-absolute svg"
+                    :style="{
+                      top: level1XY[index].top,
+                      left: level1XY[index].left,
+                      'z-index': 50 + index,
+                    }"
+                  >
+                    <LevelPopup
+                      v-if="page === 1"
+                      class="popup"
+                      :class="`popup-${level.size || 'md'}`"
+                      :size="level.size || 'md'"
+                      :text="level.name"
+                      :key="'popup' + index"
+                    />
+                    <img
+                      :src="require('./level1/' + level.svg + '.svg')"
+                      alt=""
+                    />
+                  </div>
+                </template>
+              </q-carousel-slide>
+              <q-carousel-slide name="slide2" class="tw-relative slide">
+                <img
+                  src="./-1.png"
+                  alt=""
+                  class="tw-absolute tw-left-0 tw-top-0 tw-z-0"
+                />
+                <template v-for="(level, index) in levels2">
+                  <div
+                    :key="'layer' + index"
+                    class="tw-text-xxl tw-absolute svg"
+                    :style="{
+                      top: level2XY[index].top,
+                      left: level2XY[index].left,
+                      'z-index': 50 + index,
+                    }"
+                  >
+                    <LevelPopup
+                      v-if="page === 1"
+                      class="popup"
+                      :class="`popup1-${level.size || 'md'}`"
+                      :size="level.size || 'md'"
+                      :text="level.name"
+                      :key="'popup' + index"
+                    />
+                    <img
+                      :src="require('./level2/' + level.svg + '.svg')"
+                      alt=""
+                    />
+                  </div>
+                </template>
+              </q-carousel-slide>
+              <q-carousel-slide name="slide3" class="tw-relative slide">
+                <img
+                  src="./-2.png"
+                  alt=""
+                  class="tw-absolute tw-left-0 tw-top-0 tw-z-0"
+                />
+                <template v-for="(level, index) in level3">
+                  <div
+                    :key="'layer' + index"
+                    class="tw-text-xxl tw-absolute svg"
+                    :style="{
+                      top: level3XY[index].top,
+                      left: level3XY[index].left,
+                      'z-index': 50 + index,
+                    }"
+                  >
+                    <LevelPopup
+                      v-if="page === 1"
+                      class="popup"
+                      :class="`popup1-${level.size || 'md'}`"
+                      :size="level.size || 'md'"
+                      :text="level.name"
+                      :key="'popup' + index"
+                    />
+                    <img
+                      :src="require('./level3/' + level.svg + '.svg')"
+                      alt=""
+                    />
+                  </div>
+                </template>
+              </q-carousel-slide>
+            </BoardsCarousel>
+          </div>
         </div>
-        <BoardsCarousel
-          v-model="slide"
-          onTheLeft
-          :slides="slides"
-          height="1553px"
-          wFull
-          style="width: 2761px"
-          controlClass="_About-control"
-        >
-          <q-carousel-slide name="slide1" class="tw-relative slide">
-            <img
-              src="./1.png"
-              alt=""
-              class="tw-absolute tw-left-0 tw-top-0 tw-z-0"
-            />
-            <template v-for="(level, index) in levels">
-              <div
-                :key="'layer' + index"
-                class="tw-text-xxl tw-absolute svg"
-                :style="{
-                  top: level1XY[index].top,
-                  left: level1XY[index].left,
-                  'z-index': 50 + index,
-                }"
-              >
-                <LevelPopup
-                  class="popup"
-                  :class="`popup-${level.size || 'md'}`"
-                  :size="level.size || 'md'"
-                  :text="level.name"
-                  :key="'popup' + index"
-                />
-                <img :src="require('./level1/' + level.svg + '.svg')" alt="" />
-              </div>
-            </template>
-          </q-carousel-slide>
-          <q-carousel-slide name="slide2" class="tw-relative slide">
-            <img
-              src="./-1.png"
-              alt=""
-              class="tw-absolute tw-left-0 tw-top-0 tw-z-0"
-            />
-            <template v-for="(level, index) in levels2">
-              <div
-                :key="'layer' + index"
-                class="tw-text-xxl tw-absolute svg"
-                :style="{
-                  top: level2XY[index].top,
-                  left: level2XY[index].left,
-                  'z-index': 50 + index,
-                }"
-              >
-                <LevelPopup
-                  class="popup"
-                  :class="`popup1-${level.size || 'md'}`"
-                  :size="level.size || 'md'"
-                  :text="level.name"
-                  :key="'popup' + index"
-                />
-                <img :src="require('./level2/' + level.svg + '.svg')" alt="" />
-              </div>
-            </template>
-          </q-carousel-slide>
-          <q-carousel-slide name="slide3" class="tw-relative slide">
-            <img
-              src="./-2.png"
-              alt=""
-              class="tw-absolute tw-left-0 tw-top-0 tw-z-0"
-            />
-            <template v-for="(level, index) in level3">
-              <div
-                :key="'layer' + index"
-                class="tw-text-xxl tw-absolute svg"
-                :style="{
-                  top: level3XY[index].top,
-                  left: level3XY[index].left,
-                  'z-index': 50 + index,
-                }"
-              >
-                <LevelPopup
-                  class="popup"
-                  :class="`popup1-${level.size || 'md'}`"
-                  :size="level.size || 'md'"
-                  :text="level.name"
-                  :key="'popup' + index"
-                />
-                <img :src="require('./level3/' + level.svg + '.svg')" alt="" />
-              </div>
-            </template>
-          </q-carousel-slide>
-        </BoardsCarousel>
       </div>
     </div>
   </q-page>
@@ -146,6 +162,12 @@ export default {
   },
   data() {
     return {
+      opts: {
+        afterChange: (currentSlideEl, currenIndex) => {
+          this.page = currenIndex;
+        },
+      },
+      page: 0,
       slide: 'slide1',
       slides: ['slide1', 'slide2', 'slide3'],
       levels: [
@@ -478,33 +500,52 @@ const level3XY = [
   opacity: 1;
 }
 
+.svg:hover .popup {
+  display: block;
+}
+
 .popup {
   position: fixed;
+  display: none;
 }
 
 .popup-lg {
-  top: 50px;
+  top: 1850px;
   left: 1500px;
 }
 
 .popup-md {
-  top: 150px;
+  top: 1950px;
   left: 1650px;
 }
 
 .popup1-md {
-  top: 300px;
+  top: 2100px;
   left: 1550px;
 }
 
 .popup1-lg {
-  top: 150px;
+  top: 1950px;
   left: 1500px;
 }
 
 .main-container {
   height: 1805px;
   overflow-x: hidden;
+  max-width: 2800px;
+}
+
+.fullpage-wp {
+  max-width: 2800px;
+}
+
+.main-container::-webkit-scrollbar {
+  width: 4px;
+  background-color: #fff;
+}
+
+.main-container::-webkit-scrollbar-thumb {
+  background-color: #01f859;
 }
 
 .video {

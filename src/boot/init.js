@@ -3,9 +3,13 @@ import PortalVue from "portal-vue";
 import * as moment from "moment";
 import "moment/locale/ru";
 import { ValidationProvider, ValidationObserver } from "vee-validate";
+// import 'animate.css'
+import 'fullpage-vue/src/fullpage.css'
+import VueFullpage from 'fullpage-vue'
 
 Vue.use(PortalVue);
 
+Vue.use(VueFullpage)
 moment.locale("ru");
 
 Vue.component("ValidationProvider", ValidationProvider);

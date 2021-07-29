@@ -2,7 +2,7 @@
   <HoneycombDialog
     v-model="innerValue"
     icon="Callback"
-    title="Горячая линия «Обратная связь» от бизнеса"
+    title="Горячая линия «Обратная связь» <br/> от бизнеса"
     period="С начала года"
   >
     <div class="tw-mb-20">
