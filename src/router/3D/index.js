@@ -157,5 +157,16 @@ export default [
         name: "soc.main"
       }
     ]
+  },
+  {
+    path: "/about",
+    component: () => import("src/3D/layouts/MainLayout/index.vue"),
+    children: [
+      {
+        path: "",
+        component: () => import("src/3D/pages/About/index.vue"),
+        name: "about"
+      }
+    ]
   }
 ];

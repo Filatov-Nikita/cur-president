@@ -11,6 +11,7 @@ import CommunicationsIcon from './icons/CommunicationsIcon';
 import DashboardsIcon from './icons/DashboardsIcon';
 import RespublicIcon from './icons/RespublicIcon';
 import SovetIcon from './icons/SovetIcon';
+import AboutIcon from './icons/AboutIcon';
 
 export default {
   props: {
@@ -35,6 +36,7 @@ export default {
     DashboardsIcon,
     RespublicIcon,
     SovetIcon,
+    AboutIcon
   },
 };
 </script>

@@ -38,6 +38,13 @@
       </HoneycompMaker>
       <div class="label">Оперативное совещание</div>
     </a>
+
+    <router-link :to="{ name: 'about' }" class="MAIN">
+      <HoneycompMaker contentClass="item item-about" :w="363" color="positive">
+        <About />
+      </HoneycompMaker>
+      <div class="label">О Цуре</div>
+    </router-link>
   </menu>
 </template>
 
@@ -48,6 +55,7 @@ import Os from './icons/Os';
 import Rb from './icons/Rb';
 import Soc from './icons/Soc';
 import Tw from './icons/Tw';
+import About from './icons/About';
 import moment from 'moment';
 
 export default {
@@ -65,6 +73,7 @@ export default {
     Os,
     Soc,
     Tw,
+    About
   },
 };
 </script>
@@ -95,6 +104,10 @@ export default {
 
 .MAIN .item-soc svg {
   fill: #faff00;
+}
+
+.MAIN .item-about svg {
+  fill: #0676fa;
 }
 
 .MAIN .item-dashboards svg {
@@ -137,6 +150,11 @@ export default {
   background: rgba(250, 255, 0, 0.8);
 }
 
+.MAIN:hover .item-about {
+  border-color: rgba(6, 118, 250, 0.8);
+  background: rgba(6, 118, 250, 0.8);
+}
+
 .MAIN .item-tw {
   margin-left: 19px;
   margin-right: 24px;
@@ -156,13 +174,18 @@ export default {
   margin-right: 15px;
 }
 
+.MAIN .item-about {
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
 .MAIN .item-3d {
   margin-right: 19px;
 }
 </style>
 <style scoped>
 .items {
-  margin-left: -35px;
+  margin-left: 368px;
 }
 
 .label {

@@ -170,7 +170,7 @@ export default {
 
 .avatars {
   position: absolute;
-  bottom: 118px;
+  bottom: 58px;
   right: 72px;
   z-index: 10;
 }

@@ -50,6 +50,11 @@ export default {
           icon: 'Communications',
           to: { name: 'soc' },
         },
+        {
+          label: 'О Цуре',
+          icon: 'About',
+          to: { name: 'about' },
+        },
       ],
     };
   },
