@@ -3,7 +3,7 @@
     v-model="innerValue"
     icon="Callback"
     title="Горячая линия «Обратная связь» от бизнеса"
-    period="С января 2021 г."
+    period="С начала года"
   >
     <div class="tw-mb-20">
       <div>

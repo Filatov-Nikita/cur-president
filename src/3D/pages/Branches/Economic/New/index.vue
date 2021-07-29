@@ -22,7 +22,7 @@
         number="81,2%"
         title="Показатели социально-экономического развития"
         subtitle="Объём инвестиций <br/> в основной капитал"
-        :dynamic="false"
+        :dynamic="true"
       />
       <EconomicHoneycomb
         class="item"
@@ -47,6 +47,7 @@
         title="Инвестпроекты. <br/> Заявочная компания"
         subtitle="млн ₽"
         :subtitle2="{ number: '396', label: 'Проектов' }"
+        :dynamic="true"
       />
       <EconomicHoneycomb
         class="item"
@@ -126,7 +127,7 @@
         negative
         icon="PriceIndex"
         componentName="PriceIndex"
-        period="Январь — Май 2021 г."
+        period="Начало года - Май 2021 г."
         number="105,99%"
         title="Индекс потребительских цен "
         subtitle="Индекс цен на товары <br/> и услуги"
@@ -197,6 +198,7 @@
           left: { number: '5', label: 'ТОСЭР' },
           right: { number: '1', label: 'ОЭЗ' },
         }"
+        :dynamic="true"
         title="ТОСЭР и ОЭЗ"
       />
 
@@ -237,7 +239,7 @@
         positive
         icon="Callback"
         componentName="Callback"
-        period="С января 2021 г."
+        period="С начала года"
         number="137"
         subtitle="Всего звонков"
         title="Горячая линия «Обратная связь» от бизнеса»"

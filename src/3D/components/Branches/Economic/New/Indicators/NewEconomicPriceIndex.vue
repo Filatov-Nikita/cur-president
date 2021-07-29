@@ -3,7 +3,7 @@
     v-model="innerValue"
     icon="PriceIndex"
     title="Индекс потребительских цен"
-    period="Январь — Май 2021 г."
+    period="Начало года - Май 2021 г."
     negative
   >
     <div class="tw-mb-8">

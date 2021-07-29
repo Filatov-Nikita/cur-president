@@ -3,7 +3,7 @@
     v-model="innerValue"
     icon="Diagram"
     title="Показатели социально-экономического развития"
-    period="Май 2021 г."
+    period="I квартал 2021 г"
     negative
   >
     <div class="tw-mb-20">
@@ -17,6 +17,7 @@
         color="negative"
         center
         class="tw-mb-20"
+        tail="к АППГ"
       />
       <NewTable type="type2">
         <template #col1>
