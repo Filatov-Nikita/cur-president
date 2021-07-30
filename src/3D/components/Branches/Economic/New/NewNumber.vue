@@ -181,12 +181,12 @@ export default {
 
 .number {
   line-height: 80%;
-  @apply tw-font-roboto;
 }
+  /* @apply tw-font-roboto; */
 
 .tail {
   line-height: 200%;
-  @apply tw-self-end tw-font-roboto;
+  @apply tw-self-end;
 }
 
 .tail-size-md {

@@ -6,6 +6,11 @@
     period="I квартал 2021 г."
   >
     <div class="tw-mb-20">
+      <div>
+        <img src="../images-slides/invest.svg" alt="" />
+      </div>
+    </div>
+    <!-- <div class="tw-mb-20">
       <NewSubtitle text="Всего инвестиций" class="tw-mb-10 tw-text-center" />
       <NewNumber
         size="xl"
@@ -91,7 +96,7 @@
           />
         </template>
       </NewTable>
-    </div>
+    </div> -->
     <div class="tw-text-center">
       <a
         href="https://cur.bashkortostan.ru/?menukey=4069&type=DASHBOARD"

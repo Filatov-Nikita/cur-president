@@ -5,7 +5,36 @@
         <div>
           <h1 class="eco-h1">Видео о центре управления республикой</h1>
           <div class="video">
-            <video
+            <button class="tw-cursor-pointer tw-block" @click="dialog = true">
+              <img src="./video.jpg" alt="" />
+            </button>
+            <q-dialog v-model="dialog">
+              <div style="width: 3500px; max-width: 100%">
+                <q-btn
+                  class="close tw-text-secondary"
+                  size="100px"
+                  dense
+                  flat
+                  icon="close"
+                  v-close-popup
+                >
+                  <q-tooltip class="bg-white text-primary">Close</q-tooltip>
+                </q-btn>
+                <q-card style="width: 3500px; max-width: 100%">
+                  <iframe
+                    width="100%"
+                    height="1700"
+                    src="https://www.youtube.com/embed/Izy8YqNEocE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    autoplay
+                  ></iframe>
+                </q-card>
+              </div>
+            </q-dialog>
+            <!-- <video
               class="tw-block"
               style="width: 2547px"
               autoplay
@@ -15,17 +44,44 @@
             >
               <source src="movie.mp4" type="video/mp4" />
               <source src="movie.ogg" type="video/ogg" />
-            </video>
+            </video> -->
             <!-- poster="~assets/bg-main.jpg" -->
           </div>
           <div class="tw-text-center">
             <AppButton
+              @click="dialog2 = true"
               class="tw-mx-auto"
               label="Видео о платформе ЦУР"
               color="blue"
               size="lg"
             />
           </div>
+          <q-dialog v-model="dialog2">
+            <div style="width: 3500px; max-width: 100%">
+              <q-btn
+                class="close tw-text-secondary"
+                size="100px"
+                dense
+                flat
+                icon="close"
+                v-close-popup
+              >
+                <q-tooltip class="bg-white text-primary">Close</q-tooltip>
+              </q-btn>
+              <q-card style="width: 3500px; max-width: 100%">
+                <iframe
+                  width="100%"
+                  height="1700"
+                  src="https://www.youtube.com/embed/2scAIIgDQYE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  autoplay
+                ></iframe>
+              </q-card>
+            </div>
+          </q-dialog>
         </div>
 
         <div>
@@ -162,6 +218,8 @@ export default {
   },
   data() {
     return {
+      dialog: false,
+      dialog2: false,
       opts: {
         afterChange: (currentSlideEl, currenIndex) => {
           this.page = currenIndex;
@@ -388,7 +446,7 @@ const level2XY = [
     left: '243px',
   },
   {
-    top: '443px',
+    top: '413px',
     left: '285px',
   },
   {
@@ -400,8 +458,8 @@ const level2XY = [
     left: '1295px',
   },
   {
-    top: '698px',
-    left: '1475px',
+    top: '725px',
+    left: '1447px',
   },
   {
     top: '778px',
@@ -550,5 +608,11 @@ const level3XY = [
 
 .video {
   margin-bottom: 80px;
+}
+
+.close {
+  top: 0;
+  right: 0;
+  @apply tw-absolute tw-z-50;
 }
 </style>
