@@ -261,13 +261,25 @@ export default {
         {
           to: '/tw/bis',
           positive: true,
-          dynamic: false,
-          icon: 'Shop',
-          title: 'Численность СМП и ИП, тыс. ед.',
-          number: '472,59',
+          dynamic: true,
+          icon: 'Wallet',
+          title: 'Темпы роста среднемесячной зарплаты',
+          number: '101,7%',
           bottom: {
-            l: { number: '12', label: 'по РФ' },
-            r: { number: '4', label: 'по ПФО' },
+            l: { number: '55', label: 'по РФ' },
+            r: { number: '10', label: 'по ПФО' },
+          },
+        },
+        {
+          to: '/tw/doh',
+          positive: true,
+          dynamic: false,
+          icon: 'DynamicState',
+          title: 'Темпы роста среднедушевого дохода',
+          number: '94,9%',
+          bottom: {
+            l: { number: '79', label: 'по РФ' },
+            r: { number: '12', label: 'по ПФО' },
           },
         },
         {
@@ -283,15 +295,15 @@ export default {
           },
         },
         {
-          to: '/tw/doh',
+          to: '/tw/bis',
           positive: true,
           dynamic: false,
-          icon: 'DynamicState',
-          title: 'Темпы роста среднедушевого дохода',
-          number: '94,9%',
+          icon: 'Shop',
+          title: 'Численность СМП и ИП, тыс. ед.',
+          number: '472,59',
           bottom: {
-            l: { number: '79', label: 'по РФ' },
-            r: { number: '12', label: 'по ПФО' },
+            l: { number: '12', label: 'по РФ' },
+            r: { number: '4', label: 'по ПФО' },
           },
         },
         {
@@ -320,7 +332,7 @@ export default {
       return this.items.slice(10, 15);
     },
     row4() {
-      return this.items.slice(15, 19);
+      return this.items.slice(15, 20);
     },
     typeItem() {
       return (item) => {
@@ -377,7 +389,6 @@ export default {
 .h-item {
   margin-left: 13px;
   margin-right: 13px;
-
 }
 .row-offset {
   position: relative;
