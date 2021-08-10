@@ -1,6 +1,6 @@
 <template>
   <q-footer class="footer">
-    <Ticker v-if="$route.name && $route.name.indexOf('3D.branches') !== 0" />
+    <Ticker v-if="$route.name && $route.name.indexOf('3D.branches') !== 0 && $route.name !== 'about'" />
     <div class="menu">
       <BottomMenuItems :items="menuLocal" /> <DateDysplay />
     </div>

@@ -3,7 +3,10 @@
     <q-carousel
       ref="slider"
       class="carousel"
-      :class="contentClass"
+      :class="[
+        contentClass,
+        { 'carousel-center': !onTheLeft, 'carousel-standart': !wFull },
+      ]"
       v-model="innerValue"
       :height="height"
       animated
@@ -57,6 +60,10 @@ export default {
       default: '1351px',
       type: String,
     },
+    onTheLeft: {
+      default: false,
+      type: Boolean,
+    },
     controlClass: {
       default: '',
       type: String,
@@ -64,6 +71,10 @@ export default {
     contentClass: {
       default: '',
       type: String,
+    },
+    wFull: {
+      default: false,
+      type: Boolean,
     },
   },
   data() {
@@ -99,7 +110,13 @@ export default {
 <style scoped>
 .carousel {
   background: transparent;
+}
+
+.carousel-standart {
   max-width: 86%;
+}
+
+.carousel-center {
   @apply tw-mx-auto;
 }
 
