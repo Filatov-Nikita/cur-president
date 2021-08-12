@@ -1,12 +1,17 @@
 <template>
   <q-page>
-    <StatisticsTitle class="title" icon="tal" text="Поддержка молодых талантов" />
-    <StatisticsEmptyData />
+    <StatisticsTitle
+      class="title"
+      icon="tal"
+      text="Поддержка молодых талантов"
+    />
+    <!-- <StatisticsEmptyData /> -->
+    <component :is="`Tal`" class="slide" />
     <portal to="hc-large">
       <HoneycombLarge
         v-bind="{
-          number: '--%',
-          middle: { l: '--', r: '--' },
+          number: '27,45%',
+          middle: { l: '-', r: '-' },
         }"
       />
     </portal>
@@ -14,6 +19,7 @@
 </template>
 
 <script>
+import Tal from 'src/components/Boards/Tal';
 import StatisticsTitle from 'src/components/Statistics/StatisticsTitle';
 import StatisticsEmptyData from 'src/components/Statistics/StatisticsEmptyData';
 import HoneycombLarge from 'src/components/Honeycomb/HoneycombLarge';
@@ -22,9 +28,13 @@ export default {
     StatisticsTitle,
     StatisticsEmptyData,
     HoneycombLarge,
+    Tal,
   },
 };
 </script>
 
-<style>
+<style scoped>
+.title {
+  margin-bottom: 90px;
+}
 </style>

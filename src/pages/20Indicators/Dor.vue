@@ -9,7 +9,7 @@
     <portal to="hc-large">
       <HoneycombLarge
         v-bind="{
-          number: '52,3%',
+          number: '67,8%',
           middle: { l: '-', r: '-' },
         }"
       />

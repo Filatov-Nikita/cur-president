@@ -1,6 +1,9 @@
 <template>
   <q-footer class="footer">
-    <router-link :to="{ name: 'tw.main' }" class="tw-text-xs tw-underline backBtn">
+    <router-link
+      :to="{ name: 'tw.main' }"
+      class="tw-text-xs tw-underline backBtn"
+    >
       <HoneycompMaker contentClass="backBtn-content" color="blue" :w="482">
         <div class="tw-relative back-text">
           <img
@@ -18,7 +21,7 @@
     <StatisticsCuratorName
       v-if="showCurator"
       class="curatorBlock"
-      fio="Иванов Иван Иванович"
+      :fio="curator"
     />
   </q-footer>
 </template>
@@ -28,9 +31,34 @@ import HoneycompMaker from 'src/components/Honeycomb/HoneycompMaker';
 import StatisticsCuratorName from 'src/components/Statistics/StatisticsCuratorName';
 
 export default {
+  created() {
+    this.curatorByPath = {
+      '/tw/nas': 'Забелин Максим Васильевич',
+      '/tw/bed': 'Забелин Максим Васильевич',
+      '/tw/doh': 'Забелин Максим Васильевич',
+      '/tw/lifespan': 'Забелин Максим Васильевич',
+      '/tw/sport': 'Сагитов Ирек Хайривариевич',
+      '/tw/vol': 'Сагитов Ирек Хайривариевич',
+      '/tw/edu': 'Бадранов Азат Шамилевич',
+      '/tw/tal': 'Бадранов Азат Шамилевич',
+      '/tw/gar': 'Бадранов Азат Шамилевич',
+      '/tw/kul': 'Бадранов Азат Шамилевич',
+      '/tw/zhl': 'Абдрахимов Раиф Рамазанович',
+      '/tw/str': 'Абдрахимов Раиф Рамазанович',
+      '/tw/dor': 'Абдрахимов Раиф Рамазанович',
+      '/tw/gor': 'Марзаев Алан Викторович',
+      '/tw/okr': 'Искандаров Урал Салаватович',
+      '/tw/inv': 'Муратов Рустам Хамитович',
+      '/tw/bis': 'Фазылов Нияз Мансурович',
+      '/tw/cif': 'Назаров Андрей Геннадьевич',
+    };
+  },
   computed: {
+    curator() {
+      return this.curatorByPath[this.$route.path] || '-';
+    },
     showCurator() {
-      return !['/tw/vlast-dov', '/tw/tal', '/tw/cif'].includes(this.$route.path);
+      return !['/tw/vlast-dov'].includes(this.$route.path);
     },
   },
   components: {

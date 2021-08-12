@@ -119,7 +119,7 @@ export default {
           dynamic: false,
           icon: 'Money',
           title: 'Уровень бедности',
-          number: '14,7',
+          number: '11,7',
           bottom: {
             l: { number: '-', label: 'по РФ' },
             r: { number: '-', label: 'по ПФО' },
@@ -131,7 +131,7 @@ export default {
           dynamic: false,
           icon: 'Sport',
           title: 'Занимаются спортом',
-          number: '48,54',
+          number: '48,5',
           bottom: {
             l: { number: '-', label: 'по РФ' },
             r: { number: '-', label: 'по ПФО' },
@@ -155,7 +155,7 @@ export default {
           dynamic: false,
           icon: 'Support',
           title: 'Поддержка молодых талантов',
-          number: '--%',
+          number: '27,45%',
           bottom: {
             l: { number: '-', label: 'по РФ' },
             r: { number: '-', label: 'по ПФО' },
@@ -180,7 +180,7 @@ export default {
           icon: 'SocialProgress',
           title:
             'Условия для воспитания гармонично развитой и ответственной личности',
-          number: '--%',
+          number: '100%',
           bottom: {
             l: { number: '-', label: 'по РФ' },
             r: { number: '-', label: 'по ПФО' },
@@ -203,11 +203,11 @@ export default {
           positive: true,
           dynamic: false,
           icon: 'Home',
-          title: 'Улучшение жилищных условий, тыс. ед.',
-          number: '225,87',
+          title: 'Улучшение жилищных условий, тыс. чел.',
+          number: '112,25',
           bottom: {
-            l: { number: '-', label: 'по РФ' },
-            r: { number: '-', label: 'по ПФО' },
+            l: { number: '7', label: 'по РФ' },
+            r: { number: '2', label: 'по ПФО' },
           },
         },
         {
@@ -216,10 +216,10 @@ export default {
           dynamic: false,
           icon: 'Building',
           title: 'Объем жилищного строительства, млн. м2',
-          number: '2,455',
+          number: '2,343',
           bottom: {
-            l: { number: '8', label: 'по РФ' },
-            r: { number: '2', label: 'по ПФО' },
+            l: { number: '-', label: 'по РФ' },
+            r: { number: '-', label: 'по ПФО' },
           },
         },
         {
@@ -228,10 +228,10 @@ export default {
           dynamic: false,
           icon: 'Infrasructure',
           title: 'Качество городской среды',
-          number: '184',
+          number: '43%',
           bottom: {
-            l: { number: '20', label: 'по РФ' },
-            r: { number: '4', label: 'по ПФО' },
+            l: { number: '17', label: 'по РФ' },
+            r: { number: '3', label: 'по ПФО' },
           },
         },
         {
@@ -240,7 +240,7 @@ export default {
           dynamic: false,
           icon: 'Road',
           title: 'Состояние дорожной сети',
-          number: '52,3%',
+          number: '67,8%',
           bottom: {
             l: { number: '-', label: 'по РФ' },
             r: { number: '-', label: 'по ПФО' },
@@ -288,7 +288,7 @@ export default {
           dynamic: false,
           icon: 'GrowIndex',
           title: 'Индекс роста объема инвестиций',
-          number: '365,9',
+          number: '112,1',
           bottom: {
             l: { number: '-', label: 'по РФ' },
             r: { number: '-', label: 'по ПФО' },

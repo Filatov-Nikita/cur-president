@@ -9,8 +9,8 @@
     <portal to="hc-large">
       <HoneycombLarge
         v-bind="{
-          number: '184',
-          middle: { l: '-', r: '-' },
+          number: '43%',
+          middle: { l: '17', r: '3' },
         }"
       />
     </portal>
