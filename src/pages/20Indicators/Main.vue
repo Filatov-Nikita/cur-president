@@ -259,7 +259,7 @@ export default {
           },
         },
         {
-          to: '/tw/bis',
+          to: '/tw/zp',
           positive: true,
           dynamic: true,
           icon: 'Wallet',
