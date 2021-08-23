@@ -1,6 +1,15 @@
 <template>
   <q-footer class="footer">
-    <Ticker v-if="$route.name && $route.name.indexOf('3D.branches') !== 0 && $route.name !== 'about'" />
+    <Ticker
+      v-if="
+        !waiting &&
+        tiker &&
+        $route.name &&
+        $route.name.indexOf('3D.branches') !== 0 &&
+        $route.name !== 'about'
+      "
+      :items="tiker"
+    />
     <div class="menu">
       <BottomMenuItems :items="menuLocal" /> <DateDysplay />
     </div>
@@ -11,6 +20,7 @@
 import BottomMenuItems from 'src/3D/components/TheBottomMenu/BottomMenuItems';
 import DateDysplay from 'src/components/DateDysplay';
 import Ticker from 'src/3D/components/Ticker';
+import ky from 'ky';
 
 export default {
   // { label: 'Text', icon: 'document' },
@@ -19,8 +29,20 @@ export default {
   // { label: 'Text', icon: 'garbage' },
   // { label: 'Text', icon: 'cow' }
   // { label: 'Text', icon: 'health' },
+  async created() {
+    try {
+      this.waiting = true;
+      this.tiker = await ky('https://2apps.ru/parse/newsforcur.php').json();
+    } catch (e) {
+      throw e;
+    } finally {
+      this.waiting = false;
+    }
+  },
   data() {
     return {
+      waiting: false,
+      tiker: null,
       items: [
         {
           label: 'Cтроительство',
