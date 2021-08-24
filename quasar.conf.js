@@ -6,6 +6,8 @@
 // Configuration for your app
 // https://v1.quasar.dev/quasar-cli/quasar-conf-js
 
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+
 module.exports = function(/* ctx */) {
   return {
     // https://v1.quasar.dev/quasar-cli/supporting-ts
@@ -58,7 +60,22 @@ module.exports = function(/* ctx */) {
 
       // https://v1.quasar.dev/quasar-cli/handling-webpack
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
-      chainWebpack(config) {}
+      chainWebpack(config) {},
+      extendWebpack(cng) {
+        cng.plugins.push(
+          new ImageMinimizerPlugin({
+            minimizerOptions: {
+              // Lossless optimization with custom option
+              // Feel free to experiment with options for better result for you
+              plugins: [
+                ["mozjpeg", { quality: 90 }],
+                ["pngquant", { quality: [0.7, 0.8], speed: 8 }]
+              ]
+            },
+            loader: false
+          })
+        );
+      }
     },
 
     // Full list of options: https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer

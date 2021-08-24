@@ -1,5 +1,18 @@
 module.exports = {
-  purge: [],
+  purge: {
+    content: ["./src/**/*.vue"],
+    options: {
+      safelist: [
+        /^tw-text-.+/,
+        /^tw-items-.+/,
+        /^tw-self-.+/,
+        /^tw-font-.+/,
+        /^tw-bg-.+/,
+        /^tw-border-.+/,
+        /^tw-w-1\/.+/
+      ]
+    }
+  },
   darkMode: false, // or 'media' or 'class'
   prefix: "tw-",
   theme: {
@@ -16,7 +29,7 @@ module.exports = {
     },
     fontFamily: {
       "op-sans": "Open Sans",
-      "roboto": "Roboto"
+      roboto: "Roboto"
     },
     fontSize: {
       xs: "35px",
