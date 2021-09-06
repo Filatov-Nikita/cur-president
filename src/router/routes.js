@@ -1,4 +1,5 @@
 import Routes3D from "./3D";
+import VideoMessRoutes from "./video-messages";
 
 const routes = [
   {
@@ -103,7 +104,7 @@ const routes = [
   },
 
   ...Routes3D,
-
+  ...VideoMessRoutes,
   // Always leave this as last one,
   // but you can also remove it
   {

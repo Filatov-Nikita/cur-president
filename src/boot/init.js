@@ -100,3 +100,18 @@ Vue.filter("prettyAmount", function(value) {
   if (!right) return sign + prettyPart + tail;
   return sign + prettyPart + "," + right.replace(/[^0-9]/g, "") + tail;
 });
+
+let init = false;
+
+export default function({ router }) {
+  router.beforeEach((from, to, next) => {
+    if (!init) {
+      init = true;
+      if (to.path === "/" && from.path === "/") {
+        return next({ name: "videomess.main" });
+      }
+    }
+
+    return next();
+  });
+}
