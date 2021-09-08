@@ -1,0 +1,760 @@
+{
+    "data": [
+        {
+            "ID": "2",
+            "Municipal_districts": "Альшеевский район",
+            "Category": "Строительство",
+            "Category_id": "15",
+            "fileName": "file001",
+            "Name": "Ахмадрисламов Марат",
+            "Link": "https://disk.yandex.ru/i/0qf8JvNHB0ZN8Q"
+        },
+        {
+            "ID": "3",
+            "Municipal_districts": "Архангельский район",
+            "Category": "Строительство",
+            "Category_id": "15",
+            "fileName": "file002",
+            "Name": "Салихова Разиля Раисовна",
+            "Link": "https://disk.yandex.ru/i/QC-AvfOEcsSKWg"
+        },
+        {
+            "ID": "3",
+            "Municipal_districts": "Архангельский район",
+            "Category": "Физическая культура и спорт",
+            "Category_id": "13",
+            "fileName": "file003",
+            "Name": "Пискунов Владимир",
+            "Link": "https://disk.yandex.ru/i/vqxMBpX_oSyomg"
+        },
+        {
+            "ID": "4",
+            "Municipal_districts": "Аскинский район",
+            "Category": "Образование",
+            "Category_id": "6",
+            "fileName": "file004",
+            "Name": "Исламова Асма Валидьяновна",
+            "Link": "https://disk.yandex.ru/i/zwVM4RrKNedlVw"
+        },
+        {
+            "ID": "5",
+            "Municipal_districts": "Аургазинский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file005",
+            "Name": "Ибатуллина Алия Гайнановна",
+            "Link": "https://disk.yandex.ru/i/P2p80F01fGA0JA"
+        },
+        {
+            "ID": "5",
+            "Municipal_districts": "Аургазинский район",
+            "Category": "Физическая культура и спорт",
+            "Category_id": "13",
+            "fileName": "file076_RafikovAirat",
+            "Name": "Рафиков Айрат",
+            "Link": "https://disk.yandex.ru/i/EPWmuxNTohd5Gg"
+        },
+        {
+            "ID": "6",
+            "Municipal_districts": "Баймакский район",
+            "Category": "Образование",
+            "Category_id": "6",
+            "fileName": "file006",
+            "Name": "Идрисова Гульгина",
+            "Link": "https://disk.yandex.ru/i/9lP2x7mfni4yjA"
+        },
+        {
+            "ID": "8",
+            "Municipal_districts": "Балтачевский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file007",
+            "Name": "Герасёва Татьяна",
+            "Link": "https://disk.yandex.ru/i/5kCf3Dam1h-bQQ"
+        },
+        {
+            "ID": "9",
+            "Municipal_districts": "Белебеевский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file008",
+            "Name": "Кудинова Марина Владимировна",
+            "Link": "https://disk.yandex.ru/i/tTfLJmV7u5KRLg"
+        },
+        {
+            "ID": "9",
+            "Municipal_districts": "Белебеевский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file009",
+            "Name": "Петрова Руфина Рашитовна",
+            "Link": "https://disk.yandex.ru/i/mogH28JtBguEvg"
+        },
+        {
+            "ID": "10",
+            "Municipal_districts": "Белокатайский район",
+            "Category": "Благоустройство",
+            "Category_id": "1",
+            "fileName": "file010",
+            "Name": "Трапезников Виталий Владимирович",
+            "Link": "https://disk.yandex.ru/i/931498Xpb3sD5g"
+        },
+        {
+            "ID": "11",
+            "Municipal_districts": "Белорецкий район",
+            "Category": "Образование",
+            "Category_id": "6",
+            "fileName": "file011",
+            "Name": "Нужина Татьяна Сергеевна",
+            "Link": "https://disk.yandex.ru/i/BG5lOnaRZrJBWQ "
+        },
+        {
+            "ID": "11",
+            "Municipal_districts": "Белорецкий район",
+            "Category": "Образование",
+            "Category_id": "6",
+            "fileName": "file012",
+            "Name": "коллективное обращение родителей",
+            "Link": "https://disk.yandex.ru/i/sFD8VuIpw6J8jA"
+        },
+        {
+            "ID": "13",
+            "Municipal_districts": "Бирский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file013",
+            "Name": "Сальников Валерий Петрович",
+            "Link": "https://disk.yandex.ru/i/AvajFW3yAYJpng"
+        },
+        {
+            "ID": "15",
+            "Municipal_districts": "Благовещенский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file014",
+            "Name": "Идрисова Лариса Николаевна",
+            "Link": "https://disk.yandex.ru/i/hnx3XmJPZPcDHQ"
+        },
+        {
+            "ID": "16",
+            "Municipal_districts": "Буздякский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file015",
+            "Name": "Курбанов Фанзиль",
+            "Link": "https://disk.yandex.ru/i/v5jBtdgwhkyhQQ"
+        },
+        {
+            "ID": "16",
+            "Municipal_districts": "Буздякский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file016",
+            "Name": "Ганиев Ильшат",
+            "Link": "https://disk.yandex.ru/i/OnA40skSvy4eNg"
+        },
+        {
+            "ID": "22",
+            "Municipal_districts": "Дюртюлинский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file017",
+            "Name": "Актыева Гульнур",
+            "Link": "https://disk.yandex.ru/i/d5BdQYUYAzr2GQ"
+        },
+        {
+            "ID": "22",
+            "Municipal_districts": "Дюртюлинский район",
+            "Category": "Физическая культура и спорт",
+            "Category_id": "13",
+            "fileName": "file077_Anzhekika",
+            "Name": "Дружинина Анжелика",
+            "Link": "https://disk.yandex.ru/i/SYm2BgkHupoCyA"
+        },
+        {
+            "ID": "22",
+            "Municipal_districts": "Дюртюлинский район",
+            "Category": "Физическая культура и спорт",
+            "Category_id": "13",
+            "fileName": "file018",
+            "Name": "Рахматуллин Руслан Фанисович",
+            "Link": "https://disk.yandex.ru/i/we9OaYHOJrBrBQ"
+        },
+        {
+            "ID": "26",
+            "Municipal_districts": "Иглинский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file019",
+            "Name": "Пивоварова Кристина Витальевна",
+            "Link": "https://disk.yandex.ru/i/UO3bl7PwfR-5eg"
+        },
+        {
+            "ID": "28",
+            "Municipal_districts": "Ишимбайский район",
+            "Category": "Связь и телевидение",
+            "Category_id": "9",
+            "fileName": "file020alfir",
+            "Name": "Даутов Альфир Лутфрахманович",
+            "Link": "https://disk.yandex.ru/i/Kh7WN6LutpX-0Q"
+        },
+        {
+            "ID": "30",
+            "Municipal_districts": "Караидельский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file021ilgiz",
+            "Name": "Гиндуллин Ильгиз",
+            "Link": "https://disk.yandex.ru/i/D4BXIBPtemgvvg"
+        },
+        {
+            "ID": "31",
+            "Municipal_districts": "Кармаскалинский район",
+            "Category": "Образование",
+            "Category_id": "6",
+            "fileName": "file022_luiza",
+            "Name": "Вахитова Луиза Рустамовна",
+            "Link": "https://disk.yandex.ru/i/BL2AdGd4NgfrSA "
+        },
+        {
+            "ID": "32",
+            "Municipal_districts": "Кигинский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file023_sumbul",
+            "Name": "Исмагилова Сюмбуль",
+            "Link": "https://disk.yandex.ru/i/5TVEZV9AcTVBqA"
+        },
+        {
+            "ID": "34",
+            "Municipal_districts": "Кугарчинский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file024_nikolay",
+            "Name": "Николай Александрович",
+            "Link": "https://disk.yandex.ru/i/l_w2NV6m4dj8rw"
+        },
+        {
+            "ID": "34",
+            "Municipal_districts": "Кугарчинский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file078_Kugarch_sovet",
+            "Name": "Совет предпринимателей",
+            "Link": "https://disk.yandex.ru/i/HPJpniKShRGUTg"
+        },
+        {
+            "ID": "34",
+            "Municipal_districts": "Кугарчинский район",
+            "Category": "Физическая культура и спорт",
+            "Category_id": "13",
+            "fileName": "file079_TuvalbaevVadim",
+            "Name": "Тувальбаев Вадим",
+            "Link": "https://disk.yandex.ru/i/Psdn_MDpD7gQuA"
+        },
+        {
+            "ID": "34",
+            "Municipal_districts": "Кугарчинский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file025_oksana",
+            "Name": "Каримова Оксана",
+            "Link": "https://disk.yandex.ru/i/NxTbv_FM3gsu8g"
+        },
+        {
+            "ID": "35",
+            "Municipal_districts": "Кушнаренковский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file026_minzilya",
+            "Name": "Валиева Минзеля",
+            "Link": "https://disk.yandex.ru/i/Q3w0whRQHWYhxg"
+        },
+        {
+            "ID": "36",
+            "Municipal_districts": "Куюргазинский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "File027_Marina",
+            "Name": "Исхакова Марина",
+            "Link": "https://disk.yandex.ru/i/Nl2nm3GIMCaadg"
+        },
+        {
+            "ID": "36",
+            "Municipal_districts": "Куюргазинский район",
+            "Category": "Строительство",
+            "Category_id": "15",
+            "fileName": "file028_liliuchitel",
+            "Name": "Тимербаева Ляля Вилеевна",
+            "Link": "https://disk.yandex.ru/i/cYPOB50TeXoLQQ"
+        },
+        {
+            "ID": "36",
+            "Municipal_districts": "Куюргазинский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file029_zilya",
+            "Name": "Шахмаева Зиля Гумаровна",
+            "Link": "https://disk.yandex.ru/i/DXMX7IRp8JifaQ"
+        },
+        {
+            "ID": "37",
+            "Municipal_districts": "Мелеузовский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file030_igornosov",
+            "Name": "Носов Игорь Иванович",
+            "Link": "https://disk.yandex.ru/i/QQIf5A8afk6CDA"
+        },
+        {
+            "ID": "37",
+            "Municipal_districts": "Мелеузовский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file031_ilnur",
+            "Name": "Субхангулов Ильнур",
+            "Link": "https://disk.yandex.ru/i/uscGpv_HEdvgCw"
+        },
+        {
+            "ID": "37",
+            "Municipal_districts": "Мелеузовский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file032_arturakchurin",
+            "Name": "Акчурин Артур",
+            "Link": "https://disk.yandex.ru/i/UEbsU68KT8TuWg"
+        },
+        {
+            "ID": "37",
+            "Municipal_districts": "Мелеузовский район",
+            "Category": "Физическая культура и спорт",
+            "Category_id": "13",
+            "fileName": "file033_Natalykochetkova",
+            "Name": "Кочеткова Наталья Юрьевна",
+            "Link": "https://disk.yandex.ru/i/zndpM1vEHhiWWw"
+        },
+        {
+            "ID": "37",
+            "Municipal_districts": "Мелеузовский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file083_Venera",
+            "Name": "Хужахметова Венера",
+            "Link": "https://disk.yandex.ru/i/oRbpGsAYCMF_5w"
+        },
+        {
+            "ID": "40",
+            "Municipal_districts": "Миякинский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file080_LiliaNugumanova.",
+            "Name": "Лилия Нугмановна",
+            "Link": "https://disk.yandex.ru/i/fg6UfLsNKXCIPQ"
+        },
+        {
+            "ID": "41",
+            "Municipal_districts": "Нуримановский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file034_rudolf",
+            "Name": "Арсланов Рудольф",
+            "Link": "https://disk.yandex.ru/i/f579yUo8C1biJQ"
+        },
+        {
+            "ID": "44",
+            "Municipal_districts": "Стерлитамакский район",
+            "Category": "Образование",
+            "Category_id": "6",
+            "fileName": "file035_NatalyParfenova",
+            "Name": "Парфенова Наталия Владимировна",
+            "Link": "https://disk.yandex.ru/i/jsqIv1h-qdRrGw "
+        },
+        {
+            "ID": "44",
+            "Municipal_districts": "Стерлитамакский район",
+            "Category": "Сельское хозяйство",
+            "Category_id": "10",
+            "fileName": "file036_SafuganovRustem",
+            "Name": "Сафуганов Рустем Айратович",
+            "Link": "https://disk.yandex.ru/i/WZlOEUJYGyFVtw"
+        },
+        {
+            "ID": "44",
+            "Municipal_districts": "Стерлитамакский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file037_ElenaUsupova",
+            "Name": "Юсупова Елена",
+            "Link": "https://disk.yandex.ru/i/LudvXBr-CCt1fg"
+        },
+        {
+            "ID": "45",
+            "Municipal_districts": "Татышлинский район",
+            "Category": "Благоустройство",
+            "Category_id": "1",
+            "fileName": "file081_ShakirovaSvetlana",
+            "Name": "Шакирова Светлана Вячеславовна",
+            "Link": "https://disk.yandex.ru/i/EQPi3AC8sd5XSg"
+        },
+        {
+            "ID": "46",
+            "Municipal_districts": "Туймазинский район",
+            "Category": "Благоустройство",
+            "Category_id": "1",
+            "fileName": "file 038_FaritAsadullin",
+            "Name": "Асадуллин Фарит Хатимович",
+            "Link": "https://disk.yandex.ru/i/cgF7jn6n7rDt2w"
+        },
+        {
+            "ID": "46",
+            "Municipal_districts": "Туймазинский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file039_AlbinaMuzafarova",
+            "Name": "Музафарова Альбина",
+            "Link": "https://disk.yandex.ru/i/Xu_VH9DZw_UgCg"
+        },
+        {
+            "ID": "47",
+            "Municipal_districts": "Уфимский район",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file040_ufimskiyrayon",
+            "Name": "Хисамутинов Артур Робертович",
+            "Link": "https://disk.yandex.ru/i/dE7UutIUcE33sw"
+        },
+        {
+            "ID": "47",
+            "Municipal_districts": "Уфимский район",
+            "Category": "Образование",
+            "Category_id": "6",
+            "fileName": "file041_zahvatkina",
+            "Name": "Захваткина Гульнара",
+            "Link": "https://disk.yandex.ru/i/smJau6AMm_aLLw"
+        },
+        {
+            "ID": "48",
+            "Municipal_districts": "Учалинский район",
+            "Category": "Физическая культура и спорт",
+            "Category_id": "13",
+            "fileName": "file042_SabanbaevRinat",
+            "Name": "Сабанбаев Ринат Абдулхаевич",
+            "Link": "https://disk.yandex.ru/i/8cfgzVM3qOD3EQ"
+        },
+        {
+            "ID": "48",
+            "Municipal_districts": "Учалинский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file043_MertehinAndrey",
+            "Name": "Андрей Мертехин",
+            "Link": "https://disk.yandex.ru/i/9mWo7pTyZr0wkQ"
+        },
+        {
+            "ID": "48",
+            "Municipal_districts": "Учалинский район",
+            "Category": "Экология",
+            "Category_id": "14",
+            "fileName": "file044_ecoUchaly",
+            "Name": "Жительница Учалинского района",
+            "Link": "https://disk.yandex.ru/i/LGvXvQoaznXU7A"
+        },
+        {
+            "ID": "52",
+            "Municipal_districts": "Чишминский район",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file045_baiburinZankir",
+            "Name": "Байбурин Закир",
+            "Link": "https://disk.yandex.ru/i/YZ8iNpSNgHs2YQ"
+        },
+        {
+            "ID": "53",
+            "Municipal_districts": "Шаранский район",
+            "Category": "Здравоохранение",
+            "Category_id": "3",
+            "fileName": "File046_KarinaIbragimova",
+            "Name": "Ибрагимова Карина",
+            "Link": "https://disk.yandex.ru/i/tQubykbiFSgliw"
+        },
+        {
+            "ID": "54",
+            "Municipal_districts": "Янаульский район",
+            "Category": "Строительство",
+            "Category_id": "15",
+            "fileName": "file047_alfiaSaubanova",
+            "Name": "Саубанова Альфия",
+            "Link": "https://disk.yandex.ru/i/BQo6q_cPvrwmPw"
+        },
+        {
+            "ID": "56",
+            "Municipal_districts": "Кумертау г.о.",
+            "Category": "Строительство",
+            "Category_id": "15",
+            "fileName": "file048_kumertauPiatki",
+            "Name": "Жительница города Кумертау",
+            "Link": "https://disk.yandex.ru/i/vvveLLnAsoRY4Q"
+        },
+        {
+            "ID": "56",
+            "Municipal_districts": "Кумертау г.о.",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file049_kumertau",
+            "Name": "Жительница города Кумертау",
+            "Link": "https://disk.yandex.ru/i/XbhGzzmoavzOeA"
+        },
+        {
+            "ID": "58",
+            "Municipal_districts": "Октябрьский г.о.",
+            "Category": "Здравоохранение",
+            "Category_id": "3",
+            "fileName": "file050_ViloraMuhamadeeva",
+            "Name": "Мухамадеева Вилора Винуровна",
+            "Link": "https://disk.yandex.ru/i/-ceDxetX_S-Hyw"
+        },
+        {
+            "ID": "58",
+            "Municipal_districts": "Октябрьский г.о.",
+            "Category": "Культура",
+            "Category_id": "4",
+            "fileName": "file051_IrinaMedvedeva",
+            "Name": "Медведева Ирина",
+            "Link": "https://disk.yandex.ru/i/-Na8HD7l4IMKEg"
+        },
+        {
+            "ID": "58",
+            "Municipal_districts": "Октябрьский г.о.",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file052_FanilHarisov",
+            "Name": "Харисов Фаниль Хатимович",
+            "Link": "https://disk.yandex.ru/i/mqdR4tlYxV8yJA"
+        },
+        {
+            "ID": "58",
+            "Municipal_districts": "Октябрьский г.о.",
+            "Category": "Физическая культура и спорт",
+            "Category_id": "13",
+            "fileName": "file053_AlksShevchenko",
+            "Name": "Шевченко Алексей Андреевич",
+            "Link": "https://disk.yandex.ru/i/XDzTOM0TufY0_Q"
+        },
+        {
+            "ID": "58",
+            "Municipal_districts": "Октябрьский г.о.",
+            "Category": "Физическая культура и спорт",
+            "Category_id": "13",
+            "fileName": "file054_Sharafetdinov",
+            "Name": "Шарафетдинов Артур Рафаилович",
+            "Link": "https://disk.yandex.ru/i/MoxYlY_jGA5u8g"
+        },
+        {
+            "ID": "58",
+            "Municipal_districts": "Октябрьский г.о.",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file055_TatianaUlianova",
+            "Name": "Ульянова Татьяна",
+            "Link": "https://disk.yandex.ru/i/ntlsHI0YLzpw2A"
+        },
+        {
+            "ID": "59",
+            "Municipal_districts": "Салават г.о.",
+            "Category": "Образование",
+            "Category_id": "6",
+            "fileName": "file056_AnnaAhmadullina",
+            "Name": "Салават. Ахмадуллина Анна Олеговна",
+            "Link": "https://disk.yandex.ru/i/1YpXLqJ8xGxfaQ"
+        },
+        {
+            "ID": "61",
+            "Municipal_districts": "Стерлитамак г.о.",
+            "Category": "Благоустройство",
+            "Category_id": "1",
+            "fileName": "file057_GulnazVitman",
+            "Name": "Витман Гульназ Давлатовна",
+            "Link": "https://disk.yandex.ru/i/EpBNP0qwg4L6-w"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Благоустройство",
+            "Category_id": "1",
+            "fileName": "file058_LizaAgadullina",
+            "Name": "Агадуллина Лиза Киямовна",
+            "Link": "https://disk.yandex.ru/i/NsmOggXNK0PTrg"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Строительство",
+            "Category_id": "15",
+            "fileName": "file059_KashapovDinil",
+            "Name": "Кашапов Диниль Флюрович",
+            "Link": "https://disk.yandex.ru/i/7Td4foZGDjUVfQ"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Культура",
+            "Category_id": "4",
+            "fileName": "file060_RahmetovArtur",
+            "Name": "Рахметов Артур Владимирович",
+            "Link": "https://disk.yandex.ru/i/14vPLc6qQTI26Q"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Лесное хозяйство",
+            "Category_id": "5",
+            "fileName": "file061_VLADIMIR",
+            "Name": "Владимир",
+            "Link": "https://disk.yandex.ru/i/P2k0UlPAaZztbw"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file062_TatiaYarisheva",
+            "Name": "Ярышева Тутия Гиниятовна",
+            "Link": "https://disk.yandex.ru/i/qdH3veOhRv9tcw"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Культура",
+            "Category_id": "4",
+            "fileName": "file082_GulnasZirk",
+            "Name": "Насырова Гульназ Зиганнуровна",
+            "Link": "https://disk.yandex.ru/i/KajzJy5eVnn_xw"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Образование",
+            "Category_id": "5",
+            "fileName": "file063_nadezhdaPopova",
+            "Name": "Попова Надежда Рашитовна",
+            "Link": "https://disk.yandex.ru/i/mCFhSYkYm3R8rQ"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Предпринимательство и экономика",
+            "Category_id": "7",
+            "fileName": "file064_RAIS",
+            "Name": "Раис Габитов",
+            "Link": "https://disk.yandex.ru/i/uI8UFK_lnkm3kw"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Соцобслуживание",
+            "Category_id": "11",
+            "fileName": "file065_OlgaZotova",
+            "Name": "Ольга Кузьминична Зотова",
+            "Link": "https://disk.yandex.ru/i/8IKSQVw3b2_1Fw "
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file066_SadikovLinar",
+            "Name": "Садыков Линар Ханифович",
+            "raion": "Кировский район",
+            "Link": "https://disk.yandex.ru/i/tDEXUVg5xWEc2Q"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Благоустройство",
+            "Category_id": "1",
+            "fileName": "file067_LudmilaDema",
+            "Name": "Погорелец Людмила Васильевна",
+            "raion": "Демский район",
+            "Link": "https://disk.yandex.ru/i/ytAiuMTNdjg7Ng"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Строительство",
+            "Category_id": "15",
+            "fileName": "file068_GulnazDema",
+            "Name": "Рафикова Гульназ",
+            "raion": "Демский район",
+            "Link": "https://disk.yandex.ru/i/7MFHCSmqGkAQmw"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "File069_OksanaRomanova",
+            "Name": "Романова Оксана Николаевна",
+            "raion": "Калининский район",
+            "Link": "https://disk.yandex.ru/i/WtprnlgHqhJcww"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Транспорт",
+            "Category_id": "12",
+            "fileName": "file070_AlekseyAkulinin",
+            "Name": "Акулинин Алексей Александрович",
+            "raion": "Кировский район",
+            "Link": "https://disk.yandex.ru/i/4r9VTn2Ybp6PSg"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "ЖКХ",
+            "Category_id": "2",
+            "fileName": "file071_UfaLeninskiy",
+            "Name": "Светлана Валерьева",
+            "raion": "Ленинский район",
+            "Link": "https://disk.yandex.ru/i/KuUJEvCKtwcOeA"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Благоустройство",
+            "Category_id": "1",
+            "fileName": "file072_GulshatNasennik",
+            "Name": "Насенник Гульшат Мухаметовна",
+            "raion": "Октябрьский район",
+            "Link": "https://disk.yandex.ru/i/wdBwh5FjKhhr-w"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file073_KseniaKlekovkina",
+            "Name": "Клековкина Ксения Андреевна",
+            "raion": "Октябрьский район",
+            "Link": "https://disk.yandex.ru/i/q2LKry0TMLbGCQ"
+        },
+        {
+            "ID": "62",
+            "Municipal_districts": "Уфа г.о.",
+            "Category": "Благоустройство",
+            "Category_id": "1",
+            "fileName": "file074_DenisYagudin",
+            "Name": "Ягудин Денис",
+            "raion": "Советский район",
+            "Link": "https://disk.yandex.ru/i/kD3jEgU7NkjwSw"
+        },
+        {
+            "ID": "63",
+            "Municipal_districts": "город Межгорье",
+            "Category": "Ремонт дорог",
+            "Category_id": "8",
+            "fileName": "file075_GalanovOleg",
+            "Name": "Голанов Олег Павлович",
+            "Link": "https://disk.yandex.ru/i/J3DCVG1MPvDTkA"
+        }
+    ]
+}

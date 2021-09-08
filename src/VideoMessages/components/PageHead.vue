@@ -17,7 +17,8 @@ export default {
 
 <style scoped>
 .h1 {
-  font-size: 65px;
+  font-size: 90px;
+  line-height: 100%;
   @apply tw-font-bold;
 }
 </style>

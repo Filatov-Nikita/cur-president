@@ -1,82 +1,78 @@
 <template>
   <q-page>
-    <PageHead class="head-mb" uppercase>Прямая линия главы региона</PageHead>
-    <BoardsCarousel
-      v-model="slide"
-      :slides="slideNames"
-      contentClass="_VideoMess-slider"
-      controlClass="_VideoMess-control"
-      class="slider"
-      height="1470px"
-      onTheLeft
+    <PageHead class="head-mb" uppercase>
+      Прямая линия главы региона Радия хабирова
+    </PageHead>
+    <div
+      class="row"
+      v-for="(row, index) in rows"
+      :class="{ 'row-offset': isEqualRow(index + 1), 'row-mt': index > 0 }"
+      :key="index"
     >
-      <q-carousel-slide
-        v-for="(slide, index) in slides"
-        :name="index.toString()"
-        :key="index"
-      >
-        <div
-          class="row"
-          v-for="(row, index) in slide"
-          :class="{ 'row-offset': isEqualRow(index + 1), 'row-mt': index > 0 }"
-          :key="index"
-        >
-          <BranchHoneycomb
-            class="item"
-            v-for="item in row"
-            :key="item.label"
-            :icon="item.icon"
-            :label="item.label"
-          />
-        </div>
-      </q-carousel-slide>
-    </BoardsCarousel>
+      <BranchHoneycomb
+        class="item"
+        v-for="item in row"
+        :key="item.label"
+        :icon="item.icon"
+        :label="item.label"
+        :label2="item.label2"
+        :branchId="item.id"
+      />
+    </div>
   </q-page>
 </template>
 
 <script>
 import PageHead from 'src/VideoMessages/components/PageHead';
 import BranchHoneycomb from 'src/VideoMessages/components/BranchHoneycomb';
-import BoardsCarousel from 'src/components/BoardsCarousel';
 
 export default {
   data() {
     return {
-      slide: '0',
-      slideNames: ['0', '1', '2'],
       items: getItems(),
       specificItems: [
         {
+          label: 'Соц. обслуживание <br/> и защита',
+          label2: 'Соц. обслуживание и защита',
+          icon: 'soc',
+          id: 11,
+        },
+        {
           label: 'Транспорт',
+          label2: 'Транспорт',
           icon: 'trans',
+          id: 12,
         },
         {
           label: 'Физическая культура <br/> и спорт',
+          label2: 'Физическая культура и спорт',
           icon: 'sport',
+          id: 13,
         },
         {
           label: 'Экология',
+          label2: 'Экология',
           icon: 'eco',
+          id: 14,
+        },
+        {
+          label: 'Строительство',
+          label2: 'Строительство',
+          icon: 'str',
+          id: 15,
         },
         {
           label: 'Другие',
+          label2: 'Другие',
           icon: 'other',
+          id: 16,
         },
       ],
     };
   },
   computed: {
     rows() {
-      return this.getRows(this.items);
-    },
-    specificRows() {
-      return this.getRows(this.specificItems, 2);
-    },
-    slides() {
-      return [
-        ...this.getRows(this.rows, 2),
-        ...this.getRows(this.specificRows, 2),
-      ];
+      return [...this.getRows(this.items, 5), this.specificItems];
     },
   },
   methods: {
@@ -84,7 +80,7 @@ export default {
       if (items.length <= itemsCount) return [items];
       const row = items.slice(0, itemsCount);
       const rest = items.slice(itemsCount);
-      return [row, ...this.getRows(rest)];
+      return [row, ...this.getRows(rest, itemsCount)];
     },
     isEqualRow(i) {
       return i % 2 === 0;
@@ -93,7 +89,6 @@ export default {
   components: {
     PageHead,
     BranchHoneycomb,
-    BoardsCarousel,
   },
 };
 
@@ -101,94 +96,89 @@ function getItems() {
   return [
     {
       label: 'Благоустройство',
+      label2: 'Благоустройство',
       icon: 'blag',
+      id: 1,
     },
     {
       label: 'ЖКХ',
+      label2: 'ЖКХ',
       icon: 'zkh',
+      id: 2,
     },
     {
       label: 'Здравоохранение',
+      label2: 'Здравоохранение',
       icon: 'zdrav',
-    },
-    {
-      label: 'Образование',
-      icon: 'edu',
-    },
-    {
-      label: 'Предпринимательство <br/> и экономика',
-      icon: 'pm',
-    },
-    {
-      label: 'Ремонт дорог',
-      icon: 'road',
+      id: 3,
     },
     {
       label: 'Культура',
+      label2: 'Культура',
       icon: 'kul',
+      id: 4,
     },
     {
       label: 'Лесное хозяйство',
+      label2: 'Лесное хозяйство',
       icon: 'les',
+      id: 5,
     },
     {
-      label: 'Строительство',
-      icon: 'str',
+      label: 'Образование',
+      label2: 'Образование',
+      icon: 'edu',
+      id: 6,
+    },
+    {
+      label: 'Предпринимательство <br/> и экономика',
+      label2: 'Предпринимательство и экономика',
+      icon: 'pm',
+      id: 7,
+    },
+    {
+      label: 'Ремонт дорог',
+      label2: 'Ремонт дорог',
+      icon: 'road',
+      id: 8,
     },
     {
       label: 'Связь <br/> и телевидение',
+      label2: 'Связь и телевидение',
       icon: 'tv',
+      id: 9,
     },
     {
-      label: 'Сельское хозяйство',
+      label: 'Сельское <br/> хозяйство',
+      label2: 'Сельское хозяйство',
       icon: 'sel',
-    },
-    {
-      label: 'Соц. обслуживание <br/> и защита',
-      icon: 'soc',
+      id: 10,
     },
   ];
 }
 </script>
-<style>
-._VideoMess-slider {
-  max-width: 100% !important;
-}
-
-._VideoMess-control {
-  margin-top: 121px !important;
-}
-</style>
 <style scoped>
-.slider {
-  max-width: 2548px;
-}
-
 .head-mb {
-  margin-bottom: 125px;
-}
-
-.row {
-  @apply tw-flex;
+  margin-bottom: 140px;
 }
 
 .row-offset {
   position: relative;
-  left: 363px;
+  left: 277px;
 }
 
 .row-mt {
-  margin-top: -183px;
+  margin-top: -139px;
 }
 
 .item {
-  margin-left: 15.5px;
-  margin-right: 15.5px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .row {
-  margin-left: -15.5px;
-  margin-right: -15.5px;
+  margin-left: -28px;
+  margin-right: -12px;
   @apply tw-inline-flex tw-flex-wrap;
 }
 </style>

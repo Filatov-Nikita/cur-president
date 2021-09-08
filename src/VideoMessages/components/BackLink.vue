@@ -31,6 +31,6 @@ export default {
 }
 
 .back-arrow .text {
-  @apply tw-underline tw-text-xs;
+  @apply tw-underline tw-text-md;
 }
 </style>

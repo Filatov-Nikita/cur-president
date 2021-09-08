@@ -1,11 +1,24 @@
 <template>
   <router-link
-    :to="{ name: 'videomess.branch.show', params: { branchName } }"
+    :to="{
+      name: 'videomess.branch.show',
+      params: { branchName },
+      query: { branchLabel: label2, branchId },
+    }"
     v-bind="link"
-    class="honeycomb-y-offsets tw-cursor-pointer tw-inline-block"
+    class="tw-cursor-pointer tw-inline-block"
+    :style="offsetsStyles"
   >
-    <div class="honeycomb" :class="`honeycomb-${itemStyle}`">
-      <div class="honeycomb-inner" :class="`honeycomb-inner-${itemStyle}`">
+    <div
+      class="honeycomb"
+      :class="`honeycomb-${itemStyle}`"
+      :style="honeycompStyles"
+    >
+      <div
+        class="honeycomb-inner"
+        :class="`honeycomb-inner-${itemStyle}`"
+        :style="honeycompStyles"
+      >
         <div class="honeycomb-body">
           <!-- top -->
           <section class="top">
@@ -33,10 +46,6 @@
 <script>
 export default {
   props: {
-    title: {
-      default: undefined,
-      type: String,
-    },
     link: {
       default() {
         return {};
@@ -55,8 +64,55 @@ export default {
       required: true,
       type: String,
     },
+    label2: {
+      required: true,
+      type: String,
+    },
+    branchId: {
+      required: true,
+      type: Number,
+    },
+  },
+  data() {
+    return {
+      ratio: 0.866, //(482 / 566) w / h
+      pRatio: 1.733, // (482 / 268)
+      w: 530,
+    };
   },
   computed: {
+    h() {
+      const { w, ratio } = this;
+      return w / ratio;
+    },
+    triangleH() {
+      const { w, pRatio } = this;
+      return w / pRatio / 2;
+    },
+    pH() {
+      const { h, triangleH } = this;
+      return h - triangleH * 2;
+    },
+    triangleSide() {
+      const { w } = this;
+      return w / 2;
+    },
+    honeycompStyles() {
+      const { w: width, triangleSide, triangleH, pH: height, color } = this;
+      return {
+        width: width + 'px',
+        height: height + 'px',
+        '--side-g': triangleSide + 'px',
+        '--side-h': triangleH + 'px',
+      };
+    },
+    offsetsStyles() {
+      const { triangleH } = this;
+      return {
+        'padding-top': triangleH + 'px',
+        'padding-bottom': triangleH + 'px',
+      };
+    },
     branchName() {
       return this.icon;
     },
@@ -73,7 +129,6 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-$sideHeight: 200.5px;
 $positiveColor: #02dd74;
 
 .honeycomb-inner:hover {
@@ -88,16 +143,9 @@ $positiveColor: #02dd74;
   border-bottom-color: #02dd74;
 }
 
-.honeycomb-y-offsets {
-  padding-top: $sideHeight;
-  padding-bottom: $sideHeight;
-}
-
 .honeycomb,
 .honeycomb-inner {
   position: relative;
-  width: 695px;
-  height: 390px;
 }
 
 .honeycomb-inner {
@@ -113,8 +161,8 @@ $positiveColor: #02dd74;
   position: absolute;
   width: 0;
   left: 0;
-  border-left: 347.5px solid transparent;
-  border-right: 347.5px solid transparent;
+  border-left: var(--side-g) solid transparent;
+  border-right: var(--side-g) solid transparent;
 }
 
 .honeycomb::before,
@@ -137,27 +185,19 @@ $positiveColor: #02dd74;
 }
 
 .honeycomb-positive::before {
-  border-bottom: $sideHeight solid $positiveColor;
+  border-bottom: var(--side-h) solid $positiveColor;
 }
 
 .honeycomb-positive::after {
-  border-top: $sideHeight solid $positiveColor;
+  border-top: var(--side-h) solid $positiveColor;
 }
 
 .honeycomb-inner-positive::before {
-  border-bottom: $sideHeight solid #1f2f66;
+  border-bottom: var(--side-h) solid #1f2f66;
 }
 
 .honeycomb-inner-positive::after {
-  border-top: $sideHeight solid #1f2f66;
-}
-
-.title {
-  line-height: 120%;
-  font-size: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
-  height: 47px;
+  border-top: var(--side-h) solid #1f2f66;
 }
 
 .middle {
@@ -167,20 +207,26 @@ $positiveColor: #02dd74;
 .honeycomb-body {
   position: relative;
   z-index: 1;
-  top: -16px;
+  top: -14px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .label {
-  font-size: 60px;
+  font-size: 50px;
   line-height: 68px;
   @apply tw-font-bold tw-text-center;
 }
 
 .label-sm {
-  font-size: 50px;
+  font-size: 38px;
+  line-height: 52px;
 }
 
 .icon-mb {
-  margin-bottom: 65px;
+  height: 167px;
+  margin-bottom: 60px;
 }
 </style>
