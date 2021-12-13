@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <PageHead class="head-mb" uppercase>
-      <div style="margin-bottom: 23px">Прямая линия Главы Республики Башкортостан</div>
+      <div style="margin-bottom: 23px">Видеобращения</div>
       <div>Радия Хабирова</div>
     </PageHead>
     <BoardsCarousel

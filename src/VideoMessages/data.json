@@ -235,8 +235,8 @@
             "Link": "https://disk.yandex.ru/i/l_w2NV6m4dj8rw"
         },
         {
-            "ID": "34",
-            "Municipal_districts": "Кугарчинский район",
+            "ID": "25",
+            "Municipal_districts": "Зилаирский район",
             "Category": "Ремонт дорог",
             "Category_id": "8",
             "fileName": "file078_Kugarch_sovet",
@@ -564,7 +564,7 @@
             "Category": "Образование",
             "Category_id": "6",
             "fileName": "file056_AnnaAhmadullina",
-            "Name": "Салават. Ахмадуллина Анна Олеговна",
+            "Name": "Ахмадуллина Анна Олеговна",
             "Link": "https://disk.yandex.ru/i/1YpXLqJ8xGxfaQ"
         },
         {
@@ -646,6 +646,15 @@
             "Category_id": "7",
             "fileName": "file064_RAIS",
             "Name": "Раис Габитов",
+            "Link": "https://disk.yandex.ru/i/uI8UFK_lnkm3kw"
+        },
+        {
+            "ID": "37",
+            "Municipal_districts": "Мелеузовский район",
+            "Category": "Предпринимательство и экономика",
+            "Category_id": "7",
+            "fileName": "taymasov",
+            "Name": "Таймасов Альберт Асгатович",
             "Link": "https://disk.yandex.ru/i/uI8UFK_lnkm3kw"
         },
         {

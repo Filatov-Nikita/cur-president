@@ -1,8 +1,6 @@
 <template>
   <q-page>
-    <PageHead class="head-mb" uppercase>
-      Прямая линия главы региона Радия хабирова
-    </PageHead>
+    <PageHead class="head-mb" uppercase> Видеобращения </PageHead>
 
     <div class="branch">
       <div class="branch-icon">

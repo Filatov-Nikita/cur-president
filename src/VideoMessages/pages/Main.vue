@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <PageHead class="head-mb" uppercase>
-      Прямая линия главы региона Радия хабирова
+       Видеобращения
     </PageHead>
     <div
       class="row"
