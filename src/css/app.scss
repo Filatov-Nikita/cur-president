@@ -18,13 +18,24 @@
   font-style: normal;
 }
 
+html {
+  font-size: 100%;
+
+  @include to($FHD) {
+    font-size: 45%;
+  }
+
+  @include to($_1440) {
+    font-size: 37%;
+  }
+}
 
 body {
   @apply tw-font-op-sans tw-text-white;
 }
 
-a[type=button] {
-  appearance: none
+a[type="button"] {
+  appearance: none;
 }
 
 input:focus {
@@ -32,7 +43,17 @@ input:focus {
 }
 
 button:focus {
-  outline: 0
+  outline: 0;
+}
+
+.app-notification {
+  padding: convertValues(40px 60px);
+  font-size: convertValues(40px);
+}
+
+.app-notification .q-notification__icon {
+  margin-right: convertValues(40px);
+  font-size: convertValues(40px);
 }
 
 .app-main-bg {

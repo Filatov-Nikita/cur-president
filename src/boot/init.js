@@ -2,20 +2,23 @@ import Vue from "vue";
 import PortalVue from "portal-vue";
 import * as moment from "moment";
 import "moment/locale/ru";
-import { ValidationProvider, ValidationObserver } from "vee-validate";
 // import 'animate.css'
 import "fullpage-vue/src/fullpage.css";
 import VueFullpage from "fullpage-vue";
 import * as ky from "src/api/helpers/ky";
+import { Notify } from "quasar";
+
 Vue.prototype.$ky = ky;
+
+Notify.setDefaults({
+  classes: "app-notification",
+  timeout: 3000
+});
 
 Vue.use(PortalVue);
 
 Vue.use(VueFullpage);
 moment.locale("ru");
-
-Vue.component("ValidationProvider", ValidationProvider);
-Vue.component("ValidationObserver", ValidationObserver);
 
 Vue.component(
   "BoardCover",

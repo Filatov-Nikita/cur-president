@@ -43,7 +43,7 @@
                 :icon="mapDistricts[item.ID].icon"
                 v-bind="{ cityDistrictName: item.raion || undefined }"
               >
-                <template #index>{{ index * 5 + i + 1 }}</template>
+                <template #index>{{ index * 10 + i + 1 }}</template>
               </BranchItem>
             </div>
           </div>
